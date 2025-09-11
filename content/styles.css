@@ -4,13 +4,13 @@
 
 @layer base {
   :root {
-    --hue: 26;
-    --canvas: hsl(var(--hue) 85% 95%);
-    --on-canvas: hsl(var(--hue) 10% 10%);
-    --on-canvas--dim: hsl(var(--hue) 20% 35%);
-    --on-canvas--mute: hsl(var(--hue) 10% 90%);
-    --accent: hsl(8, 58%, 52%);
-    --accent-dark: hsl(8, 58%, 42%);
+    /* Minimalist Void color scheme */
+    --canvas: #fafafa;
+    --on-canvas: #000000;
+    --on-canvas--dim: #cccccc;
+    --on-canvas--mute: #f0f0f0;
+    --accent: #0066ff;
+    --accent-dark: #0052cc;
   }
 
   h1 {
@@ -32,12 +32,16 @@
     @apply text-xl sm:text-2xl md:text-2xl leading-normal sm:leading-relaxed md:leading-relaxed font-normal;
   }
 
-  .home p + p {
-    @apply text-lg sm:text-2xl md:text-2xl leading-normal sm:leading-relaxed md:leading-relaxed font-light;
+  .home-container p:first-child {
+    @apply text-lg sm:text-2xl md:text-2xl leading-normal sm:leading-relaxed md:leading-relaxed font-normal;
+  }
+
+  .home-container p + p {
+    @apply text-lg sm:text-2xl md:text-2xl leading-normal sm:leading-relaxed md:leading-relaxed font-normal;
   }
 
   p a {
-    @apply text-on-canvas-dim border-b border-dotted border-on-canvas-dim font-semibold hover:text-accent hover:border-accent;
+    @apply text-on-canvas border-b border-dotted border-on-canvas font-bold hover:text-accent hover:border-accent;
   }
 
   ul {
@@ -52,7 +56,7 @@
   }
 
   main {
-    @apply mt-8 sm:mt-24;
+    @apply mt-4 sm:mt-12;
   }
 
   blockquote {
@@ -60,7 +64,7 @@
   }
 
   footer {
-    @apply text-base text-on-canvas-dim mt-10 md:mt-auto pt-2;
+    @apply text-base text-on-canvas mt-10 md:mt-auto pt-2;
   }
 
   .footer {
@@ -70,7 +74,7 @@
 
 @layer utilities {
   .link-style {
-    @apply text-on-canvas-dim border-b border-dotted border-on-canvas-dim font-semibold hover:text-accent hover:border-accent;
+    @apply text-on-canvas border-b border-dotted border-on-canvas font-bold hover:text-accent hover:border-accent;
   }
 
   .nav-menu {
@@ -141,7 +145,7 @@
   }
 
   .scale-hover {
-    @apply scale-110 hover:scale-100 transition-transform duration-300;
+    @apply scale-[1.01] hover:scale-100 transition-transform duration-300;
   }
 
   .profile-image {
@@ -149,11 +153,100 @@
   }
 
   .profile-image img {
-    @apply w-full h-full object-cover transform scale-[1.2] my-2 ml-0;
+    @apply w-full h-full object-cover my-2 ml-0;
   }
 
   .social-icon {
-    @apply w-4 h-4 sm:w-7 sm:h-7 hover:text-accent inline-block no-underline;
+    @apply w-4 h-4 sm:w-7 sm:h-7 text-on-canvas hover:text-accent inline-block no-underline;
+  }
+
+  /* Experience section grid layout */
+  .experience-container {
+    @apply space-y-12;
+  }
+  
+  .experience-item {
+    @apply space-y-4 pb-8 border-b border-on-canvas-mute last:border-b-0;
+  }
+  
+  .experience-field {
+    @apply grid grid-cols-3 gap-6 items-start;
+  }
+  
+  .field-label {
+    @apply font-semibold text-on-canvas-dim text-sm sm:text-base;
+  }
+  
+  .field-content {
+    @apply col-span-2 text-on-canvas text-sm sm:text-base;
+  }
+  
+  .company-logo {
+    @apply mb-6;
+  }
+  
+  .company-logos-dual {
+    @apply mb-6 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6 items-center;
+  }
+  
+  .experience-logo {
+    @apply h-16 w-auto object-contain;
+  }
+
+  .experience-logo-small {
+    @apply h-12 w-auto object-contain;
+  }
+
+  .experience-overview {
+    @apply mb-12 p-6 bg-on-canvas-mute rounded-lg;
+  }
+
+  .experience-overview h3 {
+    @apply text-lg font-semibold mb-4 text-on-canvas;
+  }
+
+  .experience-nav {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-3;
+  }
+
+  .experience-nav-item {
+    @apply flex items-center p-3 rounded border border-on-canvas-mute bg-canvas hover:bg-accent hover:text-canvas transition-colors duration-200 no-underline;
+  }
+
+  .experience-nav-item:hover {
+    @apply text-canvas;
+  }
+
+  .experience-nav-company {
+    @apply font-semibold text-lg;
+  }
+
+  .experience-nav-role {
+    @apply text-base text-on-canvas;
+  }
+
+  .experience-nav-item:hover .experience-nav-role {
+    @apply text-canvas;
+  }
+
+  /* Contact action buttons */
+  .contact-action-btn {
+    @apply px-4 py-2 bg-accent text-canvas rounded font-medium hover:bg-accent-dark transition-colors duration-200 no-underline;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .experience-item {
+    scroll-margin-top: 2rem;
   }
 
   .social-icon svg {
@@ -167,6 +260,11 @@
 
   .body-padding {
     @apply pt-[max(env(safe-area-inset-top),3rem)] pb-[max(env(safe-area-inset-bottom),0.80rem)] px-[max(env(safe-area-inset-right),1.125rem)];
+  }
+
+  /* Mobile-specific padding for experience page */
+  .experience-page .body-padding {
+    @apply px-4 sm:px-[max(env(safe-area-inset-right),1.125rem)];
   }
 
   .body-flex {
@@ -186,7 +284,7 @@
   }
 
   .home-container {
-    @apply main-container home;
+    @apply main-container;
   }
 
   .writings-list {
@@ -194,7 +292,7 @@
   }
 
   .writings-list a {
-    @apply text-on-canvas-dim border-b border-dotted font-normal hover:text-accent hover:border-accent;
+    @apply text-on-canvas border-b border-dotted font-bold hover:text-accent hover:border-accent;
   }
 
   .writings-item {
@@ -284,6 +382,14 @@
   .content-spacing {
     @apply my-4 sm:my-6;
   }
+
+  .tech-tags {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .tech-tag {
+    @apply inline-block bg-blue-50 text-blue-800 px-3 py-1 rounded text-sm font-medium border border-blue-200;
+  }
 }
 
 @layer components {
@@ -304,7 +410,7 @@
   }
 
   .logo-container {
-    @apply -mt-[calc(3em-19px)] w-[100px] sm:w-[135px] h-[60px] sm:h-[76px] bg-accent border-t-[12px] sm:border-t-[17px] border-[#b85544] text-center;
+    @apply -mt-[calc(3em-19px)] w-[100px] sm:w-[135px] h-[60px] sm:h-[76px] bg-accent border-t-[12px] sm:border-t-[17px] border-[#003d99] text-center;
   }
 
   .logo-text {
@@ -336,7 +442,7 @@
   }
 
   .card-button {
-    @apply text-base sm:text-lg font-medium block text-center bg-white text-accent border border-accent rounded-lg py-2 hover:bg-accent hover:text-white transition;
+    @apply text-base sm:text-lg font-medium block text-center bg-white text-accent border border-accent rounded-lg py-3 px-6 hover:bg-accent hover:text-white transition w-full;
   }
 
   .testimonial {
@@ -361,6 +467,646 @@
   .faq-answer {
     @apply text-lg sm:text-xl;
   }
+
+  /* Resume Styles */
+  .resume-container {
+    @apply max-w-4xl mx-auto;
+  }
+
+  .resume-footer {
+    @apply flex justify-center mt-8 pt-6 border-t border-on-canvas-mute;
+  }
+
+  .pdf-export-btn {
+    @apply flex items-center gap-2 px-4 py-2 bg-accent text-canvas rounded-lg hover:bg-accent-dark transition-colors font-medium text-sm;
+  }
+
+  .pdf-icon {
+    @apply w-4 h-4;
+  }
+
+  .resume-content {
+    @apply space-y-4;
+  }
+
+  .resume-section {
+    @apply border-b border-on-canvas-mute pb-4 mb-4 last:border-b-0;
+  }
+
+  /* Remove separators for quote and skills sections */
+  .resume-section.no-separator {
+    @apply border-b-0;
+  }
+
+  /* Remove heading separators for flowing sections */
+  .resume-section.no-separator h2 {
+    @apply border-b-0 pb-0 mb-3;
+  }
+
+  .resume-name {
+    @apply text-3xl sm:text-4xl font-bold text-center mb-6 text-on-canvas;
+  }
+
+  .resume-photo {
+    @apply flex justify-center mb-3;
+  }
+
+  .resume-image {
+    @apply w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-accent;
+  }
+
+  /* Tighter spacing for header sections */
+  .name-section {
+    @apply text-center border-b-0 pb-0 mb-4;
+  }
+
+  .resume-section.no-separator {
+    @apply border-b-0 pb-2 mb-3;
+  }
+
+  /* Create clear separation before work experience */
+  .work-experience-section {
+    @apply pt-6 mt-4;
+  }
+
+  .contact-section {
+    @apply text-left;
+  }
+
+  .contact-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto;
+  }
+
+  .contact-item {
+    @apply text-sm sm:text-base flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2;
+  }
+
+  .contact-label {
+    @apply font-bold text-on-canvas text-xs sm:text-sm uppercase tracking-wider min-w-20 sm:min-w-24;
+  }
+
+  .contact-item a {
+    @apply text-accent hover:text-accent-dark font-bold transition-colors;
+  }
+
+  .contact-item span:not(.contact-label) {
+    @apply font-medium text-on-canvas;
+  }
+
+  .resume-section h2 {
+    @apply text-lg font-semibold mb-4 text-on-canvas border-b border-on-canvas-mute pb-2;
+  }
+
+  /* Remove heading separators for flowing sections */
+  .resume-section.no-separator h2 {
+    @apply border-b-0 pb-0 mb-2;
+  }
+
+  .resume-quote {
+    @apply text-base italic leading-relaxed text-on-canvas bg-on-canvas-mute p-3 rounded-lg border-l-4 border-accent font-normal mb-4;
+  }
+
+  .focus-statement {
+    @apply text-base leading-relaxed text-on-canvas mb-2 font-normal;
+  }
+
+  .focus-statement:last-child {
+    @apply mb-2;
+  }
+
+  .motivation-list {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-2 list-none p-0 m-0;
+  }
+
+  .motivation-list li {
+    @apply text-sm sm:text-base p-2 bg-on-canvas-mute rounded;
+  }
+
+  .skills-summary {
+    @apply text-base text-on-canvas mb-4 p-4 bg-canvas border border-blue-100 rounded-lg text-center font-medium;
+  }
+
+  .skills-grid {
+    @apply grid grid-cols-2 sm:grid-cols-3 gap-3;
+  }
+
+  .skill-item {
+    @apply text-sm p-3 bg-canvas border border-blue-100 rounded-lg text-center font-normal text-on-canvas hover:bg-blue-50 transition-colors;
+  }
+
+  .job-entry {
+    @apply mb-4 last:mb-0 border border-blue-100 rounded-lg p-4;
+  }
+
+  .job-logo {
+    @apply flex justify-end items-center;
+  }
+
+  .job-logo img {
+    @apply h-6 w-auto object-contain;
+    image-rendering: auto;
+  }
+
+  .job-logos-dual {
+    @apply flex justify-end items-center gap-2;
+  }
+
+  .job-logos-dual img {
+    @apply h-6 w-auto object-contain;
+    image-rendering: auto;
+  }
+
+  .job-meta-line {
+    @apply flex justify-between items-start mt-0;
+  }
+
+  .job-meta-spacer {
+    @apply hidden;
+  }
+  
+  /* Ensure direct-report within job-meta-line is styled properly */
+  .job-meta-line .direct-report {
+    @apply flex-1;
+  }
+
+  /* Compact Header Layout */
+  .job-header-compact {
+    @apply mb-2;
+  }
+
+  .job-title-line {
+    @apply flex justify-between items-start gap-4 mb-0;
+  }
+
+  .job-title-line h3 {
+    @apply text-base font-semibold text-on-canvas m-0 mb-0 flex-1;
+  }
+
+  .job-meta-inline {
+    @apply flex flex-col gap-1 text-sm items-end;
+  }
+
+  .period {
+    @apply italic font-medium text-on-canvas;
+  }
+
+  .location {
+    @apply text-sm font-normal text-on-canvas;
+  }
+
+  .direct-report {
+    @apply text-sm font-medium text-accent mb-1;
+  }
+
+  .job-dimensions {
+    @apply text-xs italic text-blue-600 bg-blue-100 px-2 py-1 rounded inline-block;
+  }
+
+  .context-line {
+    @apply flex items-center gap-2 -mt-3;
+  }
+
+  .context-label {
+    @apply text-xs font-bold text-gray-600 whitespace-nowrap;
+  }
+
+  /* Content Section */
+  .job-content {
+    @apply mt-2 pt-2 border-t border-blue-200;
+  }
+
+  .job-content .job-section {
+    @apply mb-2 last:mb-0;
+  }
+
+  .job-content strong {
+    @apply text-on-canvas font-semibold mb-2 block text-sm;
+  }
+
+  .job-responsibilities {
+    @apply list-disc pl-5 space-y-1 text-sm sm:text-base mb-0;
+  }
+
+  .education-entry {
+    @apply space-y-2;
+  }
+
+  .education-item {
+    @apply p-3 border border-blue-100 rounded-lg mb-3;
+  }
+
+  .education-header {
+    @apply flex flex-row justify-between items-center mb-1;
+  }
+  
+  .education-second-line {
+    @apply flex flex-row justify-between items-start mb-2;
+  }
+  
+  .education-second-line .education-location {
+    @apply text-sm text-on-canvas;
+  }
+
+  .education-header strong {
+    @apply text-base font-semibold text-on-canvas;
+  }
+
+  .education-meta {
+    @apply flex flex-col sm:flex-row sm:gap-4 text-sm;
+  }
+
+  .education-period {
+    @apply italic font-medium text-on-canvas;
+  }
+
+  .education-location {
+    @apply text-sm text-on-canvas;
+  }
+
+  .education-description {
+    @apply text-sm font-medium text-on-canvas mb-2;
+  }
+
+  .education-details {
+    @apply list-disc pl-6 space-y-1 text-sm text-on-canvas mb-0;
+  }
+
+  .language-training {
+    @apply space-y-3 mb-4;
+  }
+
+  .language-item {
+    @apply text-sm sm:text-base p-3 border border-blue-100 rounded-lg;
+  }
+
+  .training-location {
+    @apply text-xs text-on-canvas italic ml-2;
+  }
+
+  .language-note {
+    @apply text-sm text-on-canvas p-2 bg-on-canvas-mute rounded italic;
+  }
+
+  /* Print styles for PDF export */
+  @media print {
+    @page {
+      margin: 0.2in 0.3in;
+      size: A4;
+    }
+    
+    body {
+      @apply text-black bg-white;
+    }
+    
+    .resume-footer {
+      @apply hidden;
+    }
+    
+    /* Hide navigation, header, and footer in print */
+    .site-header,
+    header,
+    footer {
+      @apply hidden;
+    }
+    
+    /* Hide the page title "Resume" but keep resume content */
+    main > div > h1:first-child {
+      @apply hidden;
+    }
+    
+    /* Move content up to eliminate gap */
+    .simple-content {
+      @apply -mt-8;
+    }
+    
+    main {
+      @apply mt-0;
+    }
+    
+    .resume-container {
+      @apply pt-0 pb-0 max-w-none mx-0;
+    }
+    
+    .resume-section {
+      @apply border-black;
+    }
+    
+    .resume-name {
+      @apply text-black;
+    }
+    
+    /* Apply optimized spacing in print */
+    .resume-photo {
+      @apply mb-1;
+    }
+    
+    /* Ultra-compact name section */
+    .name-section {
+      @apply mb-1 pb-0;
+    }
+    
+    .resume-section.no-separator {
+      @apply pb-1 mb-1;
+    }
+    
+    .resume-section.no-separator h2 {
+      @apply border-b-0 pb-0 mb-2;
+    }
+    
+    .resume-quote {
+      @apply p-3 mb-4 bg-gray-100;
+    }
+
+    .focus-statement {
+      @apply text-sm leading-normal mb-1 font-normal;
+    }
+    
+    .work-experience-section {
+      @apply pt-6 mt-4;
+    }
+
+    /* Compact layout print styles */
+    .job-entry {
+      @apply border-0 p-3;
+    }
+
+    .direct-report {
+      @apply text-black font-medium;
+    }
+
+    .job-dimensions {
+      @apply bg-blue-50 text-blue-800 border border-blue-200;
+    }
+
+    .context-line {
+      @apply flex items-center gap-2 mt-1;
+    }
+
+    .context-label {
+      @apply text-xs font-bold text-gray-800;
+    }
+
+    .job-content {
+      @apply border-t border-gray-200;
+    }
+
+    .job-content .job-section {
+      @apply mb-1 last:mb-0;
+    }
+
+    .job-content strong {
+      @apply text-black;
+    }
+    
+    .contact-item a {
+      @apply text-black no-underline;
+    }
+    
+    .skill-item {
+      @apply bg-gray-200 text-black border border-gray-400 font-medium px-4 py-2;
+    }
+    
+    .skills-grid {
+      @apply grid grid-cols-3 gap-2;
+    }
+    
+    .motivation-list li {
+      @apply bg-gray-100;
+    }
+
+    .education-item {
+      @apply border-0 bg-white p-3;
+    }
+
+    .education-description {
+      @apply text-black;
+    }
+
+    .education-details {
+      @apply text-black;
+    }
+
+    .language-item {
+      @apply border-0 bg-white p-3;
+    }
+
+    .language-note {
+      @apply bg-gray-100 text-black;
+    }
+    
+    /* Allow content to flow naturally across pages for maximum compression */
+    .resume-section {
+      @apply break-inside-auto;
+    }
+    
+    /* Allow skills section to break across pages */
+    .resume-section.no-separator {
+      break-inside: auto;
+      page-break-inside: auto;
+    }
+    
+    .job-entry {
+      @apply break-inside-auto;
+      page-break-inside: avoid;
+    }
+
+    /* ULTRA-AGGRESSIVE space-saving optimizations for PDF */
+    body {
+      @apply text-xs leading-none m-0 p-0;
+    }
+    
+    .resume-content {
+      @apply p-2;
+    }
+    
+    /* Ultra-compact photo and name - remove all top spacing */
+    .resume-image {
+      @apply w-16 h-16 mt-0;
+    }
+    
+    .resume-name {
+      @apply text-lg mb-0;
+    }
+    
+    .name-section {
+      @apply mb-2;
+    }
+    
+    /* Ultra-tight sections */
+    .resume-section {
+      @apply mb-1;
+    }
+    
+    .resume-section h2 {
+      @apply text-sm font-semibold mb-0;
+    }
+    
+    /* Remove separator for Contact section on print */
+    .contact-section h2 {
+      @apply border-b-0 pb-0 mb-2;
+    }
+    
+    /* Ultra-compress quote */
+    .resume-quote {
+      @apply py-1 px-2 text-xs leading-tight mb-1 font-normal;
+    }
+    
+    /* Ultra-compact skills */
+    .skills-summary {
+      @apply text-xs p-1 mb-1;
+    }
+    
+    .skills-grid {
+      @apply gap-1;
+      break-inside: auto;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .skill-item {
+      @apply px-1 py-1 font-normal;
+      break-inside: avoid;
+      font-size: 9px;
+      line-height: 1.1;
+      text-align: center;
+    }
+    
+    /* Ultra-compress job entries */
+    .job-entry {
+      @apply p-1 mb-1 text-xs font-normal;
+    }
+    
+    /* Remove forced page break for better flow */
+    .guest-lecturer-entry {
+      @apply mt-2;
+    }
+    
+    .job-logo img,
+    .job-logos-dual img {
+      @apply h-4;
+    }
+    
+    .job-header-compact {
+      @apply mb-0;
+    }
+    
+    .job-title-line {
+      @apply gap-2 mb-1;
+    }
+    
+    .job-title-line h3 {
+      @apply text-sm mb-0 leading-tight font-semibold;
+    }
+    
+    .job-meta-inline {
+      @apply text-xs leading-tight font-normal;
+    }
+    
+    .job-meta-line {
+      @apply mt-1;
+    }
+    
+    .direct-report,
+    .job-dimensions {
+      @apply text-xs mb-0 leading-tight font-normal;
+    }
+    
+    /* Make job-dimensions even smaller to harmonize with other text */
+    .job-dimensions {
+      font-size: 10px;
+      line-height: 1;
+      margin-top: 3px;
+    }
+    
+    /* Make direct report and date/location even smaller in print */
+    .job-meta-line .direct-report,
+    .job-meta-inline .period,
+    .job-meta-inline .location {
+      @apply text-xs leading-none;
+    }
+
+    /* Stack date and location vertically in print */
+    .job-meta-inline {
+      @apply flex-col items-end gap-0;
+    }
+    
+    .job-section {
+      @apply mb-0;
+    }
+    
+    .job-section strong {
+      @apply text-xs font-semibold;
+    }
+    
+    .job-responsibilities {
+      @apply text-xs space-y-0 pl-4 leading-snug font-normal;
+    }
+    
+    /* Ultra-compact education layout */
+    .education-item {
+      @apply mb-0 pb-0 p-0 text-xs border-b border-gray-200;
+    }
+    
+    .education-entry {
+      @apply space-y-0;
+    }
+    
+    /* Remove any forced spacing on work experience section */
+    .work-experience-section {
+      @apply pt-1 mt-1 border-t-0;
+    }
+    
+    .education-header {
+      @apply flex flex-row justify-between items-start mb-0 gap-2;
+    }
+    
+    .education-header strong {
+      @apply text-xs font-semibold;
+    }
+    
+    .education-meta {
+      @apply text-xs text-right flex flex-col leading-tight;
+    }
+    
+    .education-period,
+    .education-location,
+    .education-second-line .education-location {
+      @apply text-xs;
+    }
+    
+    .education-description {
+      @apply text-xs mb-0 leading-tight;
+    }
+    
+    .education-details {
+      @apply text-xs pl-4 space-y-0 mt-0 leading-none mb-0;
+    }
+    
+    .education-details li {
+      @apply mb-0 leading-tight;
+    }
+    
+    /* Ultra-compact language section */
+    .language-item {
+      @apply text-xs mb-0 p-1 leading-tight;
+    }
+    
+    .training-location {
+      @apply text-xs;
+    }
+    
+    /* Ultra-compact contact section */
+    .contact-item {
+      @apply text-xs gap-1 leading-normal;
+    }
+    
+    .contact-label {
+      @apply text-xs min-w-12 font-semibold;
+    }
+    
+    .contact-grid {
+      @apply gap-1 text-xs;
+    }
+  }
 }
 
 @font-face {
@@ -376,4 +1122,105 @@
   font-display: swap;
   font-style: italic;
   src: url('/fonts/CrimsonPro-Italic-VariableFont_wght.ttf');
+}
+
+/* Cookie Consent Banner */
+.cookie-banner {
+  @apply fixed bottom-0 left-0 right-0 bg-on-canvas text-canvas p-4 shadow-lg z-50;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cookie-banner.hidden {
+  @apply transform translate-y-full;
+}
+
+.cookie-content {
+  @apply max-w-4xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4;
+}
+
+.cookie-text h3 {
+  @apply text-lg font-semibold mb-2 text-canvas;
+}
+
+.cookie-text p {
+  @apply text-sm text-canvas mb-0 leading-relaxed;
+}
+
+.cookie-buttons {
+  @apply flex gap-3 flex-shrink-0;
+}
+
+.cookie-btn {
+  @apply px-4 py-2 rounded text-sm font-medium transition-colors duration-200 whitespace-nowrap;
+}
+
+.cookie-btn-primary {
+  @apply bg-accent text-canvas hover:bg-accent-dark;
+}
+
+.cookie-btn-secondary {
+  @apply bg-transparent text-canvas border border-canvas hover:bg-canvas hover:text-on-canvas;
+}
+
+@media (max-width: 640px) {
+  .cookie-content {
+    @apply text-center;
+  }
+  
+  .cookie-buttons {
+    @apply justify-center w-full;
+  }
+  
+  .cookie-btn {
+    @apply flex-1 max-w-none;
+  }
+}
+
+/* Language Switcher */
+.language-switcher {
+  @apply ml-4;
+}
+
+.language-link {
+  @apply font-medium text-sm px-2 py-1 rounded hover:bg-on-canvas-mute transition-colors duration-200;
+}
+
+/* Language Suggestion Banner */
+.language-suggestion-banner {
+  @apply fixed top-0 left-0 right-0 bg-blue-600 text-white z-40 shadow-lg;
+  transition: transform 0.3s ease-in-out;
+}
+
+.language-suggestion-banner.hidden {
+  @apply transform -translate-y-full;
+}
+
+.language-suggestion-content {
+  @apply max-w-4xl mx-auto flex items-center justify-between px-4 py-3;
+}
+
+.language-suggestion-text {
+  @apply flex items-center gap-3 text-sm;
+}
+
+.language-suggestion-icon {
+  @apply text-lg;
+}
+
+.language-suggestion-link {
+  @apply font-medium underline hover:no-underline ml-2;
+}
+
+.language-suggestion-dismiss {
+  @apply text-white text-xl font-bold bg-transparent border-none cursor-pointer hover:bg-white hover:bg-opacity-20 rounded px-2 py-1 transition-colors duration-200;
+}
+
+@media (max-width: 640px) {
+  .language-suggestion-content {
+    @apply flex-col gap-2 text-center py-4;
+  }
+  
+  .language-suggestion-text {
+    @apply justify-center;
+  }
 }
