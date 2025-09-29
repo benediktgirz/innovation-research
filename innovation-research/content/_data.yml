@@ -1,0 +1,300 @@
+# Navigation sections for each language
+sections:
+  en:
+    - url: '/'
+      label: 'Study Overview'
+      show: true
+    - url: '/participate/'
+      label: 'Participate'
+      show: true
+    - url: '/about/'
+      label: 'About'
+      show: true
+    - url: '/contact/'
+      label: 'Contact'
+      show: true
+  de:
+    - url: '/de/'
+      label: 'Studienübersicht'
+      show: true
+    - url: '/de/teilnehmen/'
+      label: 'Teilnehmen'
+      show: true
+    - url: '/de/ueber-uns/'
+      label: 'Über uns'
+      show: true
+    - url: '/de/kontakt/'
+      label: 'Kontakt'
+      show: true
+  fr:
+    - url: '/fr/'
+      label: "Aperçu de l'étude"
+      show: true
+    - url: '/fr/participer/'
+      label: 'Participer'
+      show: true
+    - url: '/fr/a-propos/'
+      label: 'À propos'
+      show: true
+    - url: '/fr/contact/'
+      label: 'Contact'
+      show: true
+  es:
+    - url: '/es/'
+      label: 'Resumen del estudio'
+      show: true
+    - url: '/es/participar/'
+      label: 'Participar'
+      show: true
+    - url: '/es/acerca-de/'
+      label: 'Acerca de'
+      show: true
+    - url: '/es/contacto/'
+      label: 'Contacto'
+      show: true
+  it:
+    - url: '/it/'
+      label: 'Panoramica dello studio'
+      show: true
+    - url: '/it/partecipa/'
+      label: 'Partecipa'
+      show: true
+    - url: '/it/chi-siamo/'
+      label: 'Chi siamo'
+      show: true
+    - url: '/it/contatto/'
+      label: 'Contatto'
+      show: true
+
+# Content translations
+content:
+  en:
+    title: "Innovation in Professional Football"
+    subtitle: "Research Study"
+    description: "Comprehensive research study on innovation in professional football across top European leagues"
+    exec_summary:
+      title: "Study: Innovation In Professional Football"
+      description: "Across the top European leagues, football experts, academies, associations and coaches, we are gathering information about innovation in football. As a result of this endeavour, there will be one clear statement: these innovations made it to the pitch."
+      leagues_text: "Participating leagues and all their clubs: English Premier League, German Bundesliga, Spanish La Liga, French Ligue 1 and Italian Serie A"
+    participate:
+      title: "Participate"
+      description: "As participants you get the full study and its results for free sent to your inbox. Any question you might have about it our head researcher will be happy to accommodate."
+      form_labels:
+        club_name: "Your club name"
+        role: "Your role"
+        email: "Your email"
+        innovation: "What most recent innovation do you see making a difference on the pitch? (By difference we mean winning more, by pitch we mean the team playing successful football)"
+      disclaimer: "Your input will always be treated with confidentiality. It will never be publicly published or made accessible to anyone other than the core research team. All study results are cumulative and anonymized."
+      success_message: "Thank you for participating in our research. We will get the study results to you as soon as it is available. If you have questions in the meantime, do get in touch."
+      submit_button: "Submit Participation"
+    roadmap:
+      title: "Study Roadmap"
+      phases:
+        - date: "October 2025"
+          phase: "Gathering Data"
+        - date: "November 2025"
+          phase: "Analysis and Write Up"
+        - date: "December 2025"
+          phase: "Publication"
+    about:
+      title: "Innovation as a Career"
+      description: "The research team consists of a cross-functional diverse background that all share three commonalities: a passion for knowledge, football and innovating."
+      team_title: "Head of Research"
+      support_text: "Gracefully supported by a diverse team."
+    contact:
+      title: "Get in touch"
+      description: "If you have questions about this study, get in touch."
+      form_labels:
+        name: "Name"
+        email: "Email"
+        message: "Message"
+      submit_button: "Send Message"
+  de:
+    title: "Innovation im Profifußball"
+    subtitle: "Forschungsstudie"
+    description: "Umfassende Forschungsstudie über Innovation im Profifußball in den europäischen Topligen"
+    exec_summary:
+      title: "Studie: Innovation im Profifußball"
+      description: "In den europäischen Topligen sammeln wir gemeinsam mit Fußballexperten, Akademien, Verbänden und Trainern Informationen über Innovationen im Fußball. Das Ergebnis dieser Bemühung wird eine klare Aussage sein: Diese Innovationen haben es auf den Platz geschafft."
+      leagues_text: "Teilnehmende Ligen und alle ihre Vereine: English Premier League, Deutsche Bundesliga, Spanische La Liga, Französische Ligue 1 und Italienische Serie A"
+    participate:
+      title: "Teilnehmen"
+      description: "Als Teilnehmer erhalten Sie die vollständige Studie und ihre Ergebnisse kostenlos in Ihr Postfach. Bei Fragen steht Ihnen unser Hauptforscher gerne zur Verfügung."
+      form_labels:
+        club_name: "Ihr Vereinsname"
+        role: "Ihre Rolle"
+        email: "Ihre E-Mail"
+        innovation: "Welche neueste Innovation sehen Sie als spielentscheidend? (Mit Unterschied meinen wir mehr Siege, mit Platz meinen wir erfolgreiches Fußballspiel)"
+      disclaimer: "Ihre Eingaben werden immer vertraulich behandelt. Sie werden niemals öffentlich veröffentlicht oder anderen als dem Kernforschungsteam zugänglich gemacht. Alle Studienergebnisse sind kumulativ und anonymisiert."
+      success_message: "Vielen Dank für Ihre Teilnahme an unserer Forschung. Wir werden Ihnen die Studienergebnisse zusenden, sobald sie verfügbar sind. Bei Fragen in der Zwischenzeit melden Sie sich gerne."
+      submit_button: "Teilnahme einreichen"
+    roadmap:
+      title: "Studien-Roadmap"
+      phases:
+        - date: "Oktober 2025"
+          phase: "Datensammlung"
+        - date: "November 2025"
+          phase: "Analyse und Ausarbeitung"
+        - date: "Dezember 2025"
+          phase: "Veröffentlichung"
+    about:
+      title: "Innovation als Berufung"
+      description: "Das Forschungsteam besteht aus einem funktionsübergreifenden, vielfältigen Hintergrund, der drei Gemeinsamkeiten teilt: eine Leidenschaft für Wissen, Fußball und Innovation."
+      team_title: "Leiter der Forschung"
+      support_text: "Elegant unterstützt von einem vielfältigen Team."
+    contact:
+      title: "Kontakt aufnehmen"
+      description: "Wenn Sie Fragen zu dieser Studie haben, nehmen Sie Kontakt auf."
+      form_labels:
+        name: "Name"
+        email: "E-Mail"
+        message: "Nachricht"
+      submit_button: "Nachricht senden"
+  fr:
+    title: "Innovation dans le football professionnel"
+    subtitle: "Étude de recherche"
+    description: "Étude de recherche complète sur l'innovation dans le football professionnel dans les grandes ligues européennes"
+    exec_summary:
+      title: "Étude : Innovation dans le football professionnel"
+      description: "À travers les grandes ligues européennes, experts du football, académies, associations et entraîneurs, nous recueillons des informations sur l'innovation dans le football. Le résultat de cette entreprise sera une déclaration claire : ces innovations ont atteint le terrain."
+      leagues_text: "Ligues participantes et tous leurs clubs : Premier League anglaise, Bundesliga allemande, La Liga espagnole, Ligue 1 française et Serie A italienne"
+    participate:
+      title: "Participer"
+      description: "En tant que participants, vous recevez gratuitement l'étude complète et ses résultats dans votre boîte de réception. Notre chercheur principal sera heureux de répondre à toute question que vous pourriez avoir."
+      form_labels:
+        club_name: "Nom de votre club"
+        role: "Votre rôle"
+        email: "Votre email"
+        innovation: "Quelle innovation récente voyez-vous faire la différence sur le terrain ? (Par différence, nous entendons gagner plus, par terrain nous entendons l'équipe jouant un football réussi)"
+      disclaimer: "Vos contributions seront toujours traitées de manière confidentielle. Elles ne seront jamais publiées publiquement ou rendues accessibles à quiconque autre que l'équipe de recherche principale. Tous les résultats d'étude sont cumulatifs et anonymisés."
+      success_message: "Merci de participer à notre recherche. Nous vous ferons parvenir les résultats de l'étude dès qu'ils seront disponibles. Si vous avez des questions entre-temps, n'hésitez pas à nous contacter."
+      submit_button: "Soumettre la participation"
+    roadmap:
+      title: "Feuille de route de l'étude"
+      phases:
+        - date: "Octobre 2025"
+          phase: "Collecte de données"
+        - date: "Novembre 2025"
+          phase: "Analyse et rédaction"
+        - date: "Décembre 2025"
+          phase: "Publication"
+    about:
+      title: "L'innovation comme carrière"
+      description: "L'équipe de recherche est composée d'un arrière-plan diversifié et transfonctionnel qui partage trois points communs : une passion pour la connaissance, le football et l'innovation."
+      team_title: "Chef de la recherche"
+      support_text: "Gracieusement soutenu par une équipe diverse."
+    contact:
+      title: "Entrer en contact"
+      description: "Si vous avez des questions sur cette étude, contactez-nous."
+      form_labels:
+        name: "Nom"
+        email: "Email"
+        message: "Message"
+      submit_button: "Envoyer le message"
+  es:
+    title: "Innovación en el fútbol profesional"
+    subtitle: "Estudio de investigación"
+    description: "Estudio de investigación integral sobre la innovación en el fútbol profesional en las principales ligas europeas"
+    exec_summary:
+      title: "Estudio: Innovación en el fútbol profesional"
+      description: "A través de las principales ligas europeas, expertos en fútbol, academias, asociaciones y entrenadores, estamos recopilando información sobre la innovación en el fútbol. El resultado de este esfuerzo será una declaración clara: estas innovaciones llegaron al campo."
+      leagues_text: "Ligas participantes y todos sus clubes: Premier League inglesa, Bundesliga alemana, La Liga española, Ligue 1 francesa y Serie A italiana"
+    participate:
+      title: "Participar"
+      description: "Como participantes, recibirán el estudio completo y sus resultados gratis en su bandeja de entrada. Nuestro investigador principal estará encantado de responder cualquier pregunta que puedan tener."
+      form_labels:
+        club_name: "Nombre de su club"
+        role: "Su rol"
+        email: "Su email"
+        innovation: "¿Qué innovación más reciente ves que marca la diferencia en el campo? (Por diferencia queremos decir ganar más, por campo queremos decir el equipo jugando fútbol exitoso)"
+      disclaimer: "Sus contribuciones siempre serán tratadas con confidencialidad. Nunca serán publicadas públicamente o hechas accesibles a nadie que no sea el equipo de investigación principal. Todos los resultados del estudio son acumulativos y anonimizados."
+      success_message: "Gracias por participar en nuestra investigación. Les haremos llegar los resultados del estudio tan pronto como estén disponibles. Si tienen preguntas mientras tanto, pónganse en contacto."
+      submit_button: "Enviar participación"
+    roadmap:
+      title: "Hoja de ruta del estudio"
+      phases:
+        - date: "Octubre 2025"
+          phase: "Recopilación de datos"
+        - date: "Noviembre 2025"
+          phase: "Análisis y redacción"
+        - date: "Diciembre 2025"
+          phase: "Publicación"
+    about:
+      title: "La innovación como carrera"
+      description: "El equipo de investigación consiste en un trasfondo diverso y multifuncional que comparte tres aspectos en común: una pasión por el conocimiento, el fútbol y la innovación."
+      team_title: "Jefe de investigación"
+      support_text: "Graciosamente apoyado por un equipo diverso."
+    contact:
+      title: "Ponerse en contacto"
+      description: "Si tienen preguntas sobre este estudio, pónganse en contacto."
+      form_labels:
+        name: "Nombre"
+        email: "Email"
+        message: "Mensaje"
+      submit_button: "Enviar mensaje"
+  it:
+    title: "Innovazione nel calcio professionistico"
+    subtitle: "Studio di ricerca"
+    description: "Studio di ricerca completo sull'innovazione nel calcio professionistico nelle principali leghe europee"
+    exec_summary:
+      title: "Studio: Innovazione nel calcio professionistico"
+      description: "Attraverso le principali leghe europee, esperti di calcio, accademie, associazioni e allenatori, stiamo raccogliendo informazioni sull'innovazione nel calcio. Il risultato di questo sforzo sarà una dichiarazione chiara: queste innovazioni sono arrivate in campo."
+      leagues_text: "Leghe partecipanti e tutti i loro club: Premier League inglese, Bundesliga tedesca, La Liga spagnola, Ligue 1 francese e Serie A italiana"
+    participate:
+      title: "Partecipa"
+      description: "Come partecipanti riceverete lo studio completo e i suoi risultati gratuitamente nella vostra casella di posta. Il nostro ricercatore principale sarà felice di rispondere a qualsiasi domanda possiate avere."
+      form_labels:
+        club_name: "Nome del vostro club"
+        role: "Il vostro ruolo"
+        email: "La vostra email"
+        innovation: "Quale innovazione più recente vedete fare la differenza in campo? (Per differenza intendiamo vincere di più, per campo intendiamo la squadra che gioca calcio di successo)"
+      disclaimer: "I vostri contributi saranno sempre trattati con riservatezza. Non saranno mai pubblicati pubblicamente o resi accessibili a chiunque altro che non sia il team di ricerca principale. Tutti i risultati dello studio sono cumulativi e anonimi."
+      success_message: "Grazie per aver partecipato alla nostra ricerca. Vi faremo avere i risultati dello studio non appena saranno disponibili. Se avete domande nel frattempo, mettetevi in contatto."
+      submit_button: "Invia partecipazione"
+    roadmap:
+      title: "Roadmap dello studio"
+      phases:
+        - date: "Ottobre 2025"
+          phase: "Raccolta dati"
+        - date: "Novembre 2025"
+          phase: "Analisi e scrittura"
+        - date: "Dicembre 2025"
+          phase: "Pubblicazione"
+    about:
+      title: "L'innovazione come carriera"
+      description: "Il team di ricerca è composto da un background diverso e trasversale che condivide tre punti in comune: una passione per la conoscenza, il calcio e l'innovazione."
+      team_title: "Capo della ricerca"
+      support_text: "Graziosamente supportato da un team diverso."
+    contact:
+      title: "Mettersi in contatto"
+      description: "Se avete domande su questo studio, mettetevi in contatto."
+      form_labels:
+        name: "Nome"
+        email: "Email"
+        message: "Messaggio"
+      submit_button: "Invia messaggio"
+
+# Meta information
+metas:
+  site: "Innovation in Professional Football - Research Study"
+  icon: /images/logo.png
+  lang: en
+  generator: true
+
+# League logos data
+leagues:
+  - name: "Premier League"
+    country: "England"
+    logo: "/images/leagues/placeholder.svg"
+  - name: "Bundesliga"
+    country: "Germany"
+    logo: "/images/leagues/placeholder.svg"
+  - name: "La Liga"
+    country: "Spain"
+    logo: "/images/leagues/placeholder.svg"
+  - name: "Ligue 1"
+    country: "France"
+    logo: "/images/leagues/placeholder.svg"
+  - name: "Serie A"
+    country: "Italy"
+    logo: "/images/leagues/placeholder.svg"
