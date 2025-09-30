@@ -1,0 +1,21 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.3.3/"
+  },
+  "tasks": {
+    "build": "deno run -A _config.ts",
+    "serve": "deno run -A _config.ts --serve",
+    "serve-prod": "deno run -A serve.ts"
+  },
+  "compilerOptions": {
+    "types": [
+      "https://deno.land/x/lume@v2.3.3/types.ts"
+    ]
+  },
+  "fmt": {
+    "exclude": ["_site/", "node_modules/", ".git/"]
+  },
+  "lint": {
+    "exclude": ["_site/", "node_modules/", ".git/"]
+  }
+}

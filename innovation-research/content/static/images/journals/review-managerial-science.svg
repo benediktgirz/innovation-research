@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="#FF6B35"/>
+  <text x="100" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Review of Managerial</text>
+  <text x="100" y="34" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Science</text>
+  <text x="100" y="48" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">Springer</text>
+  <rect x="10" y="10" width="15" height="15" fill="white" opacity="0.3"/>
+  <rect x="175" y="35" width="15" height="15" fill="white" opacity="0.3"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="#003B7F"/>
+  <text x="100" y="20" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Management</text>
+  <text x="100" y="34" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">Science</text>
+  <text x="100" y="48" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">INFORMS</text>
+  <polygon points="15,15 25,15 20,25" fill="#FFD700"/>
+  <polygon points="175,35 185,35 180,45" fill="#FFD700"/>
+</svg>

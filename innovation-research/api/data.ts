@@ -1,5 +1,6 @@
 // Vercel Serverless Function for Research Data Retrieval
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import * as jwt from "https://deno.land/x/djwt@v3.0.2/mod.ts";
 
 interface ParticipationRecord {
   id: string;
@@ -29,12 +30,42 @@ export default async function handler(
     return response.status(405).json({ error: 'Method not allowed' });
   }
 
-  // Simple authentication check
+  // Authentication check - support both legacy token and JWT
   const authHeader = request.headers.authorization;
-  const expectedAuth = `Bearer ${process.env.DATA_ACCESS_TOKEN || 'research-admin-2024'}`;
 
-  if (authHeader !== expectedAuth) {
-    return response.status(401).json({ error: 'Unauthorized' });
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return response.status(401).json({ error: 'Unauthorized - Missing token' });
+  }
+
+  const token = authHeader.substring(7); // Remove 'Bearer ' prefix
+
+  // Check if it's the legacy token
+  const legacyToken = process.env.DATA_ACCESS_TOKEN || 'research-admin-2024';
+  if (token === legacyToken) {
+    // Legacy token is valid, continue
+  } else {
+    // Try to validate as JWT token
+    try {
+      const SECRET_KEY = await crypto.subtle.generateKey(
+        { name: "HMAC", hash: "SHA-256" },
+        true,
+        ["sign", "verify"]
+      );
+
+      const payload = await jwt.verify(token, SECRET_KEY);
+
+      // Check if token is expired
+      if (payload.exp && payload.exp < Date.now()) {
+        return response.status(401).json({ error: 'Token expired' });
+      }
+
+      // Check if it's from the right email
+      if (payload.email !== 'bg@benedikt-girz.com') {
+        return response.status(401).json({ error: 'Invalid token' });
+      }
+    } catch (jwtError) {
+      return response.status(401).json({ error: 'Invalid token' });
+    }
   }
 
   try {
@@ -55,9 +86,18 @@ export default async function handler(
       return response.status(200).send(csv);
     }
 
+    // Get analytics data
+    const analytics = await getAnalytics();
+
     return response.status(200).json({
-      total_responses: data.length,
-      data: data,
+      participants: data,
+      analytics: {
+        total_responses: data.length,
+        today_responses: getTodayResponses(data),
+        language_distribution: analytics.by_language,
+        avg_innovation_length: getAverageResponseLength(data),
+        ...analytics
+      },
       exported_at: new Date().toISOString()
     });
 
@@ -159,6 +199,17 @@ async function getAnalytics() {
     .sort((a, b) => a.date.localeCompare(b.date));
 
   return analytics;
+}
+
+function getTodayResponses(data: ParticipationRecord[]): number {
+  const today = new Date().toISOString().split('T')[0];
+  return data.filter(item => item.submitted_at.startsWith(today)).length;
+}
+
+function getAverageResponseLength(data: ParticipationRecord[]): number {
+  if (data.length === 0) return 0;
+  const totalLength = data.reduce((sum, item) => sum + item.innovation.length, 0);
+  return totalLength / data.length;
 }
 
 function convertToCSV(data: ParticipationRecord[]): string {

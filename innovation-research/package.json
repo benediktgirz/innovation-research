@@ -1,0 +1,21 @@
+{
+  "name": "innovation-research",
+  "version": "1.0.0",
+  "description": "Innovation Research Platform",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.0.0",
+    "fs-extra": "^11.0.0",
+    "resend": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

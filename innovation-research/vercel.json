@@ -1,0 +1,39 @@
+{
+  "functions": {
+    "api/participate.ts": {
+      "runtime": "@vercel/node"
+    },
+    "api/contact.ts": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/participate",
+      "destination": "/api/participate"
+    },
+    {
+      "source": "/api/contact",
+      "destination": "/api/contact"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "POST, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+#!/usr/bin/expect -f
+
+set timeout 30
+
+spawn sftp -o StrictHostKeyChecking=no -P 22 u102640071@access848044507.webspace-data.io
+
+expect "password:"
+send "Ionos2025!!Ionos2025!!\r"
+
+expect "sftp>"
+send "cd /production/research\r"
+
+expect "sftp>"
+send "rm *\r"
+
+expect "sftp>"
+send "rm css/*\r"
+
+expect "sftp>"
+send "rmdir css\r"
+
+expect "sftp>"
+send "rm images/associations/*\r"
+
+expect "sftp>"
+send "rmdir images/associations\r"
+
+expect "sftp>"
+send "rm images/clubs/*\r"
+
+expect "sftp>"
+send "rmdir images/clubs\r"
+
+expect "sftp>"
+send "rm images/leagues/*\r"
+
+expect "sftp>"
+send "rmdir images/leagues\r"
+
+expect "sftp>"
+send "rm images/journals/*\r"
+
+expect "sftp>"
+send "rmdir images/journals\r"
+
+expect "sftp>"
+send "rm images/media/*\r"
+
+expect "sftp>"
+send "rmdir images/media\r"
+
+expect "sftp>"
+send "rmdir images\r"
+
+expect "sftp>"
+send "rm it/*\r"
+
+expect "sftp>"
+send "rmdir it\r"
+
+expect "sftp>"
+send "rm de/*\r"
+
+expect "sftp>"
+send "rmdir de\r"
+
+expect "sftp>"
+send "rm fr/*\r"
+
+expect "sftp>"
+send "rmdir fr\r"
+
+expect "sftp>"
+send "rm es/*\r"
+
+expect "sftp>"
+send "rmdir es\r"
+
+expect "sftp>"
+send "rm privacy/*\r"
+
+expect "sftp>"
+send "rmdir privacy\r"
+
+expect "sftp>"
+send "rm legal/*\r"
+
+expect "sftp>"
+send "rmdir legal\r"
+
+expect "sftp>"
+send "cd ..\r"
+
+expect "sftp>"
+send "rmdir research\r"
+
+expect "sftp>"
+send "quit\r"
+
+interact

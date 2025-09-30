@@ -1,0 +1,45 @@
+name: Deploy to research.benedikt-girz.com
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'innovation-research/**' ]
+  pull_request:
+    branches: [ main ]
+    paths: [ 'innovation-research/**' ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./innovation-research
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Deno
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+
+    - name: Lint
+      run: deno lint
+
+    - name: Build site
+      run: deno task build
+
+    - name: Deploy to research subdomain
+      if: github.ref == 'refs/heads/main'
+      run: |
+        # Configure deployment to research.benedikt-girz.com
+        # This would typically use your hosting provider's deployment method
+        echo "Deploy to research.benedikt-girz.com"
+        # Example: rsync -avz --delete _site/ user@server:/var/www/research/
+
+    - name: Archive build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: site-build
+        path: innovation-research/_site/

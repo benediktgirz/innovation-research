@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://research.benedikt-girz.com:3001/sitemap.xml
