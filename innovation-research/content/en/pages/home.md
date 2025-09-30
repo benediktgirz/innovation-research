@@ -341,22 +341,20 @@ indexable: true
 <section class="section" id="about">
   <div class="section-content">
     <h2 class="section-title">Innovation as a Career</h2>
-    <p class="section-description">The research team consists of a cross-functional diverse background that all share three commonalities: a passion for knowledge, football and innovating.</p>
+    <p class="section-description">Benedikt works his entire career on innovation and team excellence. He is working on a system that uses innovation in a large variety of contexts for the benefit of football success. His hypotheses, argument and relevant research will eventually be published as a book early in 2026.</p>
 
-    <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">{{ content.en.about.team_title }}</h3>
+    <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">Head Researcher</h3>
 
     <div class="flex justify-center w-full">
-      <div class="team-member max-w-xs">
+      <div class="team-member max-w-xs text-center">
         <div class="team-photo">
           <img src="https://benedikt-girz.com/images/benedikt.png" alt="Benedikt Girz" class="team-photo-img" loading="lazy">
         </div>
         <h4 class="team-name">Benedikt Girz</h4>
-        <p class="team-role">{{ content.en.about.team_title }}</p>
+        <p class="team-role">Head Researcher</p>
         <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
       </div>
     </div>
-
-    <p class="text-center text-text-muted mt-8">Benedikt works his entire career on innovation and team excellence. He is working on a system that uses innovation in a large variety of contexts for the benefit of football success. His hypotheses, argument and relevant research will eventually be published as a book early in 2026.</p>
   </div>
 </section>
 
