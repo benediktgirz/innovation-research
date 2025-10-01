@@ -1,10 +1,4 @@
 {
-  "outputDirectory": "_site",
-  "functions": {
-    "api/*.js": {
-      "maxDuration": 10
-    }
-  },
   "headers": [
     {
       "source": "/api/(.*)",

@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node build.js",
     "deploy": "vercel --prod",
-    "vercel-build": "curl -fsSL https://deno.land/x/install/install.sh | sh && export PATH=\"$HOME/.deno/bin:$PATH\" && deno install && deno task build"
+    "vercel-build": "node vercel-build.js"
   },
   "dependencies": {
     "@vercel/node": "^3.0.0",
