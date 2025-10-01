@@ -2,6 +2,9 @@
   "outputDirectory": "_site",
   "installCommand": "",
   "buildCommand": "",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
