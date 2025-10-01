@@ -1,10 +1,13 @@
 {
   "outputDirectory": "_site",
-  "installCommand": "",
-  "buildCommand": "",
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ],
+  "installCommand": "npm install",
+  "buildCommand": "deno task build",
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 10
+    }
+  },
   "headers": [
     {
       "source": "/api/(.*)",
