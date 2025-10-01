@@ -6,14 +6,10 @@
       "maxDuration": 10
     }
   },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/_site/$1"
+      "source": "/((?!api/).*)",
+      "destination": "/_site/$1"
     }
   ],
   "headers": [
