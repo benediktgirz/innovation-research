@@ -1,5 +1,4 @@
 {
-  "outputDirectory": "_site",
   "installCommand": "curl -fsSL https://deno.land/x/install/install.sh | sh && export PATH=\"$HOME/.deno/bin:$PATH\" && deno install && npm install",
   "buildCommand": "export PATH=\"$HOME/.deno/bin:$PATH\" && deno task build",
   "functions": {
@@ -7,6 +6,16 @@
       "maxDuration": 10
     }
   },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/_site/$1"
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
