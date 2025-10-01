@@ -1,0 +1,20 @@
+#!/usr/bin/expect -f
+
+set timeout 30
+cd /Users/benediktgirz/Sites/www/_site
+
+spawn sftp -o StrictHostKeyChecking=no -P 22 u102640071@access848044507.webspace-data.io
+
+expect "password:"
+send "Ionos2025!!Ionos2025!!\r"
+
+expect "sftp>"
+send "cd /production\r"
+
+expect "sftp>"
+send "put -r .\r"
+
+expect "sftp>"
+send "quit\r"
+
+interact

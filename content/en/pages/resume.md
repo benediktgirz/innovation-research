@@ -36,7 +36,7 @@ lang: 'en'
         <div class="skill-item">Business Modelling</div>
         <div class="skill-item">Online Marketing</div>
         <div class="skill-item">Management</div>
-        <div class="skill-item">Analytical Thinking</div>
+        <div class="skill-item">Consulting</div>
         <div class="skill-item">Continuous Learning</div>
       </div>
     </div>
@@ -54,20 +54,21 @@ lang: 'en'
               <img src="/images/loopingcollective-black.png" alt="Looping Collective Logo" class="job-logo">
             </div>
           </div>
-          <div class="job-meta-line">
-            <div class="direct-report">Direct report: Mirko Schmiedl (CEO), Jannik Schmiedl (CTO)</div>
-            <div class="job-meta-inline">
-              <span class="period">January 2022 – Sep 2025</span>
-              <span class="location">St. Gallen, CH</span>
-            </div>
+          <div class="job-meta-period-location">
+            <span class="period">January 2022 – Sep 2025</span>
+            <span class="bullet-separator">•</span>
+            <span class="location">St. Gallen, CH</span>
           </div>
-          <div class="context-line">
-            <span class="context-label">Context:</span>
-            <div class="job-dimensions">Creating Crypto and Service Products – Shipping Technology – Start Up</div>
-          </div>
+          <div class="direct-report">Direct report: Mirko Schmiedl (CEO), Jannik Schmiedl (CTO)</div>
         </div>
         
         <div class="job-content">
+          <div class="job-section">
+            <strong>Context:</strong>
+            <ul class="job-responsibilities">
+              <li>Creating Crypto and Service Products – Shipping Technology – Start Up</li>
+            </ul>
+          </div>
           <div class="job-section">
             <strong>Key Achievements:</strong>
             <ul class="job-responsibilities">
@@ -88,25 +89,28 @@ lang: 'en'
       <div class="job-entry">
         <div class="job-header-compact">
           <div class="job-title-line">
-            <h3>CTO at Deutsche Pfandbriefbank Group / CAPVERIANT GmbH</h3>
-            <div class="job-logo">
+            <h3>CTO at CAPVERIANT GmbH (Deutsche Pfandbriefbank Group)</h3>
+            <div class="job-logos-triple">
               <img src="/images/capveriant.png" alt="Capveriant Logo" class="job-logo">
+              <img src="/images/pbbgroup.png" alt="PBB Group Logo" class="job-logo">
+              <img src="/images/CaissedesDepotsGroup.svg" alt="Caisse des Dépôts Group Logo" class="job-logo">
             </div>
           </div>
-          <div class="job-meta-line">
-            <div class="direct-report">Direct report: Michael Spiegel, CDO pbb group, CEO Capveriant GmbH</div>
-            <div class="job-meta-inline">
-              <span class="period">August 2017 – Dec 2021</span>
-              <span class="location">Munich, GER</span>
-            </div>
+          <div class="job-meta-period-location">
+            <span class="period">August 2017 – Dec 2021</span>
+            <span class="bullet-separator">•</span>
+            <span class="location">Munich, GER</span>
           </div>
-          <div class="context-line">
-            <span class="context-label">Context:</span>
-            <div class="job-dimensions">Technology – People – Corporate FinTech Start Up</div>
-          </div>
+          <div class="direct-report">Direct report: Michael Spiegel, CDO pbb group, CEO Capveriant GmbH</div>
         </div>
         
         <div class="job-content">
+          <div class="job-section">
+            <strong>Context:</strong>
+            <ul class="job-responsibilities">
+              <li>Technology – People – Corporate FinTech Start Up</li>
+            </ul>
+          </div>
           <div class="job-section">
             <strong>Key Achievements:</strong>
             <ul class="job-responsibilities">
@@ -133,20 +137,21 @@ lang: 'en'
               <img src="/images/ism.png" alt="ISM Logo" class="job-logo">
             </div>
           </div>
-          <div class="job-meta-line">
-            <div class="direct-report">Direct report: Prof. Dr. Marcus Simon</div>
-            <div class="job-meta-inline">
-              <span class="period">September 2019 – 2023</span>
-              <span class="location">Munich, GER</span>
-            </div>
+          <div class="job-meta-period-location">
+            <span class="period">September 2019 – 2023</span>
+            <span class="bullet-separator">•</span>
+            <span class="location">Munich, GER</span>
           </div>
-          <div class="context-line">
-            <span class="context-label">Context:</span>
-            <div class="job-dimensions">Teaching – People – Learning Methodology</div>
-          </div>
+          <div class="direct-report">Direct report: Prof. Dr. Marcus Simon</div>
         </div>
         
         <div class="job-content">
+          <div class="job-section">
+            <strong>Context:</strong>
+            <ul class="job-responsibilities">
+              <li>Teaching – People – Learning Methodology</li>
+            </ul>
+          </div>
           <div class="job-section">
             <strong>Key Achievements:</strong>
             <ul class="job-responsibilities">
@@ -172,20 +177,21 @@ lang: 'en'
               <img src="/images/z3web.png" alt="Z3 Web Logo" class="job-logo">
             </div>
           </div>
-          <div class="job-meta-line">
-            <div class="direct-report">Direct report: Shareholder Enrico Teterra</div>
-            <div class="job-meta-inline">
-              <span class="period">March 2014 – June 2017</span>
-              <span class="location">Berlin, GER</span>
-            </div>
+          <div class="job-meta-period-location">
+            <span class="period">March 2014 – June 2017</span>
+            <span class="bullet-separator">•</span>
+            <span class="location">Berlin, GER</span>
           </div>
-          <div class="context-line">
-            <span class="context-label">Context:</span>
-            <div class="job-dimensions">Technology – Customer Success – StartUp</div>
-          </div>
+          <div class="direct-report">Direct report: Shareholder Enrico Teterra</div>
         </div>
         
         <div class="job-content">
+          <div class="job-section">
+            <strong>Context:</strong>
+            <ul class="job-responsibilities">
+              <li>Technology – Customer Success – StartUp</li>
+            </ul>
+          </div>
           <div class="job-section">
             <strong>Key Achievements:</strong>
             <ul class="job-responsibilities">
@@ -198,7 +204,7 @@ lang: 'en'
             <ul class="job-responsibilities">
               <li>Leadership: Company and Client success responsibility</li>
               <li>Building internal team and service outsourcing management</li>
-              <li>Innovation Lab</li>
+              <li>Consulting and Development of Mobile and Web Applications</li>
             </ul>
           </div>
         </div>
@@ -212,20 +218,21 @@ lang: 'en'
               <img src="/images/yalwa.png" alt="Yalwa Logo" class="job-logo">
             </div>
           </div>
-          <div class="job-meta-line">
-            <div class="direct-report">Direct report: Christian Springub (CEO)</div>
-            <div class="job-meta-inline">
-              <span class="period">April 2011 – February 2013</span>
-              <span class="location">Wiesbaden, GER</span>
-            </div>
+          <div class="job-meta-period-location">
+            <span class="period">April 2011 – February 2013</span>
+            <span class="bullet-separator">•</span>
+            <span class="location">Wiesbaden, GER</span>
           </div>
-          <div class="context-line">
-            <span class="context-label">Context:</span>
-            <div class="job-dimensions">Marketing – Team Management – Growth</div>
-          </div>
+          <div class="direct-report">Direct report: Alfred van de Pol (CEO)</div>
         </div>
         
         <div class="job-content">
+          <div class="job-section">
+            <strong>Context:</strong>
+            <ul class="job-responsibilities">
+              <li>Marketing – Team Management – Growth</li>
+            </ul>
+          </div>
           <div class="job-section">
             <strong>Key Achievements:</strong>
             <ul class="job-responsibilities">

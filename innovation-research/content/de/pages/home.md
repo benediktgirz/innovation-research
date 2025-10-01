@@ -10,8 +10,8 @@ indexable: true
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="hero-content">
-    <h1 class="hero-title text-balance">{{ content.de.exec_summary.title }}</h1>
-    <p class="hero-description">{{ content.de.exec_summary.description }} Schließe dich führenden Fußballprofis an und gestalte diese bahnbrechende Forschung mit.</p>
+    <h1 class="hero-title text-balance">Studie: Innovation im Profifußball</h1>
+    <p class="hero-description">In den europäischen Topligen sammeln wir gemeinsam mit Fußballexperten, Akademien, Verbänden und Trainern Informationen über Innovationen im Fußball. Das Ergebnis dieser Bemühung wird eine klare Aussage sein: Diese Innovationen haben es auf den Platz geschafft. Schließe dich führenden Fußballprofis an und gestalte diese bahnbrechende Forschung mit.</p>
 
     <p class="hero-participation-note">✨ Dauert nur 2 Minuten — beantworte eine strategische Frage und erhalte die vollständigen Ergebnisse</p>
 
@@ -142,41 +142,41 @@ indexable: true
 <!-- Participation Section -->
 <section class="section" id="participate">
   <div class="section-content">
-    <h2 class="section-title">{{ content.de.participate.title }}</h2>
-    <p class="section-description">{{ content.de.participate.description }}</p>
+    <h2 class="section-title">Teilnehmen</h2>
+    <p class="section-description">Als Teilnehmer erhalten Sie die vollständige Studie und ihre Ergebnisse kostenlos in Ihr Postfach. Bei Fragen steht Ihnen unser Hauptforscher gerne zur Verfügung.</p>
 
     <div class="form-container">
       <form id="participation-form" action="/api/participate" method="POST">
         <div class="form-group">
-          <label for="club_name" class="form-label">{{ content.de.participate.form_labels.club_name }}</label>
+          <label for="club_name" class="form-label">Ihr Vereinsname</label>
           <input type="text" id="club_name" name="club_name" class="form-input" required>
         </div>
 
         <div class="form-group">
-          <label for="role" class="form-label">{{ content.de.participate.form_labels.role }}</label>
+          <label for="role" class="form-label">Ihre Rolle</label>
           <input type="text" id="role" name="role" class="form-input" required>
         </div>
 
         <div class="form-group">
-          <label for="email" class="form-label">{{ content.de.participate.form_labels.email }}</label>
+          <label for="email" class="form-label">Ihre E-Mail</label>
           <input type="email" id="email" name="email" class="form-input" required>
         </div>
 
         <div class="form-group">
-          <label for="innovation" class="form-label">{{ content.de.participate.form_labels.innovation }}</label>
+          <label for="innovation" class="form-label">Welche neueste Innovation sehen Sie als spielentscheidend? (Mit Unterschied meinen wir mehr Siege, mit Platz meinen wir erfolgreiches Fußballspiel)</label>
           <textarea id="innovation" name="innovation" class="form-textarea" required></textarea>
         </div>
 
         <div class="form-disclaimer">
-          <p>{{ content.de.participate.disclaimer }}</p>
+          <p>Ihre Eingaben werden immer vertraulich behandelt. Sie werden niemals öffentlich veröffentlicht oder anderen als dem Kernforschungsteam zugänglich gemacht. Alle Studienergebnisse sind kumulativ und anonymisiert.</p>
         </div>
 
         <div class="mt-6">
-          <button type="submit" class="btn btn-primary w-full">{{ content.de.participate.submit_button }}</button>
+          <button type="submit" class="btn btn-primary w-full">Teilnahme einreichen</button>
         </div>
 
         <div id="success-message" class="form-success mt-4 hidden">
-          <p>{{ content.de.participate.success_message }}</p>
+          <p>Vielen Dank für Ihre Teilnahme an unserer Forschung. Wir werden Ihnen die Studienergebnisse zusenden, sobald sie verfügbar sind. Bei Fragen in der Zwischenzeit melden Sie sich gerne.</p>
         </div>
       </form>
     </div>
@@ -186,19 +186,48 @@ indexable: true
 <!-- Study Roadmap Section -->
 <section class="section section-alt" id="roadmap">
   <div class="section-content">
-    <h2 class="section-title">{{ content.de.roadmap.title }}</h2>
+    <h2 class="section-title">Studien-Roadmap</h2>
 
-    <div class="roadmap-container relative">
-      <div class="roadmap-line"></div>
-      {{ for phase of content.de.roadmap.phases }}
-        <div class="roadmap-item relative">
-          <div class="roadmap-date">{{ phase.date }}</div>
-          <div class="roadmap-indicator"></div>
-          <div class="roadmap-content">
-            <div class="roadmap-phase">{{ phase.phase }}</div>
+    <!-- Three column layout wrapper -->
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Empty left column -->
+      <div></div>
+
+      <!-- Center column with roadmap -->
+      <div class="roadmap-container relative">
+        <div class="roadmap-line"></div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Oktober 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Datensammlung</div>
+            </div>
           </div>
-        </div>
-      {{ /for }}
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">November 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Analyse und Ausarbeitung</div>
+            </div>
+          </div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Dezember 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Peer Review</div>
+            </div>
+          </div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Januar 2026</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Veröffentlichung</div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Empty right column -->
+      <div></div>
     </div>
   </div>
 </section>
@@ -206,51 +235,54 @@ indexable: true
 <!-- About Research Team Section -->
 <section class="section" id="about">
   <div class="section-content">
-    <h2 class="section-title">{{ content.de.about.title }}</h2>
-    <p class="section-description">{{ content.de.about.description }}</p>
+    <h2 class="section-title">Innovation als Berufung</h2>
+    <p class="section-description">Das Forschungsteam besteht aus einem funktionsübergreifenden, vielfältigen Hintergrund, der drei Gemeinsamkeiten teilt: eine Leidenschaft für Wissen, Fußball und Innovation.</p>
 
-    <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">{{ content.de.about.team_title }}</h3>
+    <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">Leiter der Forschung</h3>
 
-    <div class="flex justify-center w-full">
-      <div class="team-member max-w-xs">
-        <div class="team-photo">
-          <img src="https://benedikt-girz.com/images/benedikt.png" alt="Benedikt Girz" class="team-photo-img" loading="lazy">
+    <div class="flex justify-center items-center w-full">
+      <div class="team-member max-w-xs mx-auto text-center">
+        <div class="team-photo mx-auto">
+          <img src="https://benedikt-girz.com/images/benedikt.png" alt="Benedikt Girz" class="team-photo-img mx-auto" loading="lazy">
         </div>
-        <h4 class="team-name">Benedikt Girz</h4>
-        <p class="team-role">{{ content.de.about.team_title }}</p>
-        <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
+        <h4 class="team-name text-center">Benedikt Girz</h4>
+        <p class="team-role text-center">Leiter der Forschung</p>
+        <div class="text-center">
+          <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
+        </div>
+        <p class="mt-4 text-sm text-gray-600 text-center max-w-sm mx-auto">
+          Benedikt arbeitet seine gesamte Laufbahn an Innovation und Teamexzellenz. Er entwickelt ein System, das Innovation in einer Vielzahl von Kontexten zum Vorteil des Fußballerfolgs nutzt. Seine Hypothesen, Argumente und relevante Forschung werden schließlich Anfang 2026 als Buch veröffentlicht.
+        </p>
       </div>
     </div>
-
-    <p class="text-center text-text-muted mt-8">Benedikt arbeitet seine gesamte Laufbahn an Innovation und Teamexzellenz. Er entwickelt ein System, das Innovation in einer Vielzahl von Kontexten zum Vorteil des Fußballerfolgs nutzt. Seine Hypothesen, Argumente und relevante Forschung werden schließlich Anfang 2026 als Buch veröffentlicht.</p>
   </div>
 </section>
 
 <!-- Contact Section -->
 <section class="section section-alt" id="contact">
   <div class="section-content">
-    <h2 class="section-title">{{ content.de.contact.title }}</h2>
-    <p class="section-description">{{ content.de.contact.description }}</p>
+    <h2 class="section-title">Kontakt aufnehmen</h2>
+    <p class="section-description">Wenn Sie Fragen zu dieser Studie haben, nehmen Sie Kontakt auf.</p>
 
     <div class="form-container">
       <form id="contact-form" action="/api/contact" method="POST">
         <div class="form-group">
-          <label for="contact_name" class="form-label">{{ content.de.contact.form_labels.name }}</label>
+          <label for="contact_name" class="form-label">Name</label>
           <input type="text" id="contact_name" name="name" class="form-input" required>
         </div>
 
         <div class="form-group">
-          <label for="contact_email" class="form-label">{{ content.de.contact.form_labels.email }}</label>
+          <label for="contact_email" class="form-label">E-Mail</label>
           <input type="email" id="contact_email" name="email" class="form-input" required>
         </div>
 
         <div class="form-group">
-          <label for="message" class="form-label">{{ content.de.contact.form_labels.message }}</label>
+          <label for="message" class="form-label">Nachricht</label>
           <textarea id="message" name="message" class="form-textarea" required></textarea>
         </div>
 
         <div class="mt-6">
-          <button type="submit" class="btn btn-primary w-full">{{ content.de.contact.submit_button }}</button>
+          <button type="submit" class="btn btn-primary w-full">Nachricht senden</button>
         </div>
       </form>
     </div>

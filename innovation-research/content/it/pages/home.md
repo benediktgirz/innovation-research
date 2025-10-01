@@ -186,19 +186,48 @@ indexable: true
 <!-- Study Roadmap Section -->
 <section class="section section-alt" id="roadmap">
   <div class="section-content">
-    <h2 class="section-title">{{ content.it.roadmap.title }}</h2>
+    <h2 class="section-title">Roadmap dello studio</h2>
 
-    <div class="roadmap-container relative">
-      <div class="roadmap-line"></div>
-      {{ for phase of content.it.roadmap.phases }}
-        <div class="roadmap-item relative">
-          <div class="roadmap-date">{{ phase.date }}</div>
-          <div class="roadmap-indicator"></div>
-          <div class="roadmap-content">
-            <div class="roadmap-phase">{{ phase.phase }}</div>
+    <!-- Three column layout wrapper -->
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Empty left column -->
+      <div></div>
+
+      <!-- Center column with roadmap -->
+      <div class="roadmap-container relative">
+        <div class="roadmap-line"></div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Ottobre 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Raccolta dati</div>
+            </div>
           </div>
-        </div>
-      {{ /for }}
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Novembre 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Analisi e scrittura</div>
+            </div>
+          </div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Dicembre 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Revisione tra pari</div>
+            </div>
+          </div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Gennaio 2026</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Pubblicazione</div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Empty right column -->
+      <div></div>
     </div>
   </div>
 </section>
@@ -211,18 +240,21 @@ indexable: true
 
     <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">{{ content.it.about.team_title }}</h3>
 
-    <div class="flex justify-center w-full">
-      <div class="team-member max-w-xs">
-        <div class="team-photo">
-          <img src="https://benedikt-girz.com/images/benedikt.png" alt="Benedikt Girz" class="team-photo-img" loading="lazy">
+    <div class="flex justify-center items-center w-full">
+      <div class="team-member max-w-xs mx-auto text-center">
+        <div class="team-photo mx-auto">
+          <img src="https://benedikt-girz.com/images/benedikt.png" alt="Benedikt Girz" class="team-photo-img mx-auto" loading="lazy">
         </div>
-        <h4 class="team-name">Benedikt Girz</h4>
-        <p class="team-role">{{ content.it.about.team_title }}</p>
-        <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
+        <h4 class="team-name text-center">Benedikt Girz</h4>
+        <p class="team-role text-center">{{ content.it.about.team_title }}</p>
+        <div class="text-center">
+          <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
+        </div>
+        <p class="mt-4 text-sm text-gray-600 text-center max-w-sm mx-auto">
+          Benedikt lavora tutta la sua carriera sull'innovazione e l'eccellenza del team. Sta sviluppando un sistema che utilizza l'innovazione in una grande varietà di contesti a beneficio del successo calcistico. Le sue ipotesi, argomentazioni e ricerche rilevanti saranno infine pubblicate come libro all'inizio del 2026.
+        </p>
       </div>
     </div>
-
-    <p class="text-center text-text-muted mt-8">Benedikt lavora tutta la sua carriera sull'innovazione e l'eccellenza del team. Sta sviluppando un sistema che utilizza l'innovazione in una grande varietà di contesti a beneficio del successo calcistico. Le sue ipotesi, argomentazioni e ricerche rilevanti saranno infine pubblicate come libro all'inizio del 2026.</p>
   </div>
 </section>
 

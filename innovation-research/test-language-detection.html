@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detection Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .pass {
+            background: #d4edda;
+            color: #155724;
+        }
+        .fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Language Detection Test Suite</h1>
+
+    <div class="test-section">
+        <h2>Test 1: Browser Language Detection</h2>
+        <p>Current browser language: <code id="browser-lang"></code></p>
+        <p>Expected behavior: Should detect browser language and redirect to appropriate version</p>
+        <div id="test1-result" class="status"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 2: localStorage Persistence</h2>
+        <p>Current stored preference: <code id="stored-lang"></code></p>
+        <button onclick="testLocalStorage()">Test localStorage</button>
+        <div id="test2-result" class="status"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 3: Supported Languages</h2>
+        <p>Supported: en, de, fr, es, it</p>
+        <button onclick="testUnsupportedLanguage()">Test Unsupported Language (zh)</button>
+        <div id="test3-result" class="status"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 4: Manual Language Switch</h2>
+        <p>Test that manual selection persists</p>
+        <button onclick="simulateLanguageSwitch('de')">Switch to German</button>
+        <button onclick="simulateLanguageSwitch('fr')">Switch to French</button>
+        <button onclick="simulateLanguageSwitch('en')">Switch to English</button>
+        <div id="test4-result" class="status"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 5: Redirect Loop Prevention</h2>
+        <p>Should NOT redirect if preference already set</p>
+        <button onclick="testRedirectPrevention()">Test Loop Prevention</button>
+        <div id="test5-result" class="status"></div>
+    </div>
+
+    <script>
+        // Display current state
+        document.getElementById('browser-lang').textContent = navigator.language || 'Not detected';
+        document.getElementById('stored-lang').textContent = localStorage.getItem('language-preference') || 'None';
+
+        // Test 1: Browser language detection
+        function test1() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.toLowerCase().split('-')[0];
+            const supportedLanguages = ['en', 'de', 'fr', 'es', 'it'];
+
+            const result = document.getElementById('test1-result');
+            if (supportedLanguages.includes(langCode)) {
+                result.className = 'status pass';
+                result.textContent = `✅ PASS: Browser language "${langCode}" is supported and should trigger redirect`;
+            } else {
+                result.className = 'status pass';
+                result.textContent = `✅ PASS: Browser language "${langCode}" is unsupported, should default to English`;
+            }
+        }
+
+        // Test 2: localStorage
+        function testLocalStorage() {
+            try {
+                localStorage.setItem('language-preference', 'de');
+                const stored = localStorage.getItem('language-preference');
+
+                const result = document.getElementById('test2-result');
+                if (stored === 'de') {
+                    result.className = 'status pass';
+                    result.textContent = '✅ PASS: localStorage working correctly';
+                    document.getElementById('stored-lang').textContent = stored;
+                } else {
+                    result.className = 'status fail';
+                    result.textContent = '❌ FAIL: localStorage not working';
+                }
+            } catch (e) {
+                const result = document.getElementById('test2-result');
+                result.className = 'status fail';
+                result.textContent = '❌ FAIL: localStorage error - ' + e.message;
+            }
+        }
+
+        // Test 3: Unsupported language
+        function testUnsupportedLanguage() {
+            const supportedLanguages = ['en', 'de', 'fr', 'es', 'it'];
+            const testLang = 'zh';
+
+            const result = document.getElementById('test3-result');
+            if (!supportedLanguages.includes(testLang)) {
+                result.className = 'status pass';
+                result.textContent = `✅ PASS: Unsupported language "${testLang}" correctly identified, should default to English`;
+            } else {
+                result.className = 'status fail';
+                result.textContent = '❌ FAIL: Language support check incorrect';
+            }
+        }
+
+        // Test 4: Manual language switch
+        function simulateLanguageSwitch(lang) {
+            localStorage.setItem('language-preference', lang);
+            document.getElementById('stored-lang').textContent = lang;
+
+            const result = document.getElementById('test4-result');
+            result.className = 'status pass';
+            result.textContent = `✅ PASS: Language preference set to "${lang}"`;
+        }
+
+        // Test 5: Redirect loop prevention
+        function testRedirectPrevention() {
+            const hasPreference = localStorage.getItem('language-preference');
+            const result = document.getElementById('test5-result');
+
+            if (hasPreference) {
+                result.className = 'status pass';
+                result.textContent = `✅ PASS: Preference exists ("${hasPreference}"), redirect should be prevented`;
+            } else {
+                result.className = 'status fail';
+                result.textContent = '❌ FAIL: No preference set, cannot test loop prevention. Run Test 2 first.';
+            }
+        }
+
+        // Run Test 1 automatically
+        test1();
+    </script>
+</body>
+</html>

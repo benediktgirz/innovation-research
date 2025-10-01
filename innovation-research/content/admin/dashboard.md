@@ -209,8 +209,40 @@ document.addEventListener('DOMContentLoaded', function() {
       updateTable(data.participants || []);
     } catch (error) {
       console.error('Error loading dashboard data:', error);
-      showErrorModal('Data Load Error', 'Failed to load dashboard data. Please try again.');
+      // Show static mode message for IONOS hosting
+      showStaticModeMessage();
     }
+  }
+
+  function showStaticModeMessage() {
+    // Update stats with placeholder values
+    updateStats({
+      analytics: {
+        total_responses: 0,
+        today_responses: 0,
+        language_distribution: {},
+        avg_innovation_length: 0
+      }
+    });
+
+    // Show message in table
+    const tbody = document.getElementById('data-table-body');
+    tbody.innerHTML = `
+      <tr>
+        <td colspan="6" class="px-6 py-8 text-center">
+          <div class="text-gray-500">
+            <div class="text-lg font-medium mb-2">Static Hosting Mode</div>
+            <div class="text-sm">
+              Research data is stored securely but requires serverless functions to display.<br>
+              For full dashboard functionality, visit the Vercel deployment or configure API access.
+            </div>
+            <div class="mt-4 text-xs text-gray-400">
+              Data collection continues to work normally - only the admin dashboard is affected.
+            </div>
+          </div>
+        </td>
+      </tr>
+    `;
   }
 
   function updateStats(data) {
@@ -301,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     } catch (error) {
       console.error('Error exporting CSV:', error);
-      showErrorModal('Export Error', 'Failed to export data. Please try again.');
+      showErrorModal('Export Error', 'Export functionality requires serverless functions. Please use the Vercel deployment for data export.');
     } finally {
       exportCsvBtn.disabled = false;
       exportCsvBtn.textContent = 'Export CSV';

@@ -14,7 +14,7 @@ server.use(async (request, next) => {
   if (host && /^(www\.)?workingtitles\.xyz$/.test(host)) {
     return new Response(null, {
       status: 302,
-      headers: { Location: 'https://hirefrank.com/coaching/?ref=workingtitles.xyz' },
+      headers: { Location: 'https://benedikt-girz.com/coaching/?ref=workingtitles.xyz' },
     });
   }
   return await next(request);

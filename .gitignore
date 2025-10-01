@@ -4,3 +4,4 @@ _cache
 .env
 _data.json
 content/static/coaching.json
+.vercel

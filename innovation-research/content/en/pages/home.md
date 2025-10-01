@@ -24,101 +24,118 @@ indexable: true
 
     <!-- League and Club Logos Slider -->
     <div class="logos-slider-container">
-      <!-- First Row - Leagues and Clubs Mixed -->
+      <!-- First Row - Premier League + Bundesliga + La Liga -->
       <div class="logos-slider-row">
         <div class="logos-slider-track" id="slider-track-1">
+          <!-- Premier League -->
           <img src="/images/leagues/premier-league.png" alt="Premier League" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/manchester-united.png" alt="Manchester United" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/liverpool.png" alt="Liverpool FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/chelsea.png" alt="Chelsea FC" class="slider-logo" loading="lazy">
-          <img src="/images/leagues/bundesliga.gif" alt="Bundesliga" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/bayern.png" alt="Bayern Munich" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/dortmund.png" alt="Borussia Dortmund" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/leipzig.png" alt="RB Leipzig" class="slider-logo" loading="lazy">
-          <img src="/images/leagues/la-liga.gif" alt="La Liga" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/barcelona.png" alt="FC Barcelona" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/real-madrid.png" alt="Real Madrid" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/atletico.png" alt="Atlético Madrid" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/sevilla.png" alt="Sevilla FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/newcastle.png" alt="Newcastle United" class="slider-logo" loading="lazy">
           <img src="/images/clubs/arsenal.png" alt="Arsenal FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/tottenham.png" alt="Tottenham Hotspur" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/aston-villa.png" alt="Aston Villa" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/brighton.png" alt="Brighton" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/brentford.png" alt="Brentford FC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/chelsea.png" alt="Chelsea FC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/crystal-palace.png" alt="Crystal Palace" class="slider-logo" loading="lazy">
           <img src="/images/clubs/everton.png" alt="Everton FC" class="slider-logo" loading="lazy">
           <img src="/images/clubs/fulham.png" alt="Fulham FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/crystal-palace.png" alt="Crystal Palace" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/brentford.png" alt="Brentford FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/hoffenheim.png" alt="TSG Hoffenheim" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/bremen.png" alt="Werder Bremen" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/liverpool.png" alt="Liverpool FC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/manchester-city.png" alt="Manchester City" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/manchester-united.png" alt="Manchester United" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/newcastle.png" alt="Newcastle United" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/tottenham.png" alt="Tottenham Hotspur" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/west-ham.png" alt="West Ham United" class="slider-logo" loading="lazy">
+          <!-- Bundesliga -->
+          <img src="/images/leagues/bundesliga.gif" alt="Bundesliga" class="slider-logo" loading="lazy">
           <img src="/images/clubs/augsburg.png" alt="FC Augsburg" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/bayern.png" alt="Bayern Munich" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/bremen.png" alt="Werder Bremen" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/dortmund.png" alt="Borussia Dortmund" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/freiburg.png" alt="SC Freiburg" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/frankfurt.png" alt="Eintracht Frankfurt" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/gladbach.png" alt="Borussia Mönchengladbach" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/hoffenheim.png" alt="TSG Hoffenheim" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/leverkusen.png" alt="Bayer Leverkusen" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/leipzig.png" alt="RB Leipzig" class="slider-logo" loading="lazy">
           <img src="/images/clubs/mainz.png" alt="Mainz 05" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/stuttgart.png" alt="VfB Stuttgart" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/union-berlin.png" alt="Union Berlin" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/wolfsburg.png" alt="VfL Wolfsburg" class="slider-logo" loading="lazy">
+          <!-- La Liga -->
+          <img src="/images/leagues/la-liga.gif" alt="La Liga" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/athletic-bilbao.png" alt="Athletic Bilbao" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/atletico.png" alt="Atlético Madrid" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/barcelona.png" alt="FC Barcelona" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/betis.png" alt="Real Betis" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/celta.png" alt="Celta Vigo" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/getafe.png" alt="Getafe CF" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/mallorca.png" alt="RCD Mallorca" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/osasuna.png" alt="CA Osasuna" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/rayo-vallecano.png" alt="Rayo Vallecano" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/real-madrid.png" alt="Real Madrid" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/real-sociedad.png" alt="Real Sociedad" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/sevilla.png" alt="Sevilla FC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/valencia.png" alt="Valencia CF" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/villarreal.png" alt="Villarreal CF" class="slider-logo" loading="lazy">
           <!-- Duplicate for seamless loop -->
           <img src="/images/leagues/premier-league.png" alt="Premier League" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/manchester-united.png" alt="Manchester United" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/liverpool.png" alt="Liverpool FC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/arsenal.png" alt="Arsenal FC" class="slider-logo" loading="lazy">
           <img src="/images/clubs/chelsea.png" alt="Chelsea FC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/liverpool.png" alt="Liverpool FC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/manchester-city.png" alt="Manchester City" class="slider-logo" loading="lazy">
           <img src="/images/leagues/bundesliga.gif" alt="Bundesliga" class="slider-logo" loading="lazy">
           <img src="/images/clubs/bayern.png" alt="Bayern Munich" class="slider-logo" loading="lazy">
           <img src="/images/clubs/dortmund.png" alt="Borussia Dortmund" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/leipzig.png" alt="RB Leipzig" class="slider-logo" loading="lazy">
           <img src="/images/leagues/la-liga.gif" alt="La Liga" class="slider-logo" loading="lazy">
           <img src="/images/clubs/barcelona.png" alt="FC Barcelona" class="slider-logo" loading="lazy">
           <img src="/images/clubs/real-madrid.png" alt="Real Madrid" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/atletico.png" alt="Atlético Madrid" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/sevilla.png" alt="Sevilla FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/newcastle.png" alt="Newcastle United" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/arsenal.png" alt="Arsenal FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/tottenham.png" alt="Tottenham Hotspur" class="slider-logo" loading="lazy">
         </div>
       </div>
 
-      <!-- Second Row - Different Mix -->
+      <!-- Second Row - Serie A + Ligue 1 -->
       <div class="logos-slider-row">
         <div class="logos-slider-track" id="slider-track-2">
-          <img src="/images/clubs/manchester-city.png" alt="Arsenal FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/aston-villa.png" alt="Tottenham Hotspur" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/west-ham.png" alt="Manchester City" class="slider-logo" loading="lazy">
-          <img src="/images/leagues/ligue-1.gif" alt="Ligue 1" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/marseille.png" alt="Olympique Marseille" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/lyon.png" alt="Olympique Lyon" class="slider-logo" loading="lazy">
+          <!-- Serie A -->
           <img src="/images/leagues/serie-a.gif" alt="Serie A" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/juventus.png" alt="Juventus" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/milan.png" alt="AC Milan" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/inter.png" alt="Inter Milan" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/napoli.png" alt="Napoli" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/psg.png" alt="Premier League Association" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/monaco.png" alt="La Liga Association" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/lille.png" alt="Bundesliga Association" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/roma.png" alt="AS Roma" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/lazio.png" alt="SS Lazio" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/getafe.png" alt="Getafe CF" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/mallorca.png" alt="RCD Mallorca" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/rayo-vallecano.png" alt="Rayo Vallecano" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/osasuna.png" alt="CA Osasuna" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/udinese.png" alt="Udinese Calcio" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/genoa.png" alt="Genoa CFC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/verona.png" alt="Hellas Verona" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/atalanta.png" alt="Atalanta BC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/bologna.png" alt="Bologna FC" class="slider-logo" loading="lazy">
           <img src="/images/clubs/cagliari.png" alt="Cagliari Calcio" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/strasbourg.png" alt="RC Strasbourg" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/toulouse.png" alt="FC Toulouse" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/fiorentina.png" alt="Fiorentina" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/genoa.png" alt="Genoa CFC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/inter.png" alt="Inter Milan" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/juventus.png" alt="Juventus" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/lazio.png" alt="SS Lazio" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/milan.png" alt="AC Milan" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/napoli.png" alt="Napoli" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/roma.png" alt="AS Roma" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/torino.png" alt="Torino FC" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/udinese.png" alt="Udinese Calcio" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/verona.png" alt="Hellas Verona" class="slider-logo" loading="lazy">
+          <!-- Ligue 1 -->
+          <img src="/images/leagues/ligue-1.gif" alt="Ligue 1" class="slider-logo" loading="lazy">
           <img src="/images/clubs/angers.png" alt="Angers SCO" class="slider-logo" loading="lazy">
           <img src="/images/clubs/auxerre.png" alt="AJ Auxerre" class="slider-logo" loading="lazy">
-          <!-- Duplicate for seamless loop -->
-          <img src="/images/clubs/manchester-city.png" alt="Arsenal FC" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/aston-villa.png" alt="Tottenham Hotspur" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/west-ham.png" alt="Manchester City" class="slider-logo" loading="lazy">
-          <img src="/images/leagues/ligue-1.gif" alt="Ligue 1" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/marseille.png" alt="Olympique Marseille" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/brest.png" alt="Stade Brestois" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/lens.png" alt="RC Lens" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/lille.png" alt="Lille OSC" class="slider-logo" loading="lazy">
           <img src="/images/clubs/lyon.png" alt="Olympique Lyon" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/marseille.png" alt="Olympique Marseille" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/monaco.png" alt="AS Monaco" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/nantes.png" alt="FC Nantes" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/nice.png" alt="OGC Nice" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/psg.png" alt="Paris Saint-Germain" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/rennes.png" alt="Stade Rennais" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/strasbourg.png" alt="RC Strasbourg" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/toulouse.png" alt="FC Toulouse" class="slider-logo" loading="lazy">
+          <!-- Duplicate for seamless loop -->
           <img src="/images/leagues/serie-a.gif" alt="Serie A" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/inter.png" alt="Inter Milan" class="slider-logo" loading="lazy">
           <img src="/images/clubs/juventus.png" alt="Juventus" class="slider-logo" loading="lazy">
           <img src="/images/clubs/milan.png" alt="AC Milan" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/inter.png" alt="Inter Milan" class="slider-logo" loading="lazy">
           <img src="/images/clubs/napoli.png" alt="Napoli" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/psg.png" alt="Premier League Association" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/monaco.png" alt="La Liga Association" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/lille.png" alt="Bundesliga Association" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/roma.png" alt="Serie A Association" class="slider-logo" loading="lazy">
-          <img src="/images/clubs/lazio.png" alt="Ligue 1 Association" class="slider-logo" loading="lazy">
+          <img src="/images/leagues/ligue-1.gif" alt="Ligue 1" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/psg.png" alt="Paris Saint-Germain" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/marseille.png" alt="Olympique Marseille" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/lyon.png" alt="Olympique Lyon" class="slider-logo" loading="lazy">
+          <img src="/images/clubs/monaco.png" alt="AS Monaco" class="slider-logo" loading="lazy">
         </div>
       </div>
 
@@ -197,36 +214,46 @@ indexable: true
   <div class="section-content">
     <h2 class="section-title">Study Roadmap</h2>
 
-    <div class="roadmap-container relative">
-      <div class="roadmap-line"></div>
-        <div class="roadmap-item relative">
-          <div class="roadmap-date">Oct 2025</div>
-          <div class="roadmap-indicator"></div>
-          <div class="roadmap-content">
-            <div class="roadmap-phase">Gathering Data</div>
+    <!-- Three column layout wrapper -->
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Empty left column -->
+      <div></div>
+
+      <!-- Center column with roadmap -->
+      <div class="roadmap-container relative">
+        <div class="roadmap-line"></div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Oct 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Gathering Data</div>
+            </div>
           </div>
-        </div>
-        <div class="roadmap-item relative">
-          <div class="roadmap-date">Nov 2025</div>
-          <div class="roadmap-indicator"></div>
-          <div class="roadmap-content">
-            <div class="roadmap-phase">Analysis and Write Up</div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Nov 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Analysis and Write Up</div>
+            </div>
           </div>
-        </div>
-        <div class="roadmap-item relative">
-          <div class="roadmap-date">Dec 2025</div>
-          <div class="roadmap-indicator"></div>
-          <div class="roadmap-content">
-            <div class="roadmap-phase">Peer Review</div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Dec 2025</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Peer Review</div>
+            </div>
           </div>
-        </div>
-        <div class="roadmap-item relative">
-          <div class="roadmap-date">Jan 2026</div>
-          <div class="roadmap-indicator"></div>
-          <div class="roadmap-content">
-            <div class="roadmap-phase">Publication</div>
+          <div class="roadmap-item relative">
+            <div class="roadmap-date">Jan 2026</div>
+            <div class="roadmap-indicator"></div>
+            <div class="roadmap-content">
+              <div class="roadmap-phase">Publication</div>
+            </div>
           </div>
-        </div>
+      </div>
+
+      <!-- Empty right column -->
+      <div></div>
     </div>
   </div>
 </section>
@@ -345,14 +372,19 @@ indexable: true
 
     <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">Head Researcher</h3>
 
-    <div class="flex justify-center w-full">
-      <div class="team-member max-w-xs text-center">
-        <div class="team-photo">
-          <img src="https://benedikt-girz.com/images/benedikt.png" alt="Benedikt Girz" class="team-photo-img" loading="lazy">
+    <div class="flex justify-center items-center w-full">
+      <div class="team-member max-w-xs mx-auto text-center">
+        <div class="team-photo mx-auto">
+          <img src="https://benedikt-girz.com/images/benedikt.png" alt="Benedikt Girz" class="team-photo-img mx-auto" loading="lazy">
         </div>
-        <h4 class="team-name">Benedikt Girz</h4>
-        <p class="team-role">Head Researcher</p>
-        <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
+        <h4 class="team-name text-center">Benedikt Girz</h4>
+        <p class="team-role text-center">Head Researcher</p>
+        <div class="text-center">
+          <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
+        </div>
+        <p class="mt-4 text-sm text-gray-600 text-center max-w-sm mx-auto">
+          Benedikt works his entire career on innovation and team excellence. He is working on a system that uses innovation in a large variety of contexts for the benefit of football success. His hypotheses, argument and relevant research will eventually be published as a book early in 2026.
+        </p>
       </div>
     </div>
   </div>

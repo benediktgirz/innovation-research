@@ -17,7 +17,11 @@
     "build": "deno task lume",
     "serve": "deno task lume -s",
     "serve-prod": "deno run -A --unstable-cron --unstable-kv serve.ts",
-    "test-intro": "NODE_ENV=test deno run -A ./intro/test.ts"
+    "test-intro": "NODE_ENV=test deno run -A ./intro/test.ts",
+    "upload-dev": "expect upload.exp",
+    "upload-prod": "expect upload_production.exp",
+    "upload-all": "deno task upload-dev && deno task upload-prod",
+    "deploy": "deno task build && deno task upload-all"
   },
   "compilerOptions": {
     "types": ["lume/types.ts"]

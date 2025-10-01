@@ -253,6 +253,7 @@
               {{ if lang === 'en' }}
                 <a href="/legal/" class="block text-sm text-gray-300 hover:text-white">Imprint</a>
                 <a href="/privacy/" class="block text-sm text-gray-300 hover:text-white">Privacy</a>
+                <a href="/admin/login" class="block text-sm text-gray-300 hover:text-white">Admin</a>
               {{ /if }}
             </div>
           </div>
@@ -287,6 +288,51 @@
     <!-- Scripts -->
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // Auto-detect browser language and redirect on first visit
+        function detectAndRedirectLanguage() {
+          const currentLang = '{{ lang || "en" }}';
+          const currentPath = window.location.pathname;
+
+          // Check if user has already been redirected (to avoid redirect loops)
+          const hasLanguagePreference = localStorage.getItem('language-preference');
+
+          // Only auto-redirect if:
+          // 1. User is on the root path (/) or English version
+          // 2. User hasn't set a language preference yet
+          // 3. User hasn't been redirected before in this session
+          const isRootOrEnglish = currentPath === '/' || currentLang === 'en';
+
+          if (!hasLanguagePreference && isRootOrEnglish) {
+            // Get browser language
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.toLowerCase().split('-')[0]; // Get first part (e.g., 'en' from 'en-US')
+
+            // Supported languages
+            const supportedLanguages = ['en', 'de', 'fr', 'es', 'it'];
+
+            // Check if browser language is supported and different from current
+            if (supportedLanguages.includes(langCode) && langCode !== currentLang) {
+              // Set preference to avoid future auto-redirects
+              localStorage.setItem('language-preference', langCode);
+
+              // Redirect to detected language
+              const targetPath = langCode === 'en' ? '/' : `/${langCode}/`;
+              window.location.href = targetPath;
+              return true; // Redirect initiated
+            } else {
+              // Set preference to current language (English or detected unsupported language defaults to English)
+              localStorage.setItem('language-preference', currentLang || 'en');
+            }
+          }
+
+          return false; // No redirect
+        }
+
+        // Try to detect and redirect - if redirect happens, skip other initialization
+        if (detectAndRedirectLanguage()) {
+          return;
+        }
+
         // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -316,6 +362,23 @@
               languageDropdown.classList.add('hidden');
               languageButton.setAttribute('aria-expanded', 'false');
             }
+          });
+
+          // Update language preference when user manually selects a language
+          const languageOptions = languageDropdown.querySelectorAll('.language-option');
+          languageOptions.forEach(option => {
+            option.addEventListener('click', function(e) {
+              const href = this.getAttribute('href');
+              let selectedLang = 'en';
+
+              if (href === '/de/') selectedLang = 'de';
+              else if (href === '/fr/') selectedLang = 'fr';
+              else if (href === '/es/') selectedLang = 'es';
+              else if (href === '/it/') selectedLang = 'it';
+
+              // Update preference when user manually switches
+              localStorage.setItem('language-preference', selectedLang);
+            });
           });
         }
 

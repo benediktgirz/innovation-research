@@ -1,0 +1,242 @@
+[
+  {
+    "club": "Arsenal",
+    "website": "https://www.arsenal.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:24:53.276Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Aston Villa",
+    "website": "https://www.avfc.co.uk",
+    "emails": [
+      "customer.services@shop.avfc.co.uk",
+      "u003Ecustomer.services@shop.avfc.co.uk",
+      "supporters@avfc.co.uk",
+      "u003Esupporters@avfc.co.uk",
+      "fancomplaints@avfc.co.uk",
+      "u003Efancomplaints@avfc.co.uk",
+      "media@avfc.co.uk",
+      "u003Emedia@avfc.co.uk",
+      "foundation@avfc.co.uk",
+      "u003Efoundation@avfc.co.uk",
+      "safeguarding@avfc.co.uk",
+      "u003Esafeguarding@avfc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:25:13.868Z",
+    "status": "success",
+    "mediaEmail": "media@avfc.co.uk"
+  },
+  {
+    "club": "Bournemouth",
+    "website": "https://www.afcb.co.uk",
+    "emails": [
+      "media@afcb.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:25:33.171Z",
+    "status": "success",
+    "mediaEmail": "media@afcb.co.uk"
+  },
+  {
+    "club": "Brentford",
+    "website": "https://www.brentfordfc.com",
+    "emails": [
+      "d20dceafd8c3453e8fd1e2967fa78e32@o450172.ingest.sentry.io",
+      "tickets@brentfordfc.com",
+      "u003Etickets@brentfordfc.com",
+      "accessibility@brentfordfc.com",
+      "u003Eaccessibility@brentfordfc.com",
+      "premiumseating@brentfordfc.com",
+      "u003Epremiumseating@brentfordfc.com",
+      "stadiumhire@brentfordfc.com",
+      "u003Estadiumhire@brentfordfc.com",
+      "shop@brentfordfc.com",
+      "u003Eshop@brentfordfc.com",
+      "partnerships@brentfordfc.com",
+      "u003Epartnerships@brentfordfc.com",
+      "accounts@brentfordfc.com",
+      "u003Eaccounts@brentfordfc.com",
+      "operations@brentfordfc.com",
+      "u003Eoperations@brentfordfc.com",
+      "media@brentfordfc.com",
+      "u003Emedia@brentfordfc.com",
+      "BuzzBoxSupport@streamamg.com",
+      "u003EBuzzBoxSupport@streamamg.com",
+      "u0022enquiries@brentfordfc.com",
+      "u003Eenquiries@brentfordfc.com",
+      "u0022accessibility@brentfordfc.com",
+      "international@brentfordfc.com",
+      "u003Einternational@brentfordfc.com",
+      "u0022report@brentfordfc.com",
+      "u003Ereport@brentfordfc.com",
+      "safeguarding@brentfordfc.com",
+      "u003Esafeguarding@brentfordfc.com"
+    ],
+    "scrapedAt": "2025-10-01T08:25:52.851Z",
+    "status": "success",
+    "mediaEmail": "media@brentfordfc.com",
+    "generalEmail": "u0022enquiries@brentfordfc.com"
+  },
+  {
+    "club": "Brighton",
+    "website": "https://www.brightonandhovealbion.com",
+    "emails": [
+      "supporter.services@brightonandhovealbion.com",
+      "rewards@brightonandhovealbion.com",
+      "mail.order@brightonandhovealbion.com",
+      "1901@brightonandhovealbion.com",
+      "commercial@brightonandhovealbion.com"
+    ],
+    "scrapedAt": "2025-10-01T08:26:14.105Z",
+    "status": "partial"
+  },
+  {
+    "club": "Chelsea",
+    "website": "https://www.chelseafc.com",
+    "emails": [
+      "clubchelsea@chelseafc.com"
+    ],
+    "scrapedAt": "2025-10-01T08:26:39.458Z",
+    "status": "partial"
+  },
+  {
+    "club": "Crystal Palace",
+    "website": "https://www.cpfc.co.uk",
+    "emails": [
+      "shop@cpfc.co.uk",
+      "memberships@cpfc.co.uk",
+      "boxoffice@cpfc.co.uk",
+      "palacetvsupport@streamamg.com",
+      "dlo@cpfc.co.uk",
+      "customer.service@cpfc.co.uk",
+      "media@cpfc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:27:00.954Z",
+    "status": "success",
+    "mediaEmail": "media@cpfc.co.uk"
+  },
+  {
+    "club": "Everton",
+    "website": "https://www.evertonfc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:27:20.448Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Fulham",
+    "website": "https://www.fulhamfc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:27:39.654Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Ipswich Town",
+    "website": "https://www.itfc.co.uk",
+    "emails": [
+      "mainticketoffice@itfc.co.uk",
+      "hospitality@itfc.co.uk",
+      "events@itfc.co.uk",
+      "commercial@itfc.co.uk",
+      "partnerships@itfc.co.uk",
+      "supporter.services@itfc.co.uk",
+      "SLO@itfc.co.uk",
+      "elizabeth.edwards@itfc.co.uk",
+      "lee.smith@itfc.co.uk",
+      "lauren.fellingham@itfcfoundation.co.uk",
+      "planetblue@itfc.co.uk",
+      "community@itfc.co.uk",
+      "reception@itfc.co.uk",
+      "press@itfc.co.uk",
+      "marcus.nash@itfc.co.uk",
+      "itfcdigitalsupport@itfc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:27:59.361Z",
+    "status": "success",
+    "pressEmail": "press@itfc.co.uk"
+  },
+  {
+    "club": "Leicester City",
+    "website": "https://www.lcfc.com",
+    "emails": [
+      "lcfchelp@lcfc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:28:18.642Z",
+    "status": "partial"
+  },
+  {
+    "club": "Liverpool",
+    "website": "https://www.liverpoolfc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:28:39.762Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Manchester City",
+    "website": "https://www.mancity.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:29:07.346Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Manchester United",
+    "website": "https://www.manutd.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:29:30.193Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Newcastle United",
+    "website": "https://www.nufc.co.uk",
+    "emails": [
+      "supporter.services@nufc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:29:55.392Z",
+    "status": "partial"
+  },
+  {
+    "club": "Nottingham Forest",
+    "website": "https://www.nottinghamforest.co.uk",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:30:20.179Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Southampton",
+    "website": "https://www.southamptonfc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:30:39.854Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Tottenham Hotspur",
+    "website": "https://www.tottenhamhotspur.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:31:00.632Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "West Ham United",
+    "website": "https://www.whufc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:31:26.881Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Wolverhampton",
+    "website": "https://www.wolves.co.uk",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:31:48.821Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  }
+]

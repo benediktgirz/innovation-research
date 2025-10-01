@@ -1,3 +1,9 @@
 # robots.txt 
 
 User-agent: *
+Disallow: /resume/
+Disallow: /imprint/
+Disallow: /privacy/
+Disallow: /de/datenschutz/
+Disallow: /de/lebenslauf/
+Disallow: /de/impressum/

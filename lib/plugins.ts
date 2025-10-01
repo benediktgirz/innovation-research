@@ -18,6 +18,10 @@ export default function () {
       .use(
         tailwindcss({
           options: {
+            content: [
+              './content/**/*.{html,js,ts,jsx,tsx,md,vto}',
+              './content/styles.css',
+            ],
             theme: {
               extend: {
                 colors: {
@@ -60,7 +64,7 @@ export default function () {
       .use(onDemand())
       .use(
         coachingProfiles({
-          profiles: ['https://app.practice.do/me/hirefrank'],
+          profiles: ['https://app.practice.do/me/benediktgirz'],
           onSuccess: async (data: unknown) => {
             // Write to both locations
             await Promise.all([
@@ -72,6 +76,7 @@ export default function () {
           },
         })
       )
-      .copy('static', './');
+      .copy('static', './')
+      .copy('static/.htaccess', '.htaccess');
   };
 }

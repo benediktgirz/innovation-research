@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-canvas text-on-canvas">
+<html lang="{{ lang || 'en' }}" class="bg-canvas text-on-canvas">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,15 +9,214 @@
     <meta name="description" content="{{ description || site.description }}" />
     <meta name="robots" content="index,follow" />
     <meta name="referrer" content="origin" />
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/{{ cacheBusterVersion }}/styles.css" />
+    
+    <!-- Canonical URL -->
+    {{ if lang === 'de' }}
+      <link rel="canonical" href="https://benedikt-girz.com{{ url }}" />
+    {{ else }}
+      <link rel="canonical" href="https://benedikt-girz.com{{ url === '/index.html' ? '/' : url }}" />
+    {{ /if }}
+    
+    <!-- Hreflang for multilingual SEO -->
+    {{ if url === '/index.html' || url === '/' }}
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/" />
+      <link rel="alternate" hreflang="x-default" href="https://benedikt-girz.com/" />
+    {{ /if }}
+    {{ if url === '/de/' }}
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/" />
+      <link rel="alternate" hreflang="x-default" href="https://benedikt-girz.com/" />
+    {{ /if }}
+    {{ if url === '/fr/' }}
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/" />
+      <link rel="alternate" hreflang="x-default" href="https://benedikt-girz.com/" />
+    {{ /if }}
+    {{ if url === '/pt/' }}
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/" />
+      <link rel="alternate" hreflang="x-default" href="https://benedikt-girz.com/" />
+    {{ /if }}
+    {{ if url === '/about/' }}
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/about/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/ueber-mich/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/a-propos/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/sobre/" />
+    {{ /if }}
+    {{ if url === '/de/ueber-mich/' }}
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/ueber-mich/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/about/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/a-propos/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/sobre/" />
+    {{ /if }}
+    {{ if url === '/fr/a-propos/' }}
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/a-propos/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/about/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/ueber-mich/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/sobre/" />
+    {{ /if }}
+    {{ if url === '/experience/' }}
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/experience/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/erfahrung/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/experience/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/experiencia/" />
+    {{ /if }}
+    {{ if url === '/de/erfahrung/' }}
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/erfahrung/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/experience/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/experience/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/experiencia/" />
+    {{ /if }}
+    {{ if url === '/fr/experience/' }}
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/experience/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/experience/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/erfahrung/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/experiencia/" />
+    {{ /if }}
+    {{ if url === '/contact/' }}
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/contact/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/kontakt/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/contact/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/contato/" />
+    {{ /if }}
+    {{ if url === '/de/kontakt/' }}
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/kontakt/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/contact/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/contact/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/contato/" />
+    {{ /if }}
+    {{ if url === '/fr/contact/' }}
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/contact/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/contact/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/kontakt/" />
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/contato/" />
+    {{ /if }}
+    {{ if url === '/pt/sobre/' }}
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/sobre/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/about/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/ueber-mich/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/a-propos/" />
+    {{ /if }}
+    {{ if url === '/pt/experiencia/' }}
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/experiencia/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/experience/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/erfahrung/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/experience/" />
+    {{ /if }}
+    {{ if url === '/pt/contato/' }}
+      <link rel="alternate" hreflang="pt" href="https://benedikt-girz.com/pt/contato/" />
+      <link rel="alternate" hreflang="en" href="https://benedikt-girz.com/contact/" />
+      <link rel="alternate" hreflang="de" href="https://benedikt-girz.com/de/kontakt/" />
+      <link rel="alternate" hreflang="fr" href="https://benedikt-girz.com/fr/contact/" />
+    {{ /if }}
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Benedikt Girz's personal website." />
+    <meta property="og:locale" content="{{ lang === 'de' ? 'de_DE' : lang === 'fr' ? 'fr_FR' : lang === 'pt' ? 'pt_BR' : 'en_US' }}" />
+    <meta property="og:url" content="https://benedikt-girz.com{{ url === '/index.html' ? '/' : url }}" />
+    <meta property="og:title" content="{{ title || site.title }}" />
+    <meta property="og:description" content="{{ description || site.description }}" />
+    <meta property="og:image" content="https://benedikt-girz.com/images/benedikt.png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:alt" content="Benedikt Girz - Product Manager and Developer" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@benediktgirz" />
+    <meta name="twitter:creator" content="@benediktgirz" />
+    <meta name="twitter:title" content="{{ title || site.title }}" />
+    <meta name="twitter:description" content="{{ description || site.description }}" />
+    <meta name="twitter:image" content="https://benedikt-girz.com/images/benedikt.png" />
+    <meta name="twitter:image:alt" content="Benedikt Girz - Product Manager and Developer" />
+    
+    <!-- Geographic and Local SEO -->
+    <meta name="geo.region" content="DE-BW" />
+    <meta name="geo.placename" content="Freiburg im Breisgau" />
+    <meta name="geo.position" content="47.9990;7.8421" />
+    <meta name="ICBM" content="47.9990, 7.8421" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/styles.css" />
     <!-- 100% privacy-first analytics --><script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <script>
       !function(e,r){try{if(e.vector)return void console.log("Vector snippet included more than once.");var t={};t.q=t.q||[];for(var o=["load","identify","on"],n=function(e){return function(){var r=Array.prototype.slice.call(arguments);t.q.push([e,r])}},c=0;c<o.length;c++){var a=o[c];t[a]=n(a)}if(e.vector=t,!t.loaded){var i=r.createElement("script");i.type="text/javascript",i.async=!0,i.src="https://cdn.vector.co/pixel.js";var l=r.getElementsByTagName("script")[0];l.parentNode.insertBefore(i,l),t.loaded=!0}}catch(e){console.error("Error loading Vector:",e)}}(window,document);
       vector.load("7037091c-ed0c-410d-a92d-7202a27ab1ca");
     </script>
+    <!-- Google tag (gtag.js) - Consent Mode -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WTSGWSH6NL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      
+      // Set consent mode defaults
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied'
+      });
+      
+      gtag('js', new Date());
+      gtag('config', 'G-WTSGWSH6NL');
+    </script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Benedikt Girz",
+      "jobTitle": "{{ if lang === 'de' }}Produktmanager & Entwickler{{ /if }}{{ if lang === 'fr' }}Chef de Produit & Développeur{{ /if }}{{ if lang === 'pt' }}Gerente de Produto & Desenvolvedor{{ /if }}{{ if lang === 'en' }}Product Manager & Developer{{ /if }}",
+      "description": "{{ description || site.description }}",
+      "url": "https://benedikt-girz.com",
+      "image": "https://benedikt-girz.com/images/benedikt.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Freiburg im Breisgau",
+        "addressRegion": "Baden-Württemberg", 
+        "addressCountry": "DE"
+      },
+      "knowsAbout": [
+        "Product Management",
+        "Software Development", 
+        "Angular.JS",
+        "TypeScript",
+        "Next.js",
+        "SaaS",
+        "DeFi",
+        "Blockchain",
+        "Team Leadership"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "{{ if lang === 'de' }}Freiberuflich{{ /if }}{{ if lang === 'pt' }}Freelancer{{ /if }}{{ if lang === 'fr' }}Freelance{{ /if }}{{ if lang === 'en' }}Freelance{{ /if }}"
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "Germany"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "ISM International School of Management"
+        }
+      ]
+    }
+    </script>
   </head>
-  <body class="body-layout body-padding body-flex">
+  <body class="body-layout body-padding body-flex{{ if url == '/experience/' }} experience-page{{ /if }}">
     <header class="site-header">
       <nav class="navbar">
         <div class="navbar-container">
@@ -32,52 +231,177 @@
             <span class="hamburger-line"></span>
           </button>
           <ul id="nav-menu" class="nav-menu hidden sm:flex">
-            {{ for section of sections }}
-              {{ if section.show }}
-                <li>
-                  <a href="{{ section.url }}" class="nav-link {{ page.data.url === section.url ? 'nav-link-active' : '' }}">
-                    {{ section.label }}
-                  </a>
-                </li>
-              {{ /if }}
-            {{ /for }}
+            {{ if lang === 'de' }}
+              {{ for section of sections.de }}
+                {{ if section.show }}
+                  <li>
+                    <a href="{{ section.url }}" class="nav-link {{ page.data.url === section.url ? 'nav-link-active' : '' }}">
+                      {{ section.label }}
+                    </a>
+                  </li>
+                {{ /if }}
+              {{ /for }}
+            {{ /if }}
+            {{ if lang === 'fr' }}
+              {{ for section of sections.fr }}
+                {{ if section.show }}
+                  <li>
+                    <a href="{{ section.url }}" class="nav-link {{ page.data.url === section.url ? 'nav-link-active' : '' }}">
+                      {{ section.label }}
+                    </a>
+                  </li>
+                {{ /if }}
+              {{ /for }}
+            {{ /if }}
+            {{ if lang === 'pt' }}
+              {{ for section of sections.pt }}
+                {{ if section.show }}
+                  <li>
+                    <a href="{{ section.url }}" class="nav-link {{ page.data.url === section.url ? 'nav-link-active' : '' }}">
+                      {{ section.label }}
+                    </a>
+                  </li>
+                {{ /if }}
+              {{ /for }}
+            {{ /if }}
+            {{ if lang === 'en' }}
+              {{ for section of sections.en }}
+                {{ if section.show }}
+                  <li>
+                    <a href="{{ section.url }}" class="nav-link {{ page.data.url === section.url ? 'nav-link-active' : '' }}">
+                      {{ section.label }}
+                    </a>
+                  </li>
+                {{ /if }}
+              {{ /for }}
+            {{ /if }}
+            <li class="language-switcher dropdown">
+              <button class="dropdown-toggle nav-link" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                {{ if lang === 'en' }}EN{{ /if }}{{ if lang === 'de' }}DE{{ /if }}{{ if lang === 'fr' }}FR{{ /if }}{{ if lang === 'pt' }}PT{{ /if }}
+                <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="dropdown-menu" id="languageMenu">
+                <a href="/" class="dropdown-item {{ lang === 'en' ? 'active' : '' }}" title="Read in English">English</a>
+                <a href="/de/" class="dropdown-item {{ lang === 'de' ? 'active' : '' }}" title="Auf Deutsch lesen">Deutsch</a>
+                <a href="/fr/" class="dropdown-item {{ lang === 'fr' ? 'active' : '' }}" title="Lire en français">Français</a>
+                <a href="/pt/" class="dropdown-item {{ lang === 'pt' ? 'active' : '' }}" title="Ler em português">Português</a>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
+    
+    <!-- Language Suggestion Banner (only for German speakers on English pages) -->
+    {{ if lang === 'en' }}
+    <div id="language-suggestion-banner" class="language-suggestion-banner hidden">
+      <div class="language-suggestion-content">
+        <div class="language-suggestion-text">
+          <span class="language-suggestion-icon">🇩🇪</span>
+          Diese Seite ist auch auf Deutsch verfügbar.
+          <a href="/de/" class="language-suggestion-link">
+            Auf Deutsch lesen
+          </a>
+        </div>
+        <button id="dismiss-language-suggestion" class="language-suggestion-dismiss" title="Dismiss">
+          ×
+        </button>
+      </div>
+    </div>
+    {{ /if }}
+    
     <main>
-      <div class="{{ page.data.url === '/' ? 'home-container' : 'main-container' }}">
-        {{ if page.data.url === "/" }}
+      <div class="{{ (page.data.url === '/' || page.data.url === '/de/' || page.data.url === '/fr/' || page.data.url === '/pt/') ? 'home-container' : 'main-container' }}">
+        {{ if page.data.url === "/" || page.data.url === "/de/" || page.data.url === "/fr/" || page.data.url === "/pt/" }}
         <div class="profile-image">
-          <img alt="Frank Harris" src="/images/mug.jpg">
+          <img alt="Benedikt Girz - Product Manager and Developer based in Freiburg, Germany" src="/images/benedikt.png" loading="lazy">
         </div>
         {{ /if }}
         {{ content }}
-        {{ for section of sections }}
-          {{ if section.url === page.data.url && section.includes }}
-            {{ for include of section.includes }}
-              {{ include include }}
-            {{ /for }}
-          {{ /if }}
-        {{ /for }}
+        {{ if lang === 'de' }}
+          {{ for section of sections.de }}
+            {{ if section.url === page.data.url && section.includes }}
+              {{ for include of section.includes }}
+                {{ include include }}
+              {{ /for }}
+            {{ /if }}
+          {{ /for }}
+        {{ /if }}
+        {{ if lang === 'fr' }}
+          {{ for section of sections.fr }}
+            {{ if section.url === page.data.url && section.includes }}
+              {{ for include of section.includes }}
+                {{ include include }}
+              {{ /for }}
+            {{ /if }}
+          {{ /for }}
+        {{ /if }}
+        {{ if lang === 'pt' }}
+          {{ for section of sections.pt }}
+            {{ if section.url === page.data.url && section.includes }}
+              {{ for include of section.includes }}
+                {{ include include }}
+              {{ /for }}
+            {{ /if }}
+          {{ /for }}
+        {{ /if }}
+        {{ if lang === 'en' }}
+          {{ for section of sections.en }}
+            {{ if section.url === page.data.url && section.includes }}
+              {{ for include of section.includes }}
+                {{ include include }}
+              {{ /for }}
+            {{ /if }}
+          {{ /for }}
+        {{ /if }}
       </div>
     </main>
     <footer>
       <div class="footer">
         <ul class="footer-list">
-          <li>&copy; {{ new Date().getFullYear() }} Frank Harris</li>
+          <li>&copy; {{ new Date().getFullYear() }} Benedikt Girz</li>
+          {{ if lang === 'de' }}
+            <li><a href="/de/impressum/">Impressum</a></li>
+            <li><a href="/de/datenschutz/">Datenschutz</a></li>
+          {{ /if }}
+          {{ if lang === 'fr' }}
+            <li><a href="/fr/mentions-legales/">Mentions légales</a></li>
+            <li><a href="/fr/confidentialite/">Confidentialité</a></li>
+          {{ /if }}
+          {{ if lang === 'pt' }}
+            <li><a href="/pt/impressum/">Impressum</a></li>
+            <li><a href="/pt/privacidade/">Privacidade</a></li>
+          {{ /if }}
+          {{ if lang === 'en' }}
+            <li><a href="/legal/">Imprint</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+          {{ /if }}
         </ul>
       </div>
     </footer>
+    
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner hidden">
+      <div class="cookie-content">
+        <div class="cookie-text">
+          <h3>Cookie Consent</h3>
+          <p>We use cookies to enhance your browsing experience and analyze our traffic. Choose your preferences below.</p>
+        </div>
+        <div class="cookie-buttons">
+          <button id="accept-essential" class="cookie-btn cookie-btn-secondary">Essential Only</button>
+          <button id="accept-all" class="cookie-btn cookie-btn-primary">Accept All</button>
+        </div>
+      </div>
+    </div>
+    
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', (event) => {
-        console.log('DOMContentLoaded event fired');
 
         const menuToggle = document.getElementById('menu-toggle');
         const navMenu = document.getElementById('nav-menu');
 
-        console.log('menuToggle:', menuToggle);
-        console.log('navMenu:', navMenu);
 
         if (!menuToggle || !navMenu) {
           console.error('Menu toggle or nav menu not found');
@@ -85,17 +409,14 @@
         }
 
         menuToggle.addEventListener('click', (e) => {
-          console.log('Menu toggle clicked');
           e.stopPropagation();
           menuToggle.classList.toggle('menu-open');
           navMenu.classList.toggle('hidden');
           navMenu.classList.toggle('flex');
-          console.log('Menu classes after toggle:', navMenu.classList);
         });
 
         document.addEventListener('click', (event) => {
           if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-            console.log('Closing menu');
             menuToggle.classList.remove('menu-open');
             navMenu.classList.add('hidden');
             navMenu.classList.remove('flex');
@@ -106,7 +427,6 @@
         function handleResize() {
           clearTimeout(resizeTimeout);
           resizeTimeout = setTimeout(() => {
-            console.log('Window resized');
             if (window.innerWidth >= 1024) {
               menuToggle.classList.remove('menu-open');
               navMenu.classList.remove('hidden');
@@ -117,12 +437,136 @@
                 navMenu.classList.remove('flex');
               }
             }
-            console.log('Menu classes after resize:', navMenu.classList);
           }, 250);
         }
 
         window.addEventListener('resize', handleResize);
         handleResize();
+
+        // Language Dropdown Toggle
+        const languageDropdown = document.getElementById('languageDropdown');
+        const languageMenu = document.getElementById('languageMenu');
+
+        if (languageDropdown && languageMenu) {
+          languageDropdown.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = languageMenu.classList.contains('show');
+            languageMenu.classList.toggle('show', !isOpen);
+            languageDropdown.setAttribute('aria-expanded', !isOpen);
+          });
+
+          // Close dropdown when clicking outside
+          document.addEventListener('click', (event) => {
+            if (!languageDropdown.contains(event.target) && !languageMenu.contains(event.target)) {
+              languageMenu.classList.remove('show');
+              languageDropdown.setAttribute('aria-expanded', 'false');
+            }
+          });
+        }
+
+        // Cookie Consent Management
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptEssentialBtn = document.getElementById('accept-essential');
+        const acceptAllBtn = document.getElementById('accept-all');
+
+        // Check if user has already made a choice
+        function getCookie(name) {
+          const value = `; ${document.cookie}`;
+          const parts = value.split(`; ${name}=`);
+          if (parts.length === 2) return parts.pop().split(';').shift();
+          return null;
+        }
+
+        function setCookie(name, value, days) {
+          const date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/; SameSite=Lax`;
+        }
+
+        function updateGoogleAnalyticsConsent(hasConsent) {
+          if (typeof gtag !== 'undefined') {
+            gtag('consent', 'update', {
+              'analytics_storage': hasConsent ? 'granted' : 'denied',
+              'ad_storage': 'denied', // Always denied for privacy
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied'
+            });
+          }
+        }
+
+        function hideBanner() {
+          cookieBanner.classList.add('hidden');
+        }
+
+        // Check existing consent
+        const existingConsent = getCookie('cookie-consent');
+        if (existingConsent === null) {
+          // Show banner if no consent given
+          cookieBanner.classList.remove('hidden');
+        } else {
+          // Apply existing consent
+          updateGoogleAnalyticsConsent(existingConsent === 'all');
+        }
+
+        // Handle button clicks
+        acceptEssentialBtn.addEventListener('click', function() {
+          setCookie('cookie-consent', 'essential', 365);
+          updateGoogleAnalyticsConsent(false);
+          hideBanner();
+        });
+
+        acceptAllBtn.addEventListener('click', function() {
+          setCookie('cookie-consent', 'all', 365);
+          updateGoogleAnalyticsConsent(true);
+          hideBanner();
+        });
+
+        // Language Detection and Suggestion Banner (only on English pages)
+        {{ if lang === 'en' }}
+        const languageBanner = document.getElementById('language-suggestion-banner');
+        const dismissLanguageBanner = document.getElementById('dismiss-language-suggestion');
+
+        function getLanguagePreference() {
+          const savedPreference = getCookie('language-preference');
+          if (savedPreference) return savedPreference;
+          
+          // Check browser language
+          const browserLanguage = navigator.language || navigator.languages[0];
+          if (browserLanguage.toLowerCase().startsWith('de')) return 'de';
+          if (browserLanguage.toLowerCase().startsWith('fr')) return 'fr';
+          return 'en';
+        }
+
+        function showLanguageSuggestion() {
+          languageBanner.classList.remove('hidden');
+          // Add top padding to body to account for banner
+          document.body.style.paddingTop = languageBanner.offsetHeight + 'px';
+        }
+
+        function hideLanguageSuggestion() {
+          languageBanner.classList.add('hidden');
+          document.body.style.paddingTop = '0';
+          setCookie('language-preference', 'en', 30); // Remember for 30 days
+        }
+
+        // Check if we should show language suggestion
+        const userLanguagePreference = getLanguagePreference();
+        const hasSeenSuggestion = getCookie('language-suggestion-dismissed');
+        
+        if (userLanguagePreference === 'de' && !hasSeenSuggestion) {
+          // Show suggestion after a brief delay for better UX
+          setTimeout(showLanguageSuggestion, 1000);
+        }
+
+        // Handle dismiss button
+        if (dismissLanguageBanner) {
+          dismissLanguageBanner.addEventListener('click', function() {
+            hideLanguageSuggestion();
+            setCookie('language-suggestion-dismissed', 'true', 30);
+          });
+        }
+        {{ /if }}
+
       });
 
     </script>

@@ -1,10 +1,10 @@
 import lume from 'lume/mod.ts';
 import plugins from './lib/plugins.ts';
-import { redirects, router, cacheBusting, notFound } from './lib/middleware.ts';
+import { redirects, router, cacheBusting, notFound, enhanced404, custom404 } from './lib/middleware.ts';
 
 const site = lume({
   src: './content',
-  location: new URL('https://hirefrank.com'),
+  location: new URL('https://benedikt-girz.com'),
   server: {
     middlewares: [redirects, router, notFound(), cacheBusting()],
   },
@@ -22,13 +22,41 @@ pageConfigs.forEach(({ path, layout, tags, indexable }) => {
   if (indexable) site.data('indexable', indexable, path);
 });
 
-site.data('cacheBusterVersion', `v${Date.now()}`);
+// Disable cache busting for production deployment
+// site.data('cacheBusterVersion', `v${Date.now()}`);
 
 site.data('site', {
-  title: 'Frank Harris',
-  name: 'hirefrank',
-  description: "Frank Harris's personal website.",
+  title: 'Benedikt Girz, building growing products',
+  name: 'hiregrowth',
+  description: "Benedikt Girz's personal website.",
 });
+
+// Language configuration
+const languages = {
+  en: {
+    code: 'en',
+    name: 'English', 
+    path: '/',
+    locale: 'en-US',
+    isDefault: true
+  },
+  de: {
+    code: 'de', 
+    name: 'Deutsch',
+    path: '/de/',
+    locale: 'de-DE',
+    isDefault: false
+  },
+  pt: {
+    code: 'pt',
+    name: 'Português',
+    path: '/pt/',
+    locale: 'pt-BR',
+    isDefault: false
+  }
+};
+
+site.data('languages', languages);
 
 site.use(plugins());
 

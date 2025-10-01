@@ -9,13 +9,7 @@ expect "password:"
 send "Ionos2025!!Ionos2025!!\r"
 
 expect "sftp>"
-send "cd /production\r"
-
-expect "sftp>"
-send "mkdir research\r"
-
-expect "sftp>"
-send "cd research\r"
+send "cd /research\r"
 
 expect "sftp>"
 send "put -r .\r"

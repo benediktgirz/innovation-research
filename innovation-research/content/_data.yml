@@ -95,6 +95,8 @@ content:
         - date: "November 2025"
           phase: "Analysis and Write Up"
         - date: "December 2025"
+          phase: "Peer Review"
+        - date: "January 2026"
           phase: "Publication"
     about:
       title: "Innovation as a Career"
@@ -136,6 +138,8 @@ content:
         - date: "November 2025"
           phase: "Analyse und Ausarbeitung"
         - date: "Dezember 2025"
+          phase: "Peer Review"
+        - date: "Januar 2026"
           phase: "Veröffentlichung"
     about:
       title: "Innovation als Berufung"
@@ -177,6 +181,8 @@ content:
         - date: "Novembre 2025"
           phase: "Analyse et rédaction"
         - date: "Décembre 2025"
+          phase: "Examen par les pairs"
+        - date: "Janvier 2026"
           phase: "Publication"
     about:
       title: "L'innovation comme carrière"
@@ -218,6 +224,8 @@ content:
         - date: "Noviembre 2025"
           phase: "Análisis y redacción"
         - date: "Diciembre 2025"
+          phase: "Revisión por pares"
+        - date: "Enero 2026"
           phase: "Publicación"
     about:
       title: "La innovación como carrera"
@@ -259,6 +267,8 @@ content:
         - date: "Novembre 2025"
           phase: "Analisi e scrittura"
         - date: "Dicembre 2025"
+          phase: "Revisione tra pari"
+        - date: "Gennaio 2026"
           phase: "Pubblicazione"
     about:
       title: "L'innovazione come carriera"

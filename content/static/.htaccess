@@ -1,0 +1,32 @@
+# Custom error pages
+ErrorDocument 404 /404.html
+
+# Redirect German language 404s
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Handle German language 404s - redirect to German 404 page
+RewriteCond %{REQUEST_URI} ^/de/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* /de/404.html [L,R=404]
+
+# Handle other 404s - redirect to English 404 page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/de/
+RewriteRule .* /404.html [L,R=404]
+</IfModule>
+
+# Cache control for error pages
+<Files "404.html">
+    Header always set Cache-Control "no-cache, no-store, must-revalidate"
+    Header always set Pragma "no-cache"
+    Header always set Expires "0"
+</Files>
+
+<Files "de/404.html">
+    Header always set Cache-Control "no-cache, no-store, must-revalidate"
+    Header always set Pragma "no-cache"
+    Header always set Expires "0"
+</Files>

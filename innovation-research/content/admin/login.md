@@ -76,6 +76,14 @@ document.addEventListener('DOMContentLoaded', function() {
     errorMessage.classList.add('hidden');
   }
 
+  async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password + 'saltBG2025');
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
   loginForm.addEventListener('submit', async function(e) {
     e.preventDefault();
     hideError();
@@ -88,24 +96,24 @@ document.addEventListener('DOMContentLoaded', function() {
     loginButton.textContent = 'Signing in...';
 
     try {
-      const response = await fetch('/api/auth', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      // Client-side authentication for static hosting
+      const validEmail = 'bg@benedikt-girz.com';
+      const validPasswordHash = '77291d7e4a46974e3d4baf878b1e6dd4c74dbe164815a8b222d6c60c198dcbd3';
 
-      const data = await response.json();
+      // Hash the provided password with the same salt used server-side
+      const passwordHash = await hashPassword(password);
 
-      if (data.success) {
-        // Store the token securely
-        localStorage.setItem('adminToken', data.token);
+      if (email === validEmail && passwordHash === validPasswordHash) {
+        // Generate a simple session token
+        const sessionToken = btoa(`${email}:${Date.now()}:${Math.random()}`);
+        localStorage.setItem('adminToken', sessionToken);
+        localStorage.setItem('adminEmail', email);
+        localStorage.setItem('loginTime', Date.now().toString());
 
         // Redirect to admin dashboard
-        window.location.href = '/admin/dashboard';
+        window.location.href = '/admin/dashboard/';
       } else {
-        showError(data.message || 'Invalid credentials');
+        showError('Invalid email or password');
       }
     } catch (error) {
       showError('Login failed. Please try again.');

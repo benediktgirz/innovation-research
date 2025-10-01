@@ -1,0 +1,1198 @@
+[
+  {
+    "club": "Arsenal",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.arsenal.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:35:44.502Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Aston Villa",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.avfc.co.uk",
+    "emails": [
+      "customer.services@shop.avfc.co.uk",
+      "u003Ecustomer.services@shop.avfc.co.uk",
+      "supporters@avfc.co.uk",
+      "u003Esupporters@avfc.co.uk",
+      "fancomplaints@avfc.co.uk",
+      "u003Efancomplaints@avfc.co.uk",
+      "media@avfc.co.uk",
+      "u003Emedia@avfc.co.uk",
+      "foundation@avfc.co.uk",
+      "u003Efoundation@avfc.co.uk",
+      "safeguarding@avfc.co.uk",
+      "u003Esafeguarding@avfc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:36:17.955Z",
+    "status": "success",
+    "mediaEmail": "media@avfc.co.uk"
+  },
+  {
+    "club": "Bournemouth",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.afcb.co.uk",
+    "emails": [
+      "media@afcb.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:36:20.454Z",
+    "status": "success",
+    "mediaEmail": "media@afcb.co.uk"
+  },
+  {
+    "club": "Brentford",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.brentfordfc.com",
+    "emails": [
+      "d20dceafd8c3453e8fd1e2967fa78e32@o450172.ingest.sentry.io",
+      "tickets@brentfordfc.com",
+      "u003Etickets@brentfordfc.com",
+      "accessibility@brentfordfc.com",
+      "u003Eaccessibility@brentfordfc.com",
+      "premiumseating@brentfordfc.com",
+      "u003Epremiumseating@brentfordfc.com",
+      "stadiumhire@brentfordfc.com",
+      "u003Estadiumhire@brentfordfc.com",
+      "shop@brentfordfc.com",
+      "u003Eshop@brentfordfc.com",
+      "partnerships@brentfordfc.com",
+      "u003Epartnerships@brentfordfc.com",
+      "accounts@brentfordfc.com",
+      "u003Eaccounts@brentfordfc.com",
+      "operations@brentfordfc.com",
+      "u003Eoperations@brentfordfc.com",
+      "media@brentfordfc.com",
+      "u003Emedia@brentfordfc.com",
+      "BuzzBoxSupport@streamamg.com",
+      "u003EBuzzBoxSupport@streamamg.com",
+      "u0022enquiries@brentfordfc.com",
+      "u003Eenquiries@brentfordfc.com",
+      "u0022accessibility@brentfordfc.com",
+      "international@brentfordfc.com",
+      "u003Einternational@brentfordfc.com",
+      "u0022report@brentfordfc.com",
+      "u003Ereport@brentfordfc.com",
+      "safeguarding@brentfordfc.com",
+      "u003Esafeguarding@brentfordfc.com"
+    ],
+    "scrapedAt": "2025-10-01T08:36:20.748Z",
+    "status": "success",
+    "mediaEmail": "media@brentfordfc.com",
+    "generalEmail": "u0022enquiries@brentfordfc.com"
+  },
+  {
+    "club": "Brighton",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.brightonandhovealbion.com",
+    "emails": [
+      "supporter.services@brightonandhovealbion.com",
+      "rewards@brightonandhovealbion.com",
+      "mail.order@brightonandhovealbion.com",
+      "1901@brightonandhovealbion.com",
+      "commercial@brightonandhovealbion.com"
+    ],
+    "scrapedAt": "2025-10-01T08:36:23.838Z",
+    "status": "partial"
+  },
+  {
+    "club": "Chelsea",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.chelseafc.com",
+    "emails": [
+      "clubchelsea@chelseafc.com"
+    ],
+    "scrapedAt": "2025-10-01T08:36:25.106Z",
+    "status": "partial"
+  },
+  {
+    "club": "Crystal Palace",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.cpfc.co.uk",
+    "emails": [
+      "shop@cpfc.co.uk",
+      "memberships@cpfc.co.uk",
+      "boxoffice@cpfc.co.uk",
+      "palacetvsupport@streamamg.com",
+      "dlo@cpfc.co.uk",
+      "customer.service@cpfc.co.uk",
+      "media@cpfc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:36:25.302Z",
+    "status": "success",
+    "mediaEmail": "media@cpfc.co.uk"
+  },
+  {
+    "club": "Everton",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.evertonfc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:36:27.751Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Fulham",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.fulhamfc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:36:57.808Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Ipswich Town",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.itfc.co.uk",
+    "emails": [
+      "mainticketoffice@itfc.co.uk",
+      "hospitality@itfc.co.uk",
+      "events@itfc.co.uk",
+      "commercial@itfc.co.uk",
+      "partnerships@itfc.co.uk",
+      "supporter.services@itfc.co.uk",
+      "SLO@itfc.co.uk",
+      "elizabeth.edwards@itfc.co.uk",
+      "lee.smith@itfc.co.uk",
+      "lauren.fellingham@itfcfoundation.co.uk",
+      "planetblue@itfc.co.uk",
+      "community@itfc.co.uk",
+      "reception@itfc.co.uk",
+      "press@itfc.co.uk",
+      "marcus.nash@itfc.co.uk",
+      "itfcdigitalsupport@itfc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:37:27.704Z",
+    "status": "success",
+    "pressEmail": "press@itfc.co.uk"
+  },
+  {
+    "club": "Leicester City",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.lcfc.com",
+    "emails": [
+      "lcfchelp@lcfc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:37:30.110Z",
+    "status": "partial"
+  },
+  {
+    "club": "Liverpool",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.liverpoolfc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:37:30.562Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Manchester City",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.mancity.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:38:10.164Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Manchester United",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.manutd.com",
+    "emails": [
+      "ov0dk4m6dedaob7oqse4nrda4s@group.calendar.google.com",
+      "3203991ff225517fd418aebeeb233c87a9373113ac03b2ded2d6ed27efdedc5b@group.calendar.google.com",
+      "c86f80438c6d7e1b28437654ab6b6db8e6106d42def4e74a7d155ac91fe5dc90@group.calendar.google.com",
+      "c31eb029283fce581db947cc1da15d665cb15cbda5894dfc52b16388f237d51f@group.calendar.google.com"
+    ],
+    "scrapedAt": "2025-10-01T08:38:42.729Z",
+    "status": "partial"
+  },
+  {
+    "club": "Newcastle United",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.nufc.co.uk",
+    "emails": [
+      "supporter.services@nufc.co.uk"
+    ],
+    "scrapedAt": "2025-10-01T08:38:48.632Z",
+    "status": "partial"
+  },
+  {
+    "club": "Nottingham Forest",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.nottinghamforest.co.uk",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:38:49.155Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Southampton",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.southamptonfc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:39:19.316Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Tottenham Hotspur",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.tottenhamhotspur.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:40:08.155Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "West Ham United",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.whufc.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:40:45.035Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Wolverhampton",
+    "league": "Premier League",
+    "country": "England",
+    "website": "https://www.wolves.co.uk",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:41:16.425Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "FC Bayern Munich",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://fcbayern.com/en",
+    "emails": [
+      "berni@fcb.de"
+    ],
+    "scrapedAt": "2025-10-01T08:41:47.747Z",
+    "status": "partial"
+  },
+  {
+    "club": "Borussia Dortmund",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.bvb.com/eng",
+    "emails": [
+      "admin@telepathy.com"
+    ],
+    "scrapedAt": "2025-10-01T08:41:47.936Z",
+    "status": "partial"
+  },
+  {
+    "club": "RB Leipzig",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.dierotenbullen.com/en",
+    "emails": [
+      "u003eprivacy-rbleipzig@redbull.com",
+      "u003erb2b.businessclub@redbulls.com"
+    ],
+    "scrapedAt": "2025-10-01T08:41:51.049Z",
+    "status": "partial"
+  },
+  {
+    "club": "Bayer Leverkusen",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.bayer04.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:41:51.422Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Union Berlin",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.fc-union-berlin.de/en",
+    "emails": [
+      "verein@fc-union-berlin.de"
+    ],
+    "scrapedAt": "2025-10-01T08:42:23.393Z",
+    "status": "partial"
+  },
+  {
+    "club": "SC Freiburg",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.scfreiburg.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:42:23.706Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Eintracht Frankfurt",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.eintracht.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:42:58.343Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "VfL Wolfsburg",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.vfl-wolfsburg.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:43:30.273Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Borussia Mönchengladbach",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.borussia.de/english",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:44:00.673Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "FSV Mainz 05",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.mainz05.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:44:29.433Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "VfB Stuttgart",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.vfb.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:44:59.152Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Werder Bremen",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.werder.de/en",
+    "emails": [
+      "mitgliederevents@werder.de",
+      "mitgliederverwaltung@werder.de",
+      "Kids-Club@werder.de",
+      "kids@werder.de",
+      "kids-club@werder.de",
+      "info@werder.de",
+      "tickets@werder.de",
+      "fanshop@werder.de",
+      "werder-stiftung@werder.de",
+      "info@digitas.de",
+      "info@team-neusta.de",
+      "datenschutzbeauftragter@werder.de",
+      "personal@werder-fanwelt.de",
+      "personal@werder.de"
+    ],
+    "scrapedAt": "2025-10-01T08:45:31.422Z",
+    "status": "partial",
+    "generalEmail": "info@werder.de"
+  },
+  {
+    "club": "TSG Hoffenheim",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.achtzehn99.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:45:31.712Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "FC Augsburg",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.fcaugsburg.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:46:00.291Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "VfL Bochum",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.vfl-bochum.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:46:29.803Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "FC St. Pauli",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.fcstpauli.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:46:59.268Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Holstein Kiel",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.holstein-kiel.de/en",
+    "emails": [
+      "info@holstein-kiel.de"
+    ],
+    "scrapedAt": "2025-10-01T08:47:45.449Z",
+    "status": "partial",
+    "generalEmail": "info@holstein-kiel.de"
+  },
+  {
+    "club": "1. FC Heidenheim",
+    "league": "Bundesliga",
+    "country": "Germany",
+    "website": "https://www.fc-heidenheim.de/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:47:58.551Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.realmadrid.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:48:28.245Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.fcbarcelona.com/en",
+    "emails": [
+      "penyes@fcbarcelona.cat",
+      "CITAPREVIAOAB@fcbarcelona.onmicrosoft.com",
+      "barcaescola@fcbarcelona.cat",
+      "events@fcbarcelona.cat",
+      "vip@fcbarcelona.cat",
+      "fundacio@fcbarcelona.cat"
+    ],
+    "scrapedAt": "2025-10-01T08:48:57.525Z",
+    "status": "partial"
+  },
+  {
+    "club": "Atlético Madrid",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://en.atleticodemadrid.com",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:48:58.305Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Sevilla FC",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.sevillafc.es/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:49:28.552Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Real Sociedad",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.realsociedad.eus/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:50:00.518Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Real Betis",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.realbetisbalompie.es/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:50:31.219Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Villarreal CF",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.villarrealcf.es/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:51:00.335Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Athletic Bilbao",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.athletic-club.eus/en",
+    "emails": [
+      "contacto@athletic-club.eus",
+      "museoa@athletic-club.eus",
+      "info@fundacionathleticclub.eus",
+      "lezama@athletic-club.eus",
+      "smva@athletic-club.eus",
+      "prentsa@athletic-club.eus",
+      "veteranos@athletic-club.eus"
+    ],
+    "scrapedAt": "2025-10-01T08:52:02.538Z",
+    "status": "partial",
+    "generalEmail": "info@fundacionathleticclub.eus"
+  },
+  {
+    "club": "Valencia CF",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.valenciacf.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:52:03.141Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "CA Osasuna",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.osasuna.es/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:52:33.567Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Celta Vigo",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.celtavigo.net/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T08:53:04.049Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Rayo Vallecano",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.rayovallecano.es/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:11:02.548Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "RCD Mallorca",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.rcdmallorca.es/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:11:40.912Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Getafe CF",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.getafecf.com/en",
+    "emails": [
+      "gestiabonados@getafecf.com",
+      "contabilidad@getafecf.com",
+      "seguridad@getafecf.com",
+      "admon@getafecf.com",
+      "comunicacion@getafecf.com",
+      "carlosfg@getafecf.com",
+      "acreditaciones@getafecf.com",
+      "nerea.alonso@getafecf.com",
+      "dtorres@getafecf.com",
+      "dmartinez@getafecf.com",
+      "marketing@getafecf.com",
+      "tienda@getafecf.com",
+      "stecnico@getafecf.com",
+      "manuel.alcazar@getafecf.com",
+      "cinferiores@getafecf.com",
+      "escuelafutbol@getafecf.com",
+      "u003egestiabonados@getafecf.com",
+      "u003econtabilidad@getafecf.com",
+      "u003eseguridad@getafecf.com",
+      "u003eadmon@getafecf.com",
+      "u003ecomunicacion@getafecf.com",
+      "u003ecarlosfg@getafecf.com",
+      "u003eacreditaciones@getafecf.com",
+      "u003enerea.alonso@getafecf.com",
+      "u003edtorres@getafecf.com",
+      "u003edmartinez@getafecf.com",
+      "u003emarketing@getafecf.com",
+      "u003etienda@getafecf.com",
+      "u003estecnico@getafecf.com",
+      "u003emanuel.alcazar@getafecf.com",
+      "u003ecinferiores@getafecf.com",
+      "u003eescuelafutbol@getafecf.com"
+    ],
+    "scrapedAt": "2025-10-01T09:12:15.239Z",
+    "status": "partial"
+  },
+  {
+    "club": "Deportivo Alavés",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.deportivoalaves.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:12:16.046Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "RCD Espanyol",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.rcdespanyol.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:12:47.886Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "CD Leganés",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.cdleganes.com/en",
+    "emails": [
+      "atencionalabonado@cdleganes.com",
+      "finanzas@cdleganes.com",
+      "seguridad@cdleganes.com",
+      "recursoshumanos@cdleganes.com",
+      "n@cdleganes.com",
+      "prensa@cdleganes.com",
+      "acreditaciones@cdleganes.com",
+      "protocolo@cdleganes.com",
+      "digital@cdleganes.com",
+      "audiovisual@cdleganes.com",
+      "marketing@cdleganes.com",
+      "tienda@cdleganes.com",
+      "patrocinio@cdleganes.com",
+      "butarquepremium@cdleganes.com",
+      "eventos@cdleganes.com",
+      "secretariatecnica@cdleganes.com",
+      "j.broto@cdleganes.com",
+      "cantera11@cdleganes.com",
+      "escuela@cdleganes.com",
+      "cantera@cdleganes.com",
+      "cantera7@cdleganes.com",
+      "futbolfemenino@cdleganes.com",
+      "lopd@cdleganes.com"
+    ],
+    "scrapedAt": "2025-10-01T09:13:18.000Z",
+    "status": "success",
+    "pressEmail": "prensa@cdleganes.com"
+  },
+  {
+    "club": "Girona FC",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.gironafc.cat/en",
+    "emails": [
+      "info@gironafc.cat",
+      "u003einfo@gironafc.cat"
+    ],
+    "scrapedAt": "2025-10-01T09:13:37.550Z",
+    "status": "partial",
+    "generalEmail": "info@gironafc.cat"
+  },
+  {
+    "club": "Las Palmas",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.udlaspalmas.es/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:14:01.173Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Real Valladolid",
+    "league": "La Liga",
+    "country": "Spain",
+    "website": "https://www.realvalladolid.es/en",
+    "emails": [
+      "abonados@realvalladolid.es"
+    ],
+    "scrapedAt": "2025-10-01T09:14:37.554Z",
+    "status": "partial"
+  },
+  {
+    "club": "Juventus",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.juventus.com/en",
+    "emails": [
+      "20beatrix.zhan@juventus.com",
+      "beatrix.zhan@juventus.com"
+    ],
+    "scrapedAt": "2025-10-01T09:14:38.025Z",
+    "status": "partial"
+  },
+  {
+    "club": "AC Milan",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.acmilan.com/en",
+    "emails": [
+      "sponsorshipenquiries@acmilan.com",
+      "licensingenquiries@acmilan.com",
+      "eventi@acmilan.com",
+      "info.china@acmilan.com"
+    ],
+    "scrapedAt": "2025-10-01T09:14:41.384Z",
+    "status": "partial",
+    "generalEmail": "sponsorshipenquiries@acmilan.com"
+  },
+  {
+    "club": "Inter Milan",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.inter.it/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:14:50.329Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "AS Roma",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.asroma.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:15:23.359Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "SSC Napoli",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.sscnapoli.it/en",
+    "emails": [
+      "Napolisponsorelicenze@sscn.it",
+      "sscngarebiglietteria@pec.it"
+    ],
+    "scrapedAt": "2025-10-01T09:15:53.862Z",
+    "status": "partial"
+  },
+  {
+    "club": "SS Lazio",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.sslazio.it/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:15:54.976Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Atalanta",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.atalanta.it/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:16:25.151Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Fiorentina",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://en.violachannel.tv",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:16:57.088Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Torino FC",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.torinofc.it/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:17:26.133Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Bologna FC",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.bolognafc.it/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:18:03.777Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Udinese Calcio",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.udinese.it/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:18:44.743Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Hellas Verona",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.hellasverona.it/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:19:20.840Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Genoa CFC",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.genoacfc.it/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:19:50.456Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Cagliari Calcio",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.cagliaricalcio.com/en",
+    "emails": [
+      "info@cagliaricalcio.com"
+    ],
+    "scrapedAt": "2025-10-01T09:20:39.383Z",
+    "status": "partial",
+    "generalEmail": "info@cagliaricalcio.com"
+  },
+  {
+    "club": "Empoli FC",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.empolifc.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:20:40.587Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "US Lecce",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.uslecce.it/en",
+    "emails": [
+      "rdp@uslecce.it",
+      "slo@uslecce.it",
+      "lecce@legaseriea.it",
+      "marketing@uslecce.it",
+      "commerciale@uslecce.it",
+      "uslecceprogram@uslecce.it"
+    ],
+    "scrapedAt": "2025-10-01T09:21:13.595Z",
+    "status": "partial"
+  },
+  {
+    "club": "Parma Calcio",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.parmacalcio1913.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:21:27.664Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Como 1907",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.como1907.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:22:19.416Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Venezia FC",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.veneziafc.it/en",
+    "emails": [
+      "ninfo@veneziafc.it"
+    ],
+    "scrapedAt": "2025-10-01T09:22:47.555Z",
+    "status": "partial",
+    "generalEmail": "ninfo@veneziafc.it"
+  },
+  {
+    "club": "Monza",
+    "league": "Serie A",
+    "country": "Italy",
+    "website": "https://www.acmonza.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:22:47.787Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://en.psg.fr",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:23:29.884Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Olympique Marseille",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.om.fr/en",
+    "emails": [
+      "4853----billetterie@olympiquedemarseille.freshdesk.com",
+      "4854----billetterie@olympiquedemarseille.freshdesk.com",
+      "5480----billetterie@olympiquedemarseille.freshdesk.com",
+      "5483----billetterie@olympiquedemarseille.freshdesk.com",
+      "4864----business@olympiquedemarseille.freshdesk.com",
+      "4865----omfrassistance@olympiquedemarseille.freshdesk.com",
+      "4917----omfrassistance@olympiquedemarseille.freshdesk.com",
+      "5396----business@olympiquedemarseille.freshdesk.com",
+      "5582----business@olympiquedemarseille.freshdesk.com",
+      "4856----omprime@olympiquedemarseille.freshdesk.com",
+      "5486----omprime@olympiquedemarseille.freshdesk.com",
+      "27945----peuplebleuetblanc@olympiquedemarseille.freshdesk.com",
+      "5522----omtour@olympiquedemarseille.freshdesk.com",
+      "5525----omtour@olympiquedemarseille.freshdesk.com",
+      "4858----omfrassistance@olympiquedemarseille.freshdesk.com",
+      "4916----stade@olympiquedemarseille.freshdesk.com",
+      "5489----stade@olympiquedemarseille.freshdesk.com",
+      "5492----stade@olympiquedemarseille.freshdesk.com",
+      "5510----stade@olympiquedemarseille.freshdesk.com",
+      "4850----boutique@olympiquedemarseille.freshdesk.com",
+      "5495----boutique@olympiquedemarseille.freshdesk.com",
+      "5498----boutique@olympiquedemarseille.freshdesk.com",
+      "4863----autre-demande@olympiquedemarseille.freshdesk.com",
+      "4925----autre-demande@olympiquedemarseille.freshdesk.com",
+      "5921----autre-demande@olympiquedemarseille.freshdesk.com",
+      "27974----autre-demande@olympiquedemarseille.freshdesk.com"
+    ],
+    "scrapedAt": "2025-10-01T09:24:11.725Z",
+    "status": "partial"
+  },
+  {
+    "club": "Olympique Lyon",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.ol.fr/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:24:12.048Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "AS Monaco",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.asmonaco.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:24:42.215Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "LOSC Lille",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.losc.fr/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:25:14.074Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "OGC Nice",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.ogcnice.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:25:46.732Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Stade Rennais",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.staderennais.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:26:15.545Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "RC Lens",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.rclens.fr/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:26:50.000Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "RC Strasbourg",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.rcstrasbourgalsace.fr/en",
+    "emails": [
+      "jean.dupont@gmail.com",
+      "boutique@rcstrasbourg.eu"
+    ],
+    "scrapedAt": "2025-10-01T09:27:28.826Z",
+    "status": "partial"
+  },
+  {
+    "club": "Stade Brestois",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.sb29.bzh/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:27:29.161Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Montpellier HSC",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.mhscfoot.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:28:00.427Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "FC Nantes",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.fcnantes.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:28:53.167Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Stade de Reims",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.stade-de-reims.com/en",
+    "emails": [
+      "contact@stade-de-reims.fr"
+    ],
+    "scrapedAt": "2025-10-01T09:29:21.893Z",
+    "status": "partial",
+    "generalEmail": "contact@stade-de-reims.fr"
+  },
+  {
+    "club": "Toulouse FC",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.tfc.info/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:29:29.702Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "AJ Auxerre",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.aja.fr/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:29:57.800Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "Angers SCO",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.angers-sco.fr/en",
+    "emails": [
+      "secretariat@angers-sco.fr",
+      "commercial@angers-sco.fr",
+      "info-billetterie@angers-sco.fr",
+      "evenements.seminaires@angers-sco.fr",
+      "footsal@angers-sco.fr",
+      "communication@angers-sco.fr",
+      "fondsdedotation@angers-sco.fr"
+    ],
+    "scrapedAt": "2025-10-01T09:31:25.105Z",
+    "status": "partial"
+  },
+  {
+    "club": "Le Havre AC",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.hac-foot.com/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:31:28.172Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  },
+  {
+    "club": "AS Saint-Étienne",
+    "league": "Ligue 1",
+    "country": "France",
+    "website": "https://www.asse.fr/en",
+    "emails": [],
+    "scrapedAt": "2025-10-01T09:31:58.254Z",
+    "status": "failed",
+    "notes": "No emails found on standard contact pages"
+  }
+]

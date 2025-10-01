@@ -63,6 +63,16 @@ site.data('site', {
   description: 'A comprehensive research study on innovation in professional football across top European leagues.',
 });
 
+// Load the data from _data.yml into the site
+import { parse } from 'https://deno.land/std@0.210.0/yaml/mod.ts';
+
+const dataYaml = await Deno.readTextFile('./content/_data.yml');
+const dataConfig = parse(dataYaml);
+site.data('content', dataConfig.content);
+site.data('sections', dataConfig.sections);
+site.data('metas', dataConfig.metas);
+site.data('leagues', dataConfig.leagues);
+
 site
   .use(
     tailwindcss({

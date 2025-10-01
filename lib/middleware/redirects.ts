@@ -1,6 +1,7 @@
 import redirects from 'lume/middlewares/redirects.ts';
 
 export const definitions = {
+  // Legacy content redirects
   '/w9': '/extras/w9.pdf',
   '/14/08/why-is-it-so-hard/': '/videos/why-is-it-so-hard/',
   '/18/03/rainbows-rainier/': '/videos/rainbows-rainier/',
@@ -18,12 +19,39 @@ export const definitions = {
   '/feeds/rss.xml': '/writings',
   '/tags': '/writings',
   '/archives': '/writings',
+
+  // Common 404 patterns - redirect to appropriate pages
+  '/cv': '/resume/',
+  '/cv/': '/resume/',
+  '/curriculum': '/resume/',
+  '/curriculum/': '/resume/',
+  '/lebenslauf': '/de/lebenslauf/',
+  '/blog': '/',
+  '/blog/': '/',
+  '/posts': '/',
+  '/posts/': '/',
+  '/work': '/experience/',
+  '/work/': '/experience/',
+  '/portfolio': '/experience/',
+  '/portfolio/': '/experience/',
+  '/services': '/contact/',
+  '/services/': '/contact/',
+  '/hire': '/contact/',
+  '/hire/': '/contact/',
+  '/booking': '/contact/',
+  '/booking/': '/contact/',
+  '/impressum': '/legal/',
+  '/impressum/': '/legal/',
+  '/datenschutz': '/privacy/',
+  '/datenschutz/': '/privacy/',
+  '/privacy-policy': '/privacy/',
+  '/privacy-policy/': '/privacy/',
   '/discovery': {
-    to: 'https://coaching.hirefrank.com/book/complimentary-coaching-consultation',
+    to: 'https://coaching.benedikt-girz.com/book/complimentary-coaching-consultation',
     code: 302,
   },
   '/vip': {
-    to: 'https://coaching.hirefrank.com/book/vip-catch-up',
+    to: 'https://coaching.benedikt-girz.com/book/vip-catch-up',
     code: 302,
   },
   '/calp': {
@@ -35,10 +63,9 @@ export const definitions = {
     code: 302,
   },
   '/mailto': {
-    to: 'mailto:frank@hirefrank.com?subject=Hi!',
+    to: 'mailto:benedikt@benedikt-girz.com?subject=Hi!',
     code: 302,
   },
-  '/resume': '/extras/resume.pdf',
 };
 
 export default redirects({
