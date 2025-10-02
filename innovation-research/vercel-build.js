@@ -110,6 +110,8 @@ async function main() {
         runtime: 'nodejs20.x',
         handler: 'index.js',
         launcherType: 'Nodejs',
+        shouldAddHelpers: true,
+        shouldAddSourcemapSupport: false,
         maxDuration: 10,
       };
       await fs.writeFile(
@@ -117,10 +119,13 @@ async function main() {
         JSON.stringify(functionConfig, null, 2)
       );
 
-      // Copy package.json for CommonJS support
-      await fs.copyFile(
-        'api/package.json',
-        path.join(functionDir, 'package.json')
+      // Create package.json with CommonJS type
+      const funcPackageJson = {
+        type: 'commonjs'
+      };
+      await fs.writeFile(
+        path.join(functionDir, 'package.json'),
+        JSON.stringify(funcPackageJson, null, 2)
       );
 
       console.log(`  ✓ Created function: /api/${functionName}`);
