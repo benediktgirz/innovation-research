@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node build.js",
-    "deploy": "vercel --prod",
-    "vercel-build": "node vercel-build.js"
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@vercel/node": "^3.0.0",

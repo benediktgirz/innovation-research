@@ -1,4 +1,12 @@
 {
+  "buildCommand": "curl -fsSL https://deno.land/x/install/install.sh | sh && export PATH=\"$HOME/.deno/bin:$PATH\" && deno install && deno task build",
+  "outputDirectory": "_site",
+  "installCommand": "npm install",
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 10
+    }
+  },
   "headers": [
     {
       "source": "/api/(.*)",
