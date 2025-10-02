@@ -111,7 +111,7 @@ async function main() {
         handler: 'index.js',
         launcherType: 'Nodejs',
         shouldAddHelpers: true,
-        shouldAddSourcemapSupport: false,
+        shouldAddSourcemapSupport: true,
         maxDuration: 10,
       };
       await fs.writeFile(
