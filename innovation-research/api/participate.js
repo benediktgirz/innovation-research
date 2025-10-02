@@ -36,22 +36,15 @@ module.exports = async (req, res) => {
       ip_address: req.headers['x-forwarded-for'] || 'unknown'
     };
 
-    // Send email notification
-    await sendEmail({
-      to: process.env.NOTIFICATION_EMAIL || 'research@benedikt-girz.com',
-      subject: `New Research Participation - ${club_name}`,
-      body: `
-New participation received:
-
-Club: ${club_name}
-Role: ${role}
-Email: ${email}
-Language: ${language}
-Innovation Response: ${innovation}
-
-Submitted at: ${participation.submitted_at}
-IP Address: ${participation.ip_address}
-      `
+    // Send Telegram notification
+    await sendTelegramNotification({
+      club_name,
+      role,
+      email,
+      language,
+      innovation,
+      submitted_at: participation.submitted_at,
+      ip_address: participation.ip_address
     });
 
     // Store in database (using Vercel KV or external service)
@@ -70,45 +63,50 @@ IP Address: ${participation.ip_address}
   }
 };
 
-async function sendEmail(emailData) {
-  const apiKey = process.env.RESEND_API_KEY;
-  const fromEmail = process.env.FROM_EMAIL || 'research@benedikt-girz.com';
+async function sendTelegramNotification(data) {
+  const botToken = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
 
-  console.log('Sending email:', {
-    to: emailData.to,
-    subject: emailData.subject,
-    service: 'Resend'
-  });
+  if (!botToken || !chatId) {
+    console.log('Telegram not configured - skipping notification');
+    return;
+  }
 
-  if (apiKey) {
-    try {
-      const response = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          from: fromEmail,
-          to: [process.env.NOTIFICATION_EMAIL || 'research@benedikt-girz.com'],
-          subject: emailData.subject,
-          text: emailData.body,
-        }),
-      });
+  const message = `🏆 *New Research Participation*
 
-      if (!response.ok) {
-        throw new Error(`Resend API error: ${response.statusText}`);
-      }
+*Club:* ${data.club_name}
+*Role:* ${data.role}
+*Email:* ${data.email}
+*Language:* ${data.language}
 
-      const data = await response.json();
-      console.log('Email sent successfully via Resend:', data);
-    } catch (error) {
-      console.error('Failed to send email:', error);
-      // Don't throw - email failure shouldn't block the form submission
+*Innovation Response:*
+${data.innovation}
+
+📅 *Submitted:* ${new Date(data.submitted_at).toLocaleString('en-GB', { timeZone: 'Europe/Berlin' })}
+🌐 *IP:* ${data.ip_address}`;
+
+  try {
+    const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: message,
+        parse_mode: 'Markdown'
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Telegram API error: ${response.statusText}`);
     }
-  } else {
-    console.log('Email content (no API key configured):', emailData);
-    console.log('Note: Set RESEND_API_KEY environment variable to enable email sending');
+
+    const result = await response.json();
+    console.log('✅ Telegram notification sent:', result.ok);
+  } catch (error) {
+    console.error('❌ Failed to send Telegram notification:', error);
+    // Don't throw - notification failure shouldn't block the form submission
   }
 }
 
