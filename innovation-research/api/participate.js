@@ -104,7 +104,7 @@ async function sendEmail(emailData) {
       console.log('Email sent successfully via Resend:', data);
     } catch (error) {
       console.error('Failed to send email:', error);
-      throw error;
+      // Don't throw - email failure shouldn't block the form submission
     }
   } else {
     console.log('Email content (no API key configured):', emailData);
