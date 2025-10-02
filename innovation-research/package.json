@@ -5,8 +5,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "node build.js",
-    "deploy": "vercel --prod"
+    "build": "node build.js && cp -r _site/* public/",
+    "deploy": "vercel --prod",
+    "vercel-build": "curl -fsSL https://deno.land/x/install/install.sh | sh && export PATH=\"$HOME/.deno/bin:$PATH\" && deno install && deno task build && cp -r _site/* public/"
   },
   "dependencies": {
     "@vercel/node": "^3.0.0",
