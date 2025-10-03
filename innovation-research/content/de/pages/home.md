@@ -151,8 +151,16 @@ indexable: true
         <div class="form-group form-question-highlight">
           <h3 class="research-question-title">Die zentrale Forschungsfrage</h3>
           <label for="innovation" class="form-label-primary">Was ist die neueste Innovation, die Ihre Mannschaft auf dem Platz erfogreicher macht ?</label>
+          <p class="research-question-explainer">Mit Innovation meinen wir etwas, das Sie neu eingeführt haben mit der Absicht, die Leistung des Teams auf dem Spielfeld zu verbessern, um zu gewinnen.</p>
           <p class="research-question-explainer">Mit Erfolg meinen wir mehr Siege, mit Platz meinen wir erfolgreiches Fußballspiel</p>
-          <textarea id="innovation" name="innovation" class="form-textarea-primary" required placeholder="Bitte teilen Sie Ihre Erkenntnisse über aktuelle Fußball-Innovationen..."></textarea>
+          <textarea id="innovation" name="innovation" class="form-textarea-primary" required placeholder="Es gibt keine richtige oder falsche Antwort, sagen Sie uns einfach die Wahrheit."></textarea>
+        </div>
+
+        <!-- Second Research Question -->
+        <div class="form-group form-question-highlight">
+          <h3 class="research-question-title">Die zweite zentrale Forschungsfrage</h3>
+          <label for="effect" class="form-label-primary">Was war die messbare Wirkung dieser Innovation?</label>
+          <textarea id="effect" name="effect" class="form-textarea-primary" required placeholder="Es gibt keine richtige oder falsche Antwort, sagen Sie uns einfach die Wahrheit."></textarea>
         </div>
 
         <!-- Supporting Information -->

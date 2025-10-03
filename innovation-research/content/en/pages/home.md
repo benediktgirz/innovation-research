@@ -168,8 +168,16 @@ indexable: true
         <div class="form-group form-question-highlight">
           <h3 class="research-question-title">The Key Research Question</h3>
           <label for="innovation" class="form-label-primary">What most recent innovation do you see making a difference on the pitch?</label>
+          <p class="research-question-explainer">By innovation we mean something you newly introduced with the intent to improve the performance of the team on the field to win.</p>
           <p class="research-question-explainer">By difference we mean winning more, by pitch we mean the team playing successful football</p>
-          <textarea id="innovation" name="innovation" class="form-textarea-primary" required placeholder="Please share your insights on recent football innovations..."></textarea>
+          <textarea id="innovation" name="innovation" class="form-textarea-primary" required placeholder="There is no right or wrong answer, just tell us the truth."></textarea>
+        </div>
+
+        <!-- Second Research Question -->
+        <div class="form-group form-question-highlight">
+          <h3 class="research-question-title">The Second Key Research Question</h3>
+          <label for="effect" class="form-label-primary">What was the measurable effect of that innovation?</label>
+          <textarea id="effect" name="effect" class="form-textarea-primary" required placeholder="There is no right or wrong answer, just tell us the truth."></textarea>
         </div>
 
         <!-- Supporting Information -->

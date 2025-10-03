@@ -147,24 +147,41 @@ indexable: true
 
     <div class="form-container">
       <form id="participation-form" action="/api/participate" method="POST">
+        <!-- Main Research Question - Highlighted -->
+        <div class="form-group form-question-highlight">
+          <h3 class="research-question-title">La domanda chiave della ricerca</h3>
+          <label for="innovation" class="form-label-primary">Quale innovazione recente vedi fare la differenza sul campo?</label>
+          <p class="research-question-explainer">Per innovazione intendiamo qualcosa che hai introdotto di recente con l'intenzione di migliorare le prestazioni della squadra sul campo per vincere.</p>
+          <p class="research-question-explainer">Per differenza intendiamo vincere di più, per campo intendiamo la squadra che gioca a calcio con successo</p>
+          <textarea id="innovation" name="innovation" class="form-textarea-primary" required placeholder="Non c'è una risposta giusta o sbagliata, dicci solo la verità."></textarea>
+        </div>
+
+        <!-- Second Research Question -->
+        <div class="form-group form-question-highlight">
+          <h3 class="research-question-title">La seconda domanda chiave della ricerca</h3>
+          <label for="effect" class="form-label-primary">Qual è stato l'effetto misurabile di quell'innovazione?</label>
+          <textarea id="effect" name="effect" class="form-textarea-primary" required placeholder="Non c'è una risposta giusta o sbagliata, dicci solo la verità."></textarea>
+        </div>
+
+        <!-- Supporting Information -->
+        <div class="form-section-divider">
+          <h4 class="form-section-title">Le tue informazioni</h4>
+        </div>
+
         <div class="form-group">
-          <label for="club_name" class="form-label">{{ content.it.participate.form_labels.club_name }}</label>
+          <label for="club_name" class="form-label">Nome del tuo club o organizzazione</label>
           <input type="text" id="club_name" name="club_name" class="form-input" required>
         </div>
 
         <div class="form-group">
-          <label for="role" class="form-label">{{ content.it.participate.form_labels.role }}</label>
+          <label for="role" class="form-label">Ruolo del partecipante</label>
+          <p class="form-explainer">Idealmente, la risposta proviene dallo staff tecnico o dal direttore generale. Si prega di indicare da quale ruolo proviene la risposta</p>
           <input type="text" id="role" name="role" class="form-input" required>
         </div>
 
         <div class="form-group">
-          <label for="email" class="form-label">{{ content.it.participate.form_labels.email }}</label>
+          <label for="email" class="form-label">La tua email</label>
           <input type="email" id="email" name="email" class="form-input" required>
-        </div>
-
-        <div class="form-group">
-          <label for="innovation" class="form-label">{{ content.it.participate.form_labels.innovation }}</label>
-          <textarea id="innovation" name="innovation" class="form-textarea" required></textarea>
         </div>
 
         <div class="form-disclaimer">
