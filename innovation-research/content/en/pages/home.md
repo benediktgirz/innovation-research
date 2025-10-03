@@ -368,7 +368,6 @@ indexable: true
 <section class="section" id="about">
   <div class="section-content">
     <h2 class="section-title">Innovation as a Career</h2>
-    <p class="section-description">Benedikt works his entire career on innovation and team excellence. He is working on a system that uses innovation in a large variety of contexts for the benefit of football success. His hypotheses, argument and relevant research will eventually be published as a book early in 2026.</p>
 
     <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">Head Researcher</h3>
 
@@ -382,9 +381,6 @@ indexable: true
         <div class="text-center">
           <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
         </div>
-        <p class="mt-4 text-sm text-gray-600 text-center max-w-sm mx-auto">
-          Benedikt works his entire career on innovation and team excellence. He is working on a system that uses innovation in a large variety of contexts for the benefit of football success. His hypotheses, argument and relevant research will eventually be published as a book early in 2026.
-        </p>
       </div>
     </div>
   </div>

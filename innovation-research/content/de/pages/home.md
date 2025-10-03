@@ -147,24 +147,33 @@ indexable: true
 
     <div class="form-container">
       <form id="participation-form" action="/api/participate" method="POST">
+        <!-- Main Research Question - Highlighted -->
+        <div class="form-group form-question-highlight">
+          <h3 class="research-question-title">Die zentrale Forschungsfrage</h3>
+          <label for="innovation" class="form-label-primary">Welche neueste Innovation sehen Sie als spielentscheidend?</label>
+          <p class="research-question-explainer">Mit Unterschied meinen wir mehr Siege, mit Platz meinen wir erfolgreiches Fußballspiel</p>
+          <textarea id="innovation" name="innovation" class="form-textarea-primary" required placeholder="Bitte teilen Sie Ihre Erkenntnisse über aktuelle Fußball-Innovationen..."></textarea>
+        </div>
+
+        <!-- Supporting Information -->
+        <div class="form-section-divider">
+          <h4 class="form-section-title">Ihre Informationen</h4>
+        </div>
+
         <div class="form-group">
-          <label for="club_name" class="form-label">Ihr Vereinsname</label>
+          <label for="club_name" class="form-label">Ihr Vereins- oder Organisationsname</label>
           <input type="text" id="club_name" name="club_name" class="form-input" required>
         </div>
 
         <div class="form-group">
-          <label for="role" class="form-label">Ihre Rolle</label>
+          <label for="role" class="form-label">Teilnehmerrolle</label>
+          <p class="form-explainer">Idealerweise kommt die Antwort vom Trainerstab oder Geschäftsführer. Bitte geben Sie an, aus welcher Rolle die Antwort stammt</p>
           <input type="text" id="role" name="role" class="form-input" required>
         </div>
 
         <div class="form-group">
           <label for="email" class="form-label">Ihre E-Mail</label>
           <input type="email" id="email" name="email" class="form-input" required>
-        </div>
-
-        <div class="form-group">
-          <label for="innovation" class="form-label">Welche neueste Innovation sehen Sie als spielentscheidend? (Mit Unterschied meinen wir mehr Siege, mit Platz meinen wir erfolgreiches Fußballspiel)</label>
-          <textarea id="innovation" name="innovation" class="form-textarea" required></textarea>
         </div>
 
         <div class="form-disclaimer">
@@ -236,7 +245,6 @@ indexable: true
 <section class="section" id="about">
   <div class="section-content">
     <h2 class="section-title">Innovation als Berufung</h2>
-    <p class="section-description">Das Forschungsteam besteht aus einem funktionsübergreifenden, vielfältigen Hintergrund, der drei Gemeinsamkeiten teilt: eine Leidenschaft für Wissen, Fußball und Innovation.</p>
 
     <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">Leiter der Forschung</h3>
 
@@ -250,9 +258,6 @@ indexable: true
         <div class="text-center">
           <a href="https://www.linkedin.com/in/benedikt-girz/" target="_blank" rel="noopener noreferrer" class="text-primary hover:text-primary-light">LinkedIn</a>
         </div>
-        <p class="mt-4 text-sm text-gray-600 text-center max-w-sm mx-auto">
-          Benedikt arbeitet seine gesamte Laufbahn an Innovation und Teamexzellenz. Er entwickelt ein System, das Innovation in einer Vielzahl von Kontexten zum Vorteil des Fußballerfolgs nutzt. Seine Hypothesen, Argumente und relevante Forschung werden schließlich Anfang 2026 als Buch veröffentlicht.
-        </p>
       </div>
     </div>
   </div>
