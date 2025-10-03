@@ -18,6 +18,7 @@
     "serve": "deno task lume -s",
     "serve-prod": "deno run -A --unstable-cron --unstable-kv serve.ts",
     "test-intro": "NODE_ENV=test deno run -A ./intro/test.ts",
+    "create-application": "deno run -A ./lib/cli/create-application.ts",
     "upload-dev": "expect upload.exp",
     "upload-prod": "expect upload_production.exp",
     "upload-all": "deno task upload-dev && deno task upload-prod",

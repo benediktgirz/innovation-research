@@ -1,7 +1,18 @@
 import Server from 'lume/core/server.ts';
 import onDemand from 'lume/middlewares/on_demand.ts';
 import site from './_config.ts';
-import { redirects, router, notFound, cacheBusting } from './lib/middleware.ts';
+import { redirects, router, notFound, cacheBusting, applicationAuthMiddleware } from './lib/middleware.ts';
+import * as YAML from 'https://deno.land/std@0.218.0/yaml/mod.ts';
+
+// Load applications for auth middleware
+let applications: any[] = [];
+try {
+  const applicationsYaml = await Deno.readTextFile('./content/_data/applications.yml');
+  const data = YAML.parse(applicationsYaml) as { applications: any[] };
+  applications = data.applications || [];
+} catch (error) {
+  console.warn('Could not load applications.yml:', error);
+}
 
 const server = new Server({
   root: `${Deno.cwd()}/_site`,
@@ -21,6 +32,7 @@ server.use(async (request, next) => {
 });
 
 server.use(redirects);
+server.use(applicationAuthMiddleware(applications));
 server.use(router);
 server.use(onDemand({ site }));
 server.use(notFound());

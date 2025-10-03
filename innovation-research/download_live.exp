@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+spawn sftp -o StrictHostKeyChecking=no -P 22 u102640071@access848044507.webspace-data.io
+expect "password:"
+send "Ionos2025!!Ionos2025!!\r"
+expect "sftp>"
+send "cd /research\r"
+expect "sftp>"
+send "get index.html live-index.html\r"
+expect "sftp>"
+send "quit\r"
+expect eof

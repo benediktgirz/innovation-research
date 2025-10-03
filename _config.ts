@@ -1,12 +1,23 @@
 import lume from 'lume/mod.ts';
 import plugins from './lib/plugins.ts';
-import { redirects, router, cacheBusting, notFound, enhanced404, custom404 } from './lib/middleware.ts';
+import { redirects, router, cacheBusting, notFound, enhanced404, custom404, applicationAuthMiddleware } from './lib/middleware.ts';
+import * as YAML from 'https://deno.land/std@0.218.0/yaml/mod.ts';
+
+// Load applications for auth middleware
+let applications: any[] = [];
+try {
+  const applicationsYaml = await Deno.readTextFile('./content/_data/applications.yml');
+  const data = YAML.parse(applicationsYaml) as { applications: any[] };
+  applications = data.applications || [];
+} catch (error) {
+  console.warn('Could not load applications.yml:', error);
+}
 
 const site = lume({
   src: './content',
   location: new URL('https://benedikt-girz.com'),
   server: {
-    middlewares: [redirects, router, notFound(), cacheBusting()],
+    middlewares: [redirects, applicationAuthMiddleware(applications), router, notFound(), cacheBusting()],
   },
 });
 

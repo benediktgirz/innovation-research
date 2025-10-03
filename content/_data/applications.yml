@@ -1,0 +1,13 @@
+applications:
+  - slug: test-company
+    password: $2a$10$qyckOublglSA2Grqxbti.eWiunUj49uqJXEw9BnCxYAWtc9r/u9o.
+    company: Test Company
+    lang: en
+    headline: Welcome to My Application for Test Company
+    hero_claim: I'll help you build products that users love and scale with confidence
+    video: video.mp4
+    documents:
+      - title: Resume
+        file: resume.pdf
+      - title: Portfolio
+        file: portfolio.pdf

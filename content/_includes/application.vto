@@ -1,0 +1,192 @@
+---
+layout: base.vto
+---
+
+<div class="application-container">
+  <!-- Welcome Headline -->
+  <div class="application-header">
+    <h1 class="application-headline">{{ headline }}</h1>
+  </div>
+
+  <!-- Hero Section with Claim -->
+  <div class="application-hero">
+    <div class="hero-content">
+      <p class="hero-claim">{{ hero_claim }}</p>
+    </div>
+  </div>
+
+  <!-- Video Section -->
+  {{ if video }}
+  <div class="application-video">
+    <div class="video-container">
+      <video controls class="application-video-player">
+        <source src="/applications/{{ slug }}/{{ video }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+  {{ /if }}
+
+  <!-- Documents Section -->
+  {{ if documents && documents.length > 0 }}
+  <div class="application-documents">
+    <h2 class="documents-title">Documents & Resources</h2>
+    <div class="documents-grid">
+      {{ for document of documents }}
+      <div class="document-card">
+        {{ if document.file }}
+        <a href="/applications/{{ slug }}/{{ document.file }}" target="_blank" rel="noopener noreferrer" class="document-link">
+          <div class="document-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="document-title">{{ document.title }}</span>
+        </a>
+        {{ /if }}
+        {{ if document.url }}
+        <a href="{{ document.url }}" target="_blank" rel="noopener noreferrer" class="document-link">
+          <div class="document-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="15 3 21 3 21 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="document-title">{{ document.title }}</span>
+        </a>
+        {{ /if }}
+      </div>
+      {{ /for }}
+    </div>
+  </div>
+  {{ /if }}
+</div>
+
+<style>
+  .application-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .application-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .application-headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-on-canvas);
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .application-headline {
+      font-size: 2rem;
+    }
+  }
+
+  .application-hero {
+    background: var(--color-surface);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .hero-claim {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-on-canvas);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero-claim {
+      font-size: 1.25rem;
+    }
+    .application-hero {
+      padding: 2rem 1.5rem;
+    }
+  }
+
+  .application-video {
+    margin-bottom: 3rem;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #000;
+  }
+
+  .application-video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .application-documents {
+    margin-top: 3rem;
+  }
+
+  .documents-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-on-canvas);
+    margin-bottom: 1.5rem;
+  }
+
+  .documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .document-card {
+    background: var(--color-surface);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .document-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .document-link {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--color-on-canvas);
+  }
+
+  .document-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+
+  .document-icon svg {
+    width: 100%;
+    height: 100%;
+    color: var(--color-primary);
+  }
+
+  .document-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+</style>

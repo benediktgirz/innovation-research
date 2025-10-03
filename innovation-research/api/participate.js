@@ -15,12 +15,12 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const { club_name, role, email, innovation, language = 'en' } = req.body;
+    const { club_name, role, email, innovation, effect, language = 'en' } = req.body;
 
     // Validate required fields
-    if (!club_name || !role || !email || !innovation) {
+    if (!club_name || !role || !email || !innovation || !effect) {
       return res.status(400).json({
-        error: 'Missing required fields: club_name, role, email, innovation'
+        error: 'Missing required fields: club_name, role, email, innovation, effect'
       });
     }
 
@@ -31,6 +31,7 @@ module.exports = async (req, res) => {
       role,
       email,
       innovation,
+      effect,
       language,
       submitted_at: new Date().toISOString(),
       ip_address: req.headers['x-forwarded-for'] || 'unknown'
@@ -43,6 +44,7 @@ module.exports = async (req, res) => {
       email,
       language,
       innovation,
+      effect,
       submitted_at: participation.submitted_at,
       ip_address: participation.ip_address
     });
@@ -81,6 +83,9 @@ async function sendTelegramNotification(data) {
 
 *Innovation Response:*
 ${data.innovation}
+
+*Effect Response:*
+${data.effect}
 
 📅 *Submitted:* ${new Date(data.submitted_at).toLocaleString('en-GB', { timeZone: 'Europe/Berlin' })}
 🌐 *IP:* ${data.ip_address}`;
@@ -148,6 +153,7 @@ async function saveParticipation(participation) {
       role: participation.role,
       email: participation.email.substring(0, 3) + '***', // Privacy
       innovation_length: participation.innovation.length,
+      effect_length: participation.effect.length,
       language: participation.language,
       timestamp: participation.submitted_at
     });
