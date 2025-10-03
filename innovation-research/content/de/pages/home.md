@@ -11,7 +11,7 @@ indexable: true
 <section class="hero-section">
   <div class="hero-content">
     <h1 class="hero-title text-balance">Studie: Innovation im Profifußball</h1>
-    <p class="hero-description">In den europäischen Topligen sammeln wir gemeinsam mit Fußballexperten, Akademien, Verbänden und Trainern Informationen über Innovationen im Fußball. Das Ergebnis dieser Bemühung wird eine klare Aussage sein: Diese Innovationen haben es auf den Platz geschafft. Schließe dich führenden Fußballprofis an und gestalte diese bahnbrechende Forschung mit.</p>
+    <p class="hero-description">Welche Innovationen machen den Unterschied auf dem Feld? Wir suchen die Antowrten in den europäischen Topligen gemeinsam mit Fußballexperten, Akademien, Verbänden und Trainern über Innovationen im Fußball. Das Ergebnis dieser Bemühung wird eine klare Aussage sein: Diese Innovationen machen auf dem Platz die Mannschaft erfolgreicher. Schließe dich führenden Fußballprofis an und gestalte diese bahnbrechende Forschung mit.</p>
 
     <p class="hero-participation-note">✨ Dauert nur 2 Minuten — beantworte eine strategische Frage und erhalte die vollständigen Ergebnisse</p>
 
@@ -131,7 +131,7 @@ indexable: true
   <div class="section-content">
     <h2 class="section-title">Die Studie</h2>
     <p class="section-description">
-      Diese Forschung untersucht die zentrale Hypothese, dass Innovationen, die außerhalb der traditionellen Bereiche Ernährung, Konditionierung und Sportpädagogik entstehen, im Profifußball weitgehend ungenutzt bleiben. Um diese These zu prüfen, sammeln wir systematisch umfassende Daten aus allen operativen Dimensionen von Elite-Fußballorganisationen.
+      Diese Forschung untersucht die zentrale Hypothese, dass Innovationen, die außerhalb der traditionellen Bereiche Ernährung, Athletik und Sportpädagogik entstehen, im Profifußball weitgehend ungenutzt bleiben. Um diese These zu prüfen, sammeln wir systematisch umfassende Daten aus allen operativen Dimensionen von Elite-Fußballorganisationen.
     </p>
     <p class="section-description">
       Obwohl Selbstberichtsmethoden inherent gewisse Einschränkungen und potentielle Verzerrungen mit sich bringen, stellen sie einen wesentlichen und grundlegenden Ansatz dar, um dieses Phänomen zu erforschen und latente Leistungsoptimierungsmöglichkeiten im Profifußball zu identifizieren.
@@ -143,15 +143,15 @@ indexable: true
 <section class="section" id="participate">
   <div class="section-content">
     <h2 class="section-title">Teilnehmen</h2>
-    <p class="section-description">Als Teilnehmer erhalten Sie die vollständige Studie und ihre Ergebnisse kostenlos in Ihr Postfach. Bei Fragen steht Ihnen unser Hauptforscher gerne zur Verfügung.</p>
+    <p class="section-description">Als Teilnehmer erhalten Sie die vollständige Studie und ihre Ergebnisse kostenlos in Ihr Postfach. Bei Fragen steht Ihnen unser Studienleiter gerne zur Verfügung.</p>
 
     <div class="form-container">
       <form id="participation-form" action="/api/participate" method="POST">
         <!-- Main Research Question - Highlighted -->
         <div class="form-group form-question-highlight">
           <h3 class="research-question-title">Die zentrale Forschungsfrage</h3>
-          <label for="innovation" class="form-label-primary">Welche neueste Innovation sehen Sie als spielentscheidend?</label>
-          <p class="research-question-explainer">Mit Unterschied meinen wir mehr Siege, mit Platz meinen wir erfolgreiches Fußballspiel</p>
+          <label for="innovation" class="form-label-primary">Was ist die neueste Innovation, die Ihre Mannschaft auf dem Platz erfogreicher macht ?</label>
+          <p class="research-question-explainer">Mit Erfolg meinen wir mehr Siege, mit Platz meinen wir erfolgreiches Fußballspiel</p>
           <textarea id="innovation" name="innovation" class="form-textarea-primary" required placeholder="Bitte teilen Sie Ihre Erkenntnisse über aktuelle Fußball-Innovationen..."></textarea>
         </div>
 
@@ -245,6 +245,7 @@ indexable: true
 <section class="section" id="about">
   <div class="section-content">
     <h2 class="section-title">Innovation als Berufung</h2>
+    <p class="section-description">Benedikt arbeitet seine gesamte Karriere an Innovation und Teamexzellenz. Er arbeitet an einem System, das Innovation in einer Vielzahl von Kontexten zum Nutzen des Fußballerfolgs einsetzt. Seine Hypothesen, Argumente und relevante Forschung werden Anfang 2026 als Buch veröffentlicht.</p>
 
     <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">Leiter der Forschung</h3>
 

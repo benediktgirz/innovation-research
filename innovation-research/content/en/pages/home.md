@@ -368,6 +368,7 @@ indexable: true
 <section class="section" id="about">
   <div class="section-content">
     <h2 class="section-title">Innovation as a Career</h2>
+    <p class="section-description">Benedikt works his entire career on innovation and team excellence. He is working on a system that uses innovation in a large variety of contexts for the benefit of football success. His hypotheses, argument and relevant research will eventually be published as a book early in 2026.</p>
 
     <h3 class="text-2xl font-semibold text-center mb-8 text-primary-dark">Head Researcher</h3>
 
