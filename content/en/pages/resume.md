@@ -31,11 +31,11 @@ lang: 'en'
       <div class="skills-grid">
         <div class="skill-item">Data Driven Decision Making</div>
         <div class="skill-item">Solution Creativity</div>
-        <div class="skill-item">Web Development (Delivery)</div>
+        <div class="skill-item">Product Development Web & Mobile</div>
         <div class="skill-item">Communication (Storytelling)</div>
         <div class="skill-item">Business Modelling</div>
         <div class="skill-item">Online Marketing</div>
-        <div class="skill-item">Management</div>
+        <div class="skill-item">Management & Leadership</div>
         <div class="skill-item">Consulting</div>
         <div class="skill-item">Continuous Learning</div>
       </div>
@@ -66,14 +66,14 @@ lang: 'en'
           <div class="job-section">
             <strong>Context:</strong>
             <ul class="job-responsibilities">
-              <li>Creating Crypto and Service Products – Shipping Technology – Start Up</li>
+              <li>Leading Blockchain and Service Products – Start Up - Web & Mobile</li>
             </ul>
           </div>
           <div class="job-section">
             <strong>Key Achievements:</strong>
             <ul class="job-responsibilities">
               <li>Evolved an information-only page into a DeFi staking product</li>
-              <li>Creating successful product adoption, and quickly dropping unsuccessful ones</li>
+              <li>Creating successful product adoptionof loopedHype as day one HyperEVM 60 Million $ TVL staking yield benchmark</li>
             </ul>
           </div>
           <div class="job-section">
@@ -108,7 +108,7 @@ lang: 'en'
           <div class="job-section">
             <strong>Context:</strong>
             <ul class="job-responsibilities">
-              <li>Technology – People – Corporate FinTech Start Up</li>
+              <li>Technology Leadership – Corporate FinTech Start Up - Web & Mobile</li>
             </ul>
           </div>
           <div class="job-section">
@@ -189,14 +189,14 @@ lang: 'en'
           <div class="job-section">
             <strong>Context:</strong>
             <ul class="job-responsibilities">
-              <li>Technology – Customer Success – StartUp</li>
+              <li>Business Administration – Customer Success – StartUp</li>
             </ul>
           </div>
           <div class="job-section">
             <strong>Key Achievements:</strong>
             <ul class="job-responsibilities">
-              <li>Low customer acquisition costs and prominent press features of shipped software projects</li>
-              <li>Successful leadership of company and client success</li>
+              <li>Low customer acquisition costs (<200$) for six digits projects quotes</li>
+              <li>Several prominent press features of shipped software projects<</li>
             </ul>
           </div>
           <div class="job-section">
