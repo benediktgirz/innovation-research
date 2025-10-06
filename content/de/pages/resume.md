@@ -31,12 +31,12 @@ lang: 'de'
       <div class="skills-grid">
         <div class="skill-item">Datengetriebene Entscheidungsfindung</div>
         <div class="skill-item">Lösungskreativität</div>
-        <div class="skill-item">Web-Entwicklung (Umsetzung)</div>
+        <div class="skill-item">Produkt Entwicklung Web & Mobil</div>
         <div class="skill-item">Kommunikation (Storytelling)</div>
         <div class="skill-item">Geschäftsmodellierung</div>
         <div class="skill-item">Online-Marketing</div>
-        <div class="skill-item">Management</div>
-        <div class="skill-item">Analytisches Denken</div>
+        <div class="skill-item">Management & Teamaufbau</div>
+        <div class="skill-item">Beratung & Analytisches Denken</div>
         <div class="skill-item">Kontinuierliches Lernen</div>
       </div>
     </div>
@@ -66,14 +66,14 @@ lang: 'de'
           <div class="job-section">
             <strong>Kontext:</strong>
             <ul class="job-responsibilities">
-              <li>Krypto- und Service-Produkte entwickeln – Technologie liefern – Start-up</li>
+              <li>Leitung der Blockchain- und Service-Produktenwicklung – Start-up - Web und Mobil</li>
             </ul>
           </div>
           <div class="job-section">
             <strong>Wichtigste Erfolge:</strong>
             <ul class="job-responsibilities">
-              <li>Entwicklung einer reinen Informationsseite zu einem DeFi-Staking-Produkt</li>
-              <li>Erfolgreiche Produktakzeptanz schaffen und erfolglose schnell einstellen</li>
+              <li>Produktevolution von einer Informationsseite zu einem DeFi-Staking-Produkt</li>
+              <li>Konzeption und Erstellung von LoopedHype als HyperEvm Staking Yield Benchmark mit bis zu 60 Mio$ TVL.</li>
             </ul>
           </div>
           <div class="job-section">
@@ -108,7 +108,7 @@ lang: 'de'
           <div class="job-section">
             <strong>Kontext:</strong>
             <ul class="job-responsibilities">
-              <li>Technologie – Menschen – Corporate FinTech Start-up</li>
+              <li>IT Leitung – Corporate FinTech Start-up - Web & Mobil</li>
             </ul>
           </div>
           <div class="job-section">
@@ -189,14 +189,14 @@ lang: 'de'
           <div class="job-section">
             <strong>Kontext:</strong>
             <ul class="job-responsibilities">
-              <li>Technologie – Kundenerfolg – StartUp</li>
+              <li>Geschäftsführung – Kundenerfolg – StartUp</li>
             </ul>
           </div>
           <div class="job-section">
             <strong>Wichtigste Erfolge:</strong>
             <ul class="job-responsibilities">
-              <li>Niedrige Kundenakquisitionskosten und prominente Presseberichte über ausgelieferte Software-Projekte</li>
-              <li>Erfolgreiche Führung von Unternehmen und Kundenerfolg</li>
+              <li>Niedrige Kundenakquisitionskosten (<200$) fuer sechsstellige Auftragsvolumina</li>
+              <li>Prominente Presseberichte über ausgelieferte Software-Projekte</li>
             </ul>
           </div>
           <div class="job-section">
@@ -230,14 +230,14 @@ lang: 'de'
           <div class="job-section">
             <strong>Kontext:</strong>
             <ul class="job-responsibilities">
-              <li>Marketing – Team-Management – Wachstum</li>
+              <li>Online Marketing – Team-Management – Business Development</li>
             </ul>
           </div>
           <div class="job-section">
             <strong>Wichtigste Erfolge:</strong>
             <ul class="job-responsibilities">
               <li>Doppelte Beförderung nach 6 Monaten</li>
-              <li>Erfolgreiche Geschäftsabschlüsse und starke SERP-Performance</li>
+              <li>Erfolgreiche Geschäftsabschlüsse und starke SERP-Performance in 40 internationalen Märkten</li>
             </ul>
           </div>
           <div class="job-section">
@@ -245,7 +245,7 @@ lang: 'de'
             <ul class="job-responsibilities">
               <li>Führung internationales Marketing-Team für 40 Länder</li>
               <li>Wachstum des Locanto Kleinanzeigen-Marktplatzes</li>
-              <li>Führung von Online-Marketing-Experimenten und Dateneinblick-Initiativen</li>
+              <li>Führung von Online-Marketing-Experimenten und Datenanalysen-Initiativen</li>
             </ul>
           </div>
         </div>
