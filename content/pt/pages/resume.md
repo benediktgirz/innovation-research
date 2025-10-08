@@ -29,27 +29,29 @@ lang: 'pt'
         <div class="skill-cluster">
           <h3>Competências Comportamentais</h3>
           <div class="skills-grid">
-            <div class="skill-item">Comunicação (Storytelling)</div>
             <div class="skill-item">Liderança de Equipes Multifuncionais</div>
-            <div class="skill-item">Gestão de Stakeholders</div>
-            <div class="skill-item">Priorização Estratégica</div>
-            <div class="skill-item">Ensino & Transferência de Conhecimento</div>
+            <div class="skill-item">Inteligência Cultural</div>
             <div class="skill-item">Empreendedorismo</div>
+            <div class="skill-item">Priorização Estratégica</div>
+            <div class="skill-item">Comunicação (Storytelling)</div>
+            <div class="skill-item">Gestão de Stakeholders</div>
+            <div class="skill-item">Ensino & Transferência de Conhecimento</div>
             <div class="skill-item">Gestão de Mudanças</div>
+            <div class="skill-item">Resolução de Conflitos</div>
           </div>
         </div>
         <div class="skill-cluster">
           <h3>Competências de Negócio</h3>
           <div class="skills-grid">
+            <div class="skill-item">Desenvolvimento de Produtos (Web & Mobile)</div>
+            <div class="skill-item">Consultoria em Estratégia de TI</div>
+            <div class="skill-item">Estratégia Go-To-Market</div>
+            <div class="skill-item">Arquitetura & Design de Plataforma</div>
+            <div class="skill-item">Gestão Financeira & M&A</div>
+            <div class="skill-item">Gestão de Talentos & Outsourcing</div>
             <div class="skill-item">Tomada de Decisão Baseada em Dados</div>
             <div class="skill-item">Modelagem de Negócios</div>
-            <div class="skill-item">Desenvolvimento de Produtos Web & Mobile</div>
-            <div class="skill-item">Consultoria em Estratégia de TI</div>
-            <div class="skill-item">Estratégia Go-To-Market (GTM)</div>
-            <div class="skill-item">Formação de Equipes & Recrutamento</div>
-            <div class="skill-item">Gestão de Orçamento</div>
-            <div class="skill-item">Arquitetura & Design de Plataforma</div>
-            <div class="skill-item">Preparação M&A & Due Diligence</div>
+            <div class="skill-item">Métodos Ágeis & Gestão de Projetos</div>
           </div>
         </div>
       </div>
@@ -60,26 +62,24 @@ lang: 'pt'
           <div class="skills-grid">
             <div class="skill-item">Next.js</div>
             <div class="skill-item">TypeScript</div>
-            <div class="skill-item">PostgreSQL</div>
-            <div class="skill-item">MySQL</div>
+            <div class="skill-item">PostgreSQL & MySQL</div>
             <div class="skill-item">GraphQL</div>
+            <div class="skill-item">Plataformas Cloud (AWS, Azure, GCP)</div>
             <div class="skill-item">Vercel</div>
             <div class="skill-item">CI/CD</div>
+            <div class="skill-item">Google Tag Manager</div>
             <div class="skill-item">AI Prompts</div>
-            <div class="skill-item">Java Spring</div>
-            <div class="skill-item">Matomo</div>
-            <div class="skill-item">AWS</div>
           </div>
         </div>
         <div class="skill-cluster">
           <h3>Expertise de Domínio</h3>
           <div class="skills-grid">
             <div class="skill-item">Blockchain & DeFi</div>
-            <div class="skill-item">Finanças Públicas & Regulatory Tech</div>
+            <div class="skill-item">Finanças & Tecnologia Regulatória</div>
             <div class="skill-item">PropTech</div>
             <div class="skill-item">E-commerce</div>
             <div class="skill-item">HealthTech</div>
-            <div class="skill-item">Desenvolvimento de Produtos SaaS</div>
+            <div class="skill-item">Produtos SaaS</div>
           </div>
         </div>
       </div>
