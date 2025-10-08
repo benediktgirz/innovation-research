@@ -26,18 +26,66 @@ lang: 'en'
     </div>
 
     <!-- Skills Section -->
-    <div class="resume-section no-separator">
+    <div class="resume-section core-skills-section no-separator">
       <h2>Core Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-item">Data Driven Decision Making</div>
-        <div class="skill-item">Solution Creativity</div>
-        <div class="skill-item">Product Development Web & Mobile</div>
-        <div class="skill-item">Communication (Storytelling)</div>
-        <div class="skill-item">Business Modelling</div>
-        <div class="skill-item">Online Marketing</div>
-        <div class="skill-item">Management & Leadership</div>
-        <div class="skill-item">Consulting</div>
-        <div class="skill-item">Continuous Learning</div>
+      <!-- First Row: Soft Skills + Hard Skills -->
+      <div class="skills-clusters-row">
+        <div class="skill-cluster">
+          <h3>Soft Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">Cross-functional Team Leadership</div>
+            <div class="skill-item">Cultural Intelligence</div>
+            <div class="skill-item">Entrepreneurship</div>
+            <div class="skill-item">Strategic Prioritization</div>
+            <div class="skill-item">Communication (Storytelling)</div>
+            <div class="skill-item">Stakeholder Management</div>
+            <div class="skill-item">Teaching & Knowledge Transfer</div>
+            <div class="skill-item">Change Management</div>
+            <div class="skill-item">Conflict Resolution</div>
+          </div>
+        </div>
+        <div class="skill-cluster">
+          <h3>Hard Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">Product Development (Web & Mobile)</div>
+            <div class="skill-item">IT Strategy Consulting</div>
+            <div class="skill-item">Go-To-Market Strategy</div>
+            <div class="skill-item">Platform Architecture & Design</div>
+            <div class="skill-item">Financial Management & M&A</div>
+            <div class="skill-item">Talent Management & Outsourcing</div>
+            <div class="skill-item">Data Driven Decision Making</div>
+            <div class="skill-item">Business Modelling</div>
+            <div class="skill-item">Agile Methods & Project Management</div>
+          </div>
+        </div>
+      </div>
+      <!-- Second Row: Technical Skills + Domain Expertise -->
+      <div class="skills-clusters-row">
+        <div class="skill-cluster">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">Next.js</div>
+            <div class="skill-item">TypeScript</div>
+            <div class="skill-item">PostgreSQL & MySQL</div>
+            <div class="skill-item">GraphQL</div>
+            <div class="skill-item">Cloud Platforms (AWS, Azure, GCP)</div>
+            <div class="skill-item">Vercel</div>
+            <div class="skill-item">CI/CD</div>
+            <div class="skill-item">Google Tag Manager</div>
+            <div class="skill-item">AI Prompts</div>
+          </div>
+        </div>
+        <div class="skill-cluster">
+          <h3>Domain Expertise</h3>
+          <div class="skills-grid">
+            <div class="skill-item">Blockchain & DeFi</div>
+            <div class="skill-item">Finance & Regulatory Tech</div>
+            <div class="skill-item">PropTech</div>
+            <div class="skill-item">E-commerce</div>
+            <div class="skill-item">HealthTech</div>
+            <div class="skill-item">SaaS Products</div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -60,8 +108,9 @@ lang: 'en'
             <span class="location">St. Gallen, CH</span>
           </div>
           <div class="direct-report">Direct report: Mirko Schmiedl (CEO), Jannik Schmiedl (CTO)</div>
+          <div class="team-size">Team Managed: 15-20 | Team Size: 20-25</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Context:</strong>
@@ -102,8 +151,9 @@ lang: 'en'
             <span class="location">Munich, GER</span>
           </div>
           <div class="direct-report">Direct report: Michael Spiegel, CDO pbb group, CEO Capveriant GmbH</div>
+          <div class="team-size">Team Managed: 15-20 | Team Size: 20-30</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Context:</strong>
@@ -183,8 +233,9 @@ lang: 'en'
             <span class="location">Berlin, GER</span>
           </div>
           <div class="direct-report">Direct report: Shareholder Enrico Teterra</div>
+          <div class="team-size">Team Managed: 15-20 | Team Size: 15-20</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Context:</strong>
@@ -224,8 +275,9 @@ lang: 'en'
             <span class="location">Wiesbaden, GER</span>
           </div>
           <div class="direct-report">Direct report: Alfred van de Pol (CEO)</div>
+          <div class="team-size">Team Managed: 5-7 | Team Size: 15-20</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Context:</strong>
@@ -253,7 +305,7 @@ lang: 'en'
     </div>
 
     <!-- Education Section -->
-    <div class="resume-section no-separator">
+    <div class="resume-section education-section no-separator">
       <h2>Education</h2>
       
       <div class="education-entry">
@@ -268,6 +320,9 @@ lang: 'en'
             <div class="education-description">Ruby on Rails & JavaScript Web Engineering</div>
             <div class="education-location">San Francisco, USA</div>
           </div>
+          <ul class="education-details">
+            <li>9 Months Modern Full Stack Web Engineering and Agile Methods competitive course programme</li>
+          </ul>
         </div>
 
         <div class="education-item">
@@ -281,6 +336,9 @@ lang: 'en'
             <div class="education-description">Certified WebDesigner [1,6]</div>
             <div class="education-location">Hamburg, GER / Online</div>
           </div>
+          <ul class="education-details">
+            <li>Web Design and Programming Online Course teaching HTML, CSS, SQL, Design Principles and Web Programming</li>
+          </ul>
         </div>
 
         <div class="education-item">

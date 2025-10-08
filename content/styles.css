@@ -592,12 +592,36 @@
     font-style: italic;
     font-weight: 700;
     line-height: normal;
-    @apply mt-6 mb-10 border-b border-on-canvas-mute pb-2;
+    @apply mt-3 mb-10 border-b border-on-canvas-mute pb-2;
+  }
+
+  /* First h2 needs no top margin */
+  .resume-section:first-of-type h2 {
+    @apply mt-0;
   }
 
   /* Remove heading separators for flowing sections */
   .resume-section.no-separator h2 {
     @apply border-b-0 pb-0 mb-6;
+  }
+
+  .resume-section h3 {
+    color: #000;
+    font-family: "Crimson Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    @apply mt-6 mb-3;
+  }
+
+  .resume-section h3:first-of-type {
+    @apply mt-0;
+  }
+
+  /* Technical Skills and Domain Expertise need more top margin */
+  .skills-clusters-row:last-child .skill-cluster h3 {
+    @apply mt-3;
   }
 
   .resume-quote {
@@ -625,14 +649,38 @@
   }
 
   .skills-grid {
-    @apply grid grid-cols-2 sm:grid-cols-3 gap-3;
+    @apply grid grid-cols-2 sm:grid-cols-3 gap-1.5;
   }
 
   .skill-item {
     border-radius: 0.25rem;
-    border: 1px solid #E1EDFD;
+    border: 1px solid #C5DBFA;
     background: #E1EDFD;
-    @apply text-sm p-3 text-center font-normal text-on-canvas hover:bg-blue-50 transition-colors;
+    color: #1a365d;
+    @apply text-xs p-1.5 text-center font-medium hover:bg-blue-50 transition-colors;
+  }
+
+  /* Two-column cluster layout for skills on desktop */
+  .skills-clusters-row {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-3 mb-0;
+    align-items: start;
+  }
+
+  .skills-clusters-row:last-child {
+    @apply mb-0;
+  }
+
+  .skill-cluster {
+    @apply mb-0;
+  }
+
+  .skill-cluster h3 {
+    @apply mt-0 mb-1;
+    font-size: 0.875rem;
+  }
+
+  .skill-cluster .skills-grid {
+    align-content: start;
   }
 
   .job-entry {
@@ -711,6 +759,7 @@
     font-weight: 400;
     line-height: 1.625rem;
     letter-spacing: -0.0175rem;
+    @apply mb-0;
   }
 
   .location {
@@ -721,9 +770,11 @@
     font-weight: 400;
     line-height: 1.625rem;
     letter-spacing: -0.0175rem;
+    @apply mb-0;
   }
 
-  .direct-report {
+  .direct-report,
+  .team-size {
     color: #000;
     font-family: Quicksand;
     font-size: 0.875rem;
@@ -731,7 +782,6 @@
     font-weight: 400;
     line-height: 1.625rem;
     letter-spacing: -0.0175rem;
-    @apply mb-0;
   }
 
   .bullet-separator {
@@ -740,8 +790,11 @@
     vertical-align: middle;
   }
 
-  .job-meta-period-location {
-    @apply mt-0 mb-1;
+  .job-meta-period-location,
+  .direct-report,
+  .team-size {
+    @apply mt-0 mb-0;
+    line-height: 1.625rem;
   }
 
   .job-dimensions {
@@ -856,15 +909,50 @@
     @apply text-sm text-on-canvas p-2 bg-on-canvas-mute rounded italic;
   }
 
-  /* Print styles for PDF export */
+  /* Print styles for PDF export - Complete Reset and Dedicated Layout */
   @media print {
     @page {
-      margin: 0.2in 0.3in;
+      margin: 0.4in 0.5in;
       size: A4;
     }
-    
+
+    /* RESET ALL WEB STYLES */
+    * {
+      box-sizing: border-box !important;
+    }
+
     body {
       @apply text-black bg-white;
+      font-size: 9pt !important;
+      line-height: 1.3 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Reset all margins and padding */
+    h1, h2, h3, h4, h5, h6, p, ul, li, div {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Dedicated print typography */
+    .resume-section h2 {
+      font-size: 14pt !important;
+      margin-top: 6pt !important;
+      margin-bottom: 4pt !important;
+      line-height: 1.2 !important;
+      font-weight: 700 !important;
+      page-break-after: avoid !important;
+    }
+
+    .focus-statement {
+      font-size: 8pt !important;
+      line-height: 1.25 !important;
+      margin-bottom: 4pt !important;
+    }
+
+    .focus-statement p {
+      margin-bottom: 3pt !important;
     }
     
     .resume-footer {
@@ -893,11 +981,12 @@
     }
     
     .resume-container {
-      @apply pt-0 pb-0 max-w-none mx-0;
+      @apply pt-0 pb-0 mb-0 max-w-none mx-0;
     }
     
+    /* Consolidated resume-section styles - DO NOT add duplicate .resume-section rules below */
     .resume-section {
-      @apply border-black;
+      @apply border-black break-inside-auto mb-1;
     }
     
     .resume-name {
@@ -915,22 +1004,40 @@
     }
     
     .resume-section.no-separator {
-      @apply pb-0 mb-1;
+      @apply pb-0 mb-0;
     }
-    
+
     .resume-section h2 {
       color: #000;
       font-family: "Crimson Pro";
       font-size: 1.125rem;
       font-style: italic;
       font-weight: 700;
-      @apply mb-2;
+      @apply mb-1 mt-2;
     }
 
     .resume-section.no-separator h2 {
-      @apply border-b-0 pb-0 mb-1;
+      @apply border-b-0 pb-0 mb-1 mt-0;
     }
-    
+
+    /* First section after header needs no top margin */
+    .name-section + .resume-section h2 {
+      @apply mt-0;
+    }
+
+    .resume-section h3 {
+      color: #000;
+      font-family: "Crimson Pro";
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 600;
+      @apply mt-3 mb-1;
+    }
+
+    .resume-section h3:first-of-type {
+      @apply mt-0;
+    }
+
     .resume-quote {
       @apply p-3 mb-4 bg-gray-100;
     }
@@ -938,15 +1045,19 @@
     .focus-statement {
       @apply text-xs leading-tight mb-1 font-normal;
     }
-    
-    .work-experience-section {
-      @apply pt-2 mt-1;
-    }
 
-    /* Compact layout print styles */
+    /* Removed - using later .work-experience-section definition instead */
+
+    /* Consolidated job-entry styles - Simple fixed layout */
     .job-entry {
-      @apply border-0 p-2 mb-3 pb-3;
-      border-bottom: 1px solid #e5e7eb;
+      border: none !important;
+      border-bottom: 1px solid #e5e7eb !important;
+      padding: 6pt 0 !important;
+      margin-bottom: 8pt !important;
+      font-size: 8pt !important;
+      line-height: 1.3 !important;
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
     }
     
     .job-entry:last-child {
@@ -1014,7 +1125,7 @@
     }
 
     .job-meta-period-location {
-      @apply mt-0 mb-1;
+      @apply mt-0 mb-0;
     }
 
     .bullet-separator {
@@ -1071,9 +1182,10 @@
     
     .skill-item {
       border-radius: 0.25rem;
-      border: 1px solid #E1EDFD;
+      border: 1px solid #C5DBFA;
       background: #E1EDFD;
-      @apply text-sm p-3 text-center font-normal text-on-canvas hover:bg-blue-50 transition-colors;
+      color: #1a365d;
+      @apply text-sm p-3 text-center font-medium hover:bg-blue-50 transition-colors;
     }
     
     .skills-grid {
@@ -1117,21 +1229,15 @@
       @apply bg-gray-100 text-black;
     }
     
-    /* Allow content to flow naturally across pages for maximum compression */
-    .resume-section {
-      @apply break-inside-auto;
-    }
-    
+    /* Removed duplicate .resume-section - consolidated above */
+
     /* Allow skills section to break across pages */
     .resume-section.no-separator {
       break-inside: auto;
       page-break-inside: auto;
     }
-    
-    .job-entry {
-      @apply break-inside-auto;
-      page-break-inside: avoid;
-    }
+
+    /* Removed duplicate .job-entry - consolidated above */
 
     /* ULTRA-AGGRESSIVE space-saving optimizations for PDF */
     body {
@@ -1155,18 +1261,59 @@
       @apply mb-2;
     }
     
-    /* Ultra-tight sections */
-    .resume-section {
-      @apply mb-1;
-    }
-    
+    /* Removed duplicate .resume-section - consolidated above */
+
     .resume-section h2 {
       @apply text-sm font-semibold mb-0;
     }
     
     /* Remove separator for Contact section on print */
+    .contact-section {
+      @apply mb-0 pb-0;
+      page-break-after: avoid !important;
+    }
+
     .contact-section h2 {
       @apply border-b-0 pb-0 mb-2;
+    }
+
+    .resume-section:last-child {
+      @apply mb-0 pb-0;
+      page-break-after: avoid !important;
+    }
+
+    .languages-section {
+      @apply mb-0 pb-0;
+      page-break-after: avoid !important;
+    }
+
+    /* Prevent page break after the entire resume content */
+    .resume-content {
+      page-break-after: avoid !important;
+    }
+
+    /* Enhanced contact section styling for print */
+    .contact-grid {
+      @apply grid grid-cols-2 gap-x-8 gap-y-1;
+    }
+
+    .contact-item {
+      @apply text-xs flex flex-row items-baseline gap-2 leading-snug;
+    }
+
+    .contact-label {
+      @apply font-semibold uppercase tracking-wide;
+      min-width: 70px;
+      color: #1a365d;
+    }
+
+    .contact-item span:not(.contact-label) {
+      @apply font-normal;
+    }
+
+    .contact-item a {
+      @apply font-medium no-underline;
+      color: #1a365d;
     }
     
     /* Ultra-compress quote */
@@ -1178,26 +1325,40 @@
     .skills-summary {
       @apply text-xs p-1 mb-1;
     }
-    
+
+    .skills-clusters-row {
+      @apply grid grid-cols-2 gap-2 mb-0;
+      align-items: start;
+    }
+
+    .skill-cluster {
+      @apply mb-0;
+    }
+
+    .skill-cluster h3 {
+      @apply mb-1;
+      font-size: 0.75rem;
+    }
+
     .skills-grid {
       @apply gap-1;
       break-inside: auto;
       grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .skill-item {
-      @apply px-1 py-1 font-normal;
+      border: 1px solid #C5DBFA;
+      background: #E1EDFD;
+      color: #1a365d;
+      @apply px-1 py-1 font-medium;
       break-inside: avoid;
       font-size: 9px;
       line-height: 1.1;
       text-align: center;
     }
     
-    /* Ultra-compress job entries */
-    .job-entry {
-      @apply p-1 mb-1 text-xs font-normal;
-    }
-    
+    /* Removed duplicate .job-entry - consolidated above */
+
     /* Remove forced page break for better flow */
     .guest-lecturer-entry {
       @apply mt-2;
@@ -1252,6 +1413,7 @@
     }
     
     .direct-report,
+    .team-size,
     .job-dimensions {
       @apply text-xs mb-0 leading-tight font-normal;
     }
@@ -1276,7 +1438,7 @@
     }
     
     .job-section {
-      @apply mb-0;
+      @apply mb-2;
     }
     
     .job-section strong {
@@ -1287,18 +1449,20 @@
       @apply text-xs space-y-0 pl-5 leading-snug font-normal;
     }
     
-    /* Ultra-compact education layout */
+    /* Education layout with better spacing */
     .education-item {
-      @apply mb-0 pb-0 p-0 text-xs border-b border-gray-200;
+      @apply mb-3 pb-2 p-0 text-xs border-b border-gray-200;
     }
-    
+
     .education-entry {
-      @apply space-y-0;
+      @apply space-y-2;
     }
     
-    /* Remove any forced spacing on work experience section */
+    /* Work Experience Section - Simple layout */
     .work-experience-section {
-      @apply pt-1 mt-1 border-t-0;
+      padding-top: 0 !important;
+      margin-top: 8pt !important;
+      border: none !important;
     }
     
     .education-header {
@@ -1325,6 +1489,7 @@
     
     .education-details {
       @apply text-xs pl-6 space-y-0 mt-0 leading-none mb-0;
+      font-size: 10px;
     }
     
     .education-details li {
@@ -1333,24 +1498,35 @@
     
     /* Ultra-compact language section */
     .language-item {
-      @apply text-xs mb-0 p-1 leading-tight;
+      @apply text-xs mb-0 p-0.5 leading-tight;
+    }
+
+    .language-training {
+      @apply space-y-1;
     }
     
     .training-location {
       @apply text-xs;
     }
     
-    /* Ultra-compact contact section */
-    .contact-item {
-      @apply text-xs gap-1 leading-normal;
-    }
-    
-    .contact-label {
-      @apply text-xs min-w-12 font-semibold;
-    }
-    
+    /* Enhanced contact section - final override */
     .contact-grid {
-      @apply gap-1 text-xs;
+      @apply grid grid-cols-2 gap-x-8 gap-y-1 text-xs !important;
+    }
+
+    .contact-item {
+      @apply text-xs flex flex-row items-baseline gap-2 leading-snug !important;
+    }
+
+    .contact-label {
+      @apply font-bold uppercase tracking-wide text-xs !important;
+      min-width: 70px !important;
+      color: #1a365d !important;
+    }
+
+    .contact-item a {
+      @apply font-medium no-underline !important;
+      color: #1a365d !important;
     }
     
     /* Final logo overrides for print - positioned relative to job-header */
@@ -1460,13 +1636,7 @@
       @apply pb-0 mb-0;
     }
     
-    .job-entry {
-      @apply mb-0;
-    }
-    
-    .job-content .job-section {
-      @apply mb-0;
-    }
+    /* Removed tight spacing - using earlier mb-6 and mb-2 rules instead */
     
     .job-content strong {
       @apply block mb-0;
@@ -1492,7 +1662,8 @@
       @apply mb-0;
     }
     
-    .direct-report {
+    .direct-report,
+    .team-size {
       @apply mb-0;
     }
     
@@ -1502,7 +1673,7 @@
     }
     
     .education-item {
-      @apply mb-0 mt-2;
+      @apply mb-0 mt-1;
     }
     
     .education-header {
@@ -1521,21 +1692,15 @@
       @apply mb-0;
     }
     
-    /* Allow first 4 education items on page 2, force University of Bamberg to page 3 */
-    .education-item:nth-child(5) {
-      page-break-before: always !important;
-    }
-    
     /* Prevent education items with details from being split */
     .education-item:has(.education-details) {
       page-break-inside: avoid !important;
       break-inside: avoid !important;
     }
     
-    /* Fallback for browsers that don't support :has() */
-    .education-item:nth-child(3),
-    .education-item:nth-child(4),
-    .education-item:nth-child(5) {
+    /* Fallback for browsers that don't support :has() - only protect items with details */
+    .education-item:nth-child(1),
+    .education-item:nth-child(2) {
       page-break-inside: avoid !important;
       break-inside: avoid !important;
     }
@@ -1543,20 +1708,192 @@
     /* Skill boxes styling to match web version */
     .resume-content .skill-item {
       background-color: #E1EDFD !important;
-      border: 1px solid #E1EDFD !important;
+      border: 1px solid #C5DBFA !important;
+      color: #1a365d !important;
+      font-weight: 500 !important;
       border-radius: 0.5rem !important;
-      padding: 0.75rem !important;
+      padding: 0.4rem !important;
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
     }
-    
+
     .skills-grid .skill-item {
       background-color: #E1EDFD !important;
-      border: 1px solid #E1EDFD !important;
+      border: 1px solid #C5DBFA !important;
+      color: #1a365d !important;
+      font-weight: 500 !important;
       border-radius: 0.5rem !important;
-      padding: 0.75rem !important;
+      padding: 0.4rem !important;
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
+    }
+
+    /* Portuguese-specific print optimizations for tighter layout */
+    html[lang="pt"] .resume-section h2 {
+      font-size: 1rem !important;
+      @apply mb-1;
+    }
+
+    html[lang="pt"] .focus-statement {
+      font-size: 0.7rem !important;
+      line-height: 1.2 !important;
+      @apply mb-1;
+    }
+
+    html[lang="pt"] .skill-item {
+      font-size: 8px !important;
+      padding: 0.6rem !important;
+      line-height: 1 !important;
+    }
+
+    html[lang="pt"] .job-entry {
+      @apply mb-1 pb-1;
+    }
+
+    html[lang="pt"] .job-title-line h3 {
+      font-size: 1.1rem !important;
+      line-height: 1.1 !important;
+    }
+
+    html[lang="pt"] .job-responsibilities {
+      font-size: 0.7rem !important;
+      line-height: 1.3 !important;
+    }
+
+    html[lang="pt"] .job-content {
+      @apply mt-0 pt-0;
+    }
+
+    html[lang="pt"] .job-content .job-section {
+      @apply mb-1;
+    }
+
+    html[lang="pt"] .period,
+    html[lang="pt"] .location,
+    html[lang="pt"] .direct-report {
+      font-size: 0.7rem !important;
+    }
+
+    /* Prevent Page 4 - aggressive compression */
+    .resume-section {
+      margin-bottom: 6pt !important;
+      page-break-inside: auto !important;
+    }
+
+    /* Allow Education and Contact to break if needed to fit */
+    .education-section,
+    .contact-section {
+      page-break-inside: auto !important;
+      page-break-after: avoid !important;
+    }
+
+    /* Prevent orphaned Contact section creating Page 4 */
+    .contact-section {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .resume-section.no-separator {
+      padding-bottom: 0 !important;
+      margin-bottom: 4pt !important;
+    }
+
+    /* Compress all text elements */
+    .skill-item {
+      font-size: 7pt !important;
+      padding: 3pt 6pt !important;
+      margin: 2pt !important;
+      line-height: 1.2 !important;
+    }
+
+    .skills-grid {
+      gap: 3pt !important;
+      margin-bottom: 4pt !important;
+    }
+
+    .skills-clusters-row {
+      margin-bottom: 4pt !important;
+      gap: 6pt !important;
+    }
+
+    .skill-cluster h3 {
+      font-size: 10pt !important;
+      margin-bottom: 3pt !important;
+      font-weight: 600 !important;
+    }
+
+    /* Job content */
+    .job-title-line h3 {
+      font-size: 11pt !important;
+      font-weight: 600 !important;
+      line-height: 1.2 !important;
+      margin-bottom: 2pt !important;
+    }
+
+    .job-meta-period-location,
+    .period,
+    .location,
+    .direct-report,
+    .team-size {
+      font-size: 7.5pt !important;
+      line-height: 1.3 !important;
+      margin: 1pt 0 !important;
+    }
+
+    .job-section {
+      margin-bottom: 3pt !important;
+    }
+
+    .job-section strong {
+      font-size: 8pt !important;
+    }
+
+    .job-responsibilities {
+      font-size: 7.5pt !important;
+      line-height: 1.3 !important;
+      margin-left: 12pt !important;
+    }
+
+    .job-responsibilities li {
+      margin-bottom: 2pt !important;
+    }
+
+    /* Education */
+    .education-item {
+      margin-bottom: 6pt !important;
+      font-size: 7.5pt !important;
+      line-height: 1.3 !important;
+    }
+
+    .education-item strong {
+      font-size: 8.5pt !important;
+    }
+
+    .education-details {
+      font-size: 7pt !important;
+      margin-left: 12pt !important;
+    }
+
+    .education-details li {
+      margin-bottom: 1pt !important;
+    }
+
+    /* Languages */
+    .language-item {
+      margin-bottom: 2pt !important;
+      font-size: 7.5pt !important;
+      line-height: 1.3 !important;
+    }
+
+    /* Contact */
+    .contact-grid {
+      font-size: 7.5pt !important;
+      gap: 2pt 8pt !important;
+    }
+
+    .contact-label {
+      font-size: 7.5pt !important;
+      font-weight: 600 !important;
     }
   }
 }

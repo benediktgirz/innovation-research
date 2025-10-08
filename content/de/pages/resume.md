@@ -26,18 +26,56 @@ lang: 'de'
     </div>
 
     <!-- Skills Section -->
-    <div class="resume-section no-separator">
+    <div class="resume-section core-skills-section no-separator">
       <h2>Kernkompetenzen</h2>
+
+      <h3>Soft Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Kommunikation (Storytelling)</div>
+        <div class="skill-item">Interdisziplinäre Teamführung</div>
+        <div class="skill-item">Stakeholder-Management</div>
+        <div class="skill-item">Strategische Priorisierung</div>
+        <div class="skill-item">Lehre & Wissenstransfer</div>
+        <div class="skill-item">Unternehmertum</div>
+        <div class="skill-item">Change Management</div>
+      </div>
+
+      <h3>Hard Skills</h3>
       <div class="skills-grid">
         <div class="skill-item">Datengetriebene Entscheidungsfindung</div>
-        <div class="skill-item">Lösungskreativität</div>
-        <div class="skill-item">Produkt Entwicklung Web & Mobil</div>
-        <div class="skill-item">Kommunikation (Storytelling)</div>
         <div class="skill-item">Geschäftsmodellierung</div>
-        <div class="skill-item">Online-Marketing</div>
-        <div class="skill-item">Management & Teamaufbau</div>
-        <div class="skill-item">Beratung & Analytisches Denken</div>
-        <div class="skill-item">Kontinuierliches Lernen</div>
+        <div class="skill-item">Produkt Entwicklung Web & Mobil</div>
+        <div class="skill-item">IT-Strategie-Beratung</div>
+        <div class="skill-item">Go-To-Market-Strategie (GTM)</div>
+        <div class="skill-item">Teamaufbau & Recruiting</div>
+        <div class="skill-item">Budget-Management</div>
+        <div class="skill-item">Plattform-Architektur & Design</div>
+        <div class="skill-item">M&A-Vorbereitung & Due Diligence</div>
+      </div>
+
+      <h3>Technische Fähigkeiten</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Next.js</div>
+        <div class="skill-item">TypeScript</div>
+        <div class="skill-item">PostgreSQL</div>
+        <div class="skill-item">MySQL</div>
+        <div class="skill-item">GraphQL</div>
+        <div class="skill-item">Vercel</div>
+        <div class="skill-item">CI/CD</div>
+        <div class="skill-item">AI Prompts</div>
+        <div class="skill-item">Java Spring</div>
+        <div class="skill-item">Matomo</div>
+        <div class="skill-item">AWS</div>
+      </div>
+
+      <h3>Branchenexpertise</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Blockchain & DeFi</div>
+        <div class="skill-item">Public Finance & Regulatory Tech</div>
+        <div class="skill-item">PropTech</div>
+        <div class="skill-item">E-commerce</div>
+        <div class="skill-item">HealthTech</div>
+        <div class="skill-item">SaaS-Produktentwicklung</div>
       </div>
     </div>
 
@@ -60,8 +98,9 @@ lang: 'de'
             <span class="location">St. Gallen, CH</span>
           </div>
           <div class="direct-report">Direkter Vorgesetzter: Mirko Schmiedl (CEO), Jannik Schmiedl (CTO)</div>
+          <div class="team-size">Geführtes Team: 15-20 | Teamgröße: 20-25</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Kontext:</strong>
@@ -102,8 +141,9 @@ lang: 'de'
             <span class="location">München, GER</span>
           </div>
           <div class="direct-report">Direkter Vorgesetzter: Michael Spiegel, CDO pbb group, CEO Capveriant GmbH</div>
+          <div class="team-size">Geführtes Team: 15-20 | Teamgröße: 20-30</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Kontext:</strong>
@@ -183,8 +223,9 @@ lang: 'de'
             <span class="location">Berlin, GER</span>
           </div>
           <div class="direct-report">Direkter Vorgesetzter: Gesellschafter Enrico Teterra</div>
+          <div class="team-size">Geführtes Team: 15-20 | Teamgröße: 15-20</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Kontext:</strong>
@@ -224,8 +265,9 @@ lang: 'de'
             <span class="location">Wiesbaden, GER</span>
           </div>
           <div class="direct-report">Direkter Vorgesetzter: Alfred van de Pol (CEO)</div>
+          <div class="team-size">Geführtes Team: 5-10 | Teamgröße: 15-20</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Kontext:</strong>
@@ -253,7 +295,7 @@ lang: 'de'
     </div>
 
     <!-- Education Section -->
-    <div class="resume-section no-separator">
+    <div class="resume-section education-section no-separator">
       <h2>Ausbildung</h2>
       
       <div class="education-entry">

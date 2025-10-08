@@ -26,18 +26,56 @@ lang: 'fr'
     </div>
 
     <!-- Section Compétences Principales -->
-    <div class="resume-section no-separator">
+    <div class="resume-section core-skills-section no-separator">
       <h2>Compétences Principales</h2>
+
+      <h3>Compétences Comportementales</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Communication (Storytelling)</div>
+        <div class="skill-item">Leadership d'Équipes Transverses</div>
+        <div class="skill-item">Gestion des Parties Prenantes</div>
+        <div class="skill-item">Priorisation Stratégique</div>
+        <div class="skill-item">Enseignement & Transfert de Connaissances</div>
+        <div class="skill-item">Entrepreneuriat</div>
+        <div class="skill-item">Gestion du Changement</div>
+      </div>
+
+      <h3>Compétences Métier</h3>
       <div class="skills-grid">
         <div class="skill-item">Prise de Décision Basée sur les Données</div>
-        <div class="skill-item">Créativité de Solution</div>
-        <div class="skill-item">Développement Web (Livraison)</div>
-        <div class="skill-item">Communication (Storytelling)</div>
         <div class="skill-item">Modélisation Business</div>
-        <div class="skill-item">Marketing en Ligne</div>
-        <div class="skill-item">Management</div>
-        <div class="skill-item">Conseil</div>
-        <div class="skill-item">Apprentissage Continu</div>
+        <div class="skill-item">Développement Produit Web & Mobile</div>
+        <div class="skill-item">Conseil en Stratégie IT</div>
+        <div class="skill-item">Stratégie Go-To-Market (GTM)</div>
+        <div class="skill-item">Constitution d'Équipe & Recrutement</div>
+        <div class="skill-item">Gestion de Budget</div>
+        <div class="skill-item">Architecture & Design de Plateforme</div>
+        <div class="skill-item">Préparation M&A & Due Diligence</div>
+      </div>
+
+      <h3>Compétences Techniques</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Next.js</div>
+        <div class="skill-item">TypeScript</div>
+        <div class="skill-item">PostgreSQL</div>
+        <div class="skill-item">MySQL</div>
+        <div class="skill-item">GraphQL</div>
+        <div class="skill-item">Vercel</div>
+        <div class="skill-item">CI/CD</div>
+        <div class="skill-item">AI Prompts</div>
+        <div class="skill-item">Java Spring</div>
+        <div class="skill-item">Matomo</div>
+        <div class="skill-item">AWS</div>
+      </div>
+
+      <h3>Expertise Sectorielle</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Blockchain & DeFi</div>
+        <div class="skill-item">Finance Publique & Regulatory Tech</div>
+        <div class="skill-item">PropTech</div>
+        <div class="skill-item">E-commerce</div>
+        <div class="skill-item">HealthTech</div>
+        <div class="skill-item">Développement Produit SaaS</div>
       </div>
     </div>
 
@@ -60,20 +98,21 @@ lang: 'fr'
             <span class="location">St. Gallen, CH</span>
           </div>
           <div class="direct-report">Rapport direct : Mirko Schmiedl (CEO), Jannik Schmiedl (CTO)</div>
+          <div class="team-size">Équipe Gérée : 15-20 | Taille d'Équipe : 20-25</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Contexte :</strong>
             <ul class="job-responsibilities">
-              <li>Création de Produits Crypto et Services – Livraison Technologique – Start Up</li>
+              <li>Direction des Produits Blockchain et Services – Start Up - Web & Mobile</li>
             </ul>
           </div>
           <div class="job-section">
             <strong>Réalisations Clés :</strong>
             <ul class="job-responsibilities">
               <li>Fait évoluer une page uniquement informative en produit de staking DeFi</li>
-              <li>Création d'adoption produit réussie, et abandon rapide de ceux qui ne fonctionnent pas</li>
+              <li>Création d'une adoption produit réussie de loopedHype comme référence de rendement de staking HyperEVM au jour un avec 60 millions $ TVL</li>
             </ul>
           </div>
           <div class="job-section">
@@ -102,13 +141,14 @@ lang: 'fr'
             <span class="location">Munich, GER</span>
           </div>
           <div class="direct-report">Rapport direct : Michael Spiegel, CDO pbb group, CEO Capveriant GmbH</div>
+          <div class="team-size">Équipe Gérée : 15-20 | Taille d'Équipe : 20-30</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Contexte :</strong>
             <ul class="job-responsibilities">
-              <li>Technologie – Personnel – Start Up FinTech Corporate</li>
+              <li>Leadership Technologique – Start Up FinTech Corporate - Web & Mobile</li>
             </ul>
           </div>
           <div class="job-section">
@@ -149,7 +189,7 @@ lang: 'fr'
           <div class="job-section">
             <strong>Contexte :</strong>
             <ul class="job-responsibilities">
-              <li>Enseignement – Personnel – Méthodologie d'Apprentissage</li>
+              <li>Enseignement – Personnes – Méthodologie d'Apprentissage</li>
             </ul>
           </div>
           <div class="job-section">
@@ -183,20 +223,21 @@ lang: 'fr'
             <span class="location">Berlin, GER</span>
           </div>
           <div class="direct-report">Rapport direct : Actionnaire Enrico Teterra</div>
+          <div class="team-size">Équipe Gérée : 15-20 | Taille d'Équipe : 15-20</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Contexte :</strong>
             <ul class="job-responsibilities">
-              <li>Technologie – Succès Client – StartUp</li>
+              <li>Administration d'Entreprise – Succès Client – StartUp</li>
             </ul>
           </div>
           <div class="job-section">
             <strong>Réalisations Clés :</strong>
             <ul class="job-responsibilities">
-              <li>Faibles coûts d'acquisition client et fonctionnalités presse proéminentes de projets logiciels livrés</li>
-              <li>Leadership réussi de l'entreprise et succès client</li>
+              <li>Faibles coûts d'acquisition client (<200$) pour projets à six chiffres</li>
+              <li>Plusieurs fonctionnalités presse proéminentes de projets logiciels livrés</li>
             </ul>
           </div>
           <div class="job-section">
@@ -204,7 +245,7 @@ lang: 'fr'
             <ul class="job-responsibilities">
               <li>Leadership : Responsabilité succès Entreprise et Client</li>
               <li>Construction équipe interne et gestion externalisation services</li>
-              <li>Consulting et Développement d'Applications Mobiles et Web</li>
+              <li>Conseil et Développement d'Applications Mobiles et Web</li>
             </ul>
           </div>
         </div>
@@ -224,8 +265,9 @@ lang: 'fr'
             <span class="location">Wiesbaden, GER</span>
           </div>
           <div class="direct-report">Rapport direct : Alfred van de Pol (CEO)</div>
+          <div class="team-size">Équipe Gérée : 5-10 | Taille d'Équipe : 15-20</div>
         </div>
-        
+
         <div class="job-content">
           <div class="job-section">
             <strong>Contexte :</strong>
@@ -253,7 +295,7 @@ lang: 'fr'
     </div>
 
     <!-- Section Éducation -->
-    <div class="resume-section no-separator">
+    <div class="resume-section education-section no-separator">
       <h2>Formation</h2>
       
       <div class="education-entry">

@@ -1,0 +1,475 @@
+/*
+ * DEDICATED PRINT STYLESHEET - LOADS LAST, OVERRIDES EVERYTHING
+ * This stylesheet is exclusively for PDF export and completely resets all web/mobile styles
+ */
+
+@media print {
+  /* ============================================
+     NUCLEAR RESET - Override all previous styles
+     ============================================ */
+
+  @page {
+    size: A4;
+    margin: 0.5in 0.6in;
+  }
+
+  /* Universal reset */
+  * {
+    box-sizing: border-box !important;
+    max-width: none !important;
+  }
+
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 9pt !important;
+    line-height: 1.35 !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  /* Hide web elements */
+  .site-header,
+  header,
+  nav,
+  footer,
+  .nav-menu,
+  .hamburger,
+  .logo-container {
+    display: none !important;
+  }
+
+  /* Reset all spacing */
+  h1, h2, h3, h4, h5, h6, p, ul, ol, li, div, section, article {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* ============================================
+     PAGE STRUCTURE
+     ============================================ */
+
+  .resume-content,
+  .simple-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  main > div > h1:first-child {
+    display: none !important;
+  }
+
+  /* ============================================
+     TYPOGRAPHY SYSTEM
+     ============================================ */
+
+  /* Name */
+  .resume-name,
+  .name-section h1 {
+    font-size: 20pt !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    margin-bottom: 8pt !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Photo */
+  .resume-photo {
+    text-align: center !important;
+    margin-bottom: 10pt !important;
+  }
+
+  .resume-photo img {
+    width: 60pt !important;
+    height: 60pt !important;
+    border-radius: 50% !important;
+  }
+
+  /* Section Headers (Work Experience, Education, etc.) */
+  .resume-section h2 {
+    font-family: "Crimson Pro", serif !important;
+    font-size: 13pt !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    margin-top: 10pt !important;
+    margin-bottom: 5pt !important;
+    line-height: 1.2 !important;
+    page-break-after: avoid !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    padding-bottom: 3pt !important;
+  }
+
+  /* First section no top margin */
+  .resume-section:first-of-type h2,
+  .resume-section.education-section h2 {
+    margin-top: 0 !important;
+  }
+
+  /* Subsection Headers (Soft Skills, Hard Skills, etc.) */
+  .skill-cluster h3,
+  .resume-section h3 {
+    font-family: "Crimson Pro", serif !important;
+    font-size: 9.5pt !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    margin-bottom: 2pt !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Body text */
+  .focus-statement,
+  .focus-statement p {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 9pt !important;
+    line-height: 1.25 !important;
+    margin-bottom: 2pt !important;
+  }
+
+  /* ============================================
+     CORE SKILLS SECTION
+     ============================================ */
+
+  .resume-section.core-skills-section {
+    margin-top: 12pt !important;
+    margin-bottom: 4pt !important;
+  }
+
+  .skills-clusters-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10pt !important;
+    margin-bottom: 6pt !important;
+  }
+
+  .skill-cluster {
+    break-inside: avoid !important;
+  }
+
+  .skills-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 4pt !important;
+  }
+
+  .skill-item {
+    font-family: "Quicksand", sans-serif !important;
+    background-color: #E1EDFD !important;
+    border: 1px solid #C5DBFA !important;
+    border-radius: 4pt !important;
+    padding: 4pt 6pt !important;
+    font-size: 8pt !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    color: #1a365d !important;
+    font-weight: 500 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    word-wrap: break-word !important;
+    hyphens: none !important;
+  }
+
+  /* ============================================
+     WORK EXPERIENCE SECTION
+     ============================================ */
+
+  .work-experience-section {
+    page-break-before: auto !important;
+    margin-top: 12pt !important;
+    margin-bottom: 4pt !important;
+  }
+
+  .job-entry {
+    margin-bottom: 8pt !important;
+    padding-bottom: 6pt !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Add "Work Experience (continued)" header on page breaks */
+  .job-entry:nth-child(3)::before {
+    content: "Work Experience (continued)";
+    display: block;
+    font-family: "Crimson Pro", serif !important;
+    font-size: 13pt !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    margin-top: 12pt !important;
+    margin-bottom: 5pt !important;
+    padding-bottom: 3pt !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    page-break-after: avoid !important;
+  }
+
+  .job-entry:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Job header with logos */
+  .job-header-compact {
+    position: relative !important;
+    margin-bottom: 4pt !important;
+  }
+
+  .job-title-line {
+    padding-right: 70pt !important;
+    position: relative !important;
+  }
+
+  .job-title-line h3 {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 10.5pt !important;
+    font-weight: 600 !important;
+    line-height: 1.25 !important;
+    margin: 0 0 2pt 0 !important;
+    color: #0052cc !important;
+  }
+
+  /* Logos positioned absolutely on right */
+  .job-logo,
+  .job-logos-dual,
+  .job-logos-triple {
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    width: 65pt !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    gap: 3pt !important;
+  }
+
+  .job-logo img,
+  .job-logos-dual img,
+  .job-logos-triple img {
+    max-height: 20pt !important;
+    max-width: 65pt !important;
+    object-fit: contain !important;
+  }
+
+  /* Job metadata */
+  .job-meta-period-location,
+  .period,
+  .location,
+  .direct-report,
+  .team-size {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 8pt !important;
+    line-height: 1.3 !important;
+    margin: 1pt 0 !important;
+  }
+
+  .bullet-separator {
+    margin: 0 4pt !important;
+  }
+
+  /* Job content sections */
+  .job-content {
+    font-family: "Quicksand", sans-serif !important;
+    margin-top: 4pt !important;
+  }
+
+  .job-section {
+    margin-bottom: 4pt !important;
+  }
+
+  .job-section strong {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 9pt !important;
+    font-weight: 600 !important;
+  }
+
+  .job-responsibilities,
+  .job-responsibilities li {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 9pt !important;
+    line-height: 1.35 !important;
+    margin-left: 15pt !important;
+  }
+
+  .job-responsibilities li {
+    margin-bottom: 2pt !important;
+  }
+
+  /* ============================================
+     EDUCATION SECTION
+     ============================================ */
+
+  .education-section {
+    page-break-before: always !important;
+    break-before: page !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Ensure Education h2 starts at top of page */
+  .education-section h2 {
+    margin-top: 0 !important;
+  }
+
+  /* Force page break before last 2 jobs to prevent Education from starting on page 2 */
+  .job-entry:nth-last-child(2),
+  .job-entry:nth-last-child(1) {
+    page-break-after: auto !important;
+  }
+
+  .education-item {
+    font-family: "Quicksand", sans-serif !important;
+    margin-bottom: 8pt !important;
+    font-size: 9pt !important;
+    line-height: 1.35 !important;
+  }
+
+  .education-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+    margin-bottom: 2pt !important;
+  }
+
+  .education-header strong {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 9pt !important;
+    font-weight: 600 !important;
+  }
+
+  .education-period {
+    font-size: 7.5pt !important;
+    font-style: italic !important;
+    white-space: nowrap !important;
+  }
+
+  .education-second-line {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-bottom: 2pt !important;
+  }
+
+  .education-description {
+    font-weight: 500 !important;
+  }
+
+  .education-location {
+    font-style: italic !important;
+  }
+
+  .education-details {
+    margin-left: 15pt !important;
+    font-size: 9pt !important;
+  }
+
+  .education-details li {
+    margin-bottom: 1pt !important;
+  }
+
+  /* ============================================
+     LANGUAGES SECTION
+     ============================================ */
+
+  .language-training {
+    margin-top: 0 !important;
+  }
+
+  .language-item {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 9pt !important;
+    line-height: 1.4 !important;
+    margin-bottom: 4pt !important;
+  }
+
+  .language-item strong {
+    font-family: "Quicksand", sans-serif !important;
+    font-weight: 600 !important;
+  }
+
+  .training-location {
+    font-style: italic !important;
+    font-size: 7.5pt !important;
+  }
+
+  /* ============================================
+     CONTACT SECTION
+     ============================================ */
+
+  .contact-section {
+    margin-top: 10pt !important;
+    padding-top: 8pt !important;
+    border-top: 1px solid #e5e7eb !important;
+  }
+
+  .contact-grid {
+    font-family: "Quicksand", sans-serif !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6pt 15pt !important;
+    font-size: 8pt !important;
+    line-height: 1.5 !important;
+  }
+
+  .contact-item {
+    display: grid !important;
+    grid-template-columns: 85pt 1fr !important;
+    gap: 8pt !important;
+  }
+
+  .contact-label {
+    font-family: "Quicksand", sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 7.5pt !important;
+    letter-spacing: 0.5pt !important;
+    color: #666 !important;
+  }
+
+  .contact-item a {
+    color: #0052cc !important;
+    text-decoration: none !important;
+  }
+
+  /* ============================================
+     PAGE BREAK CONTROL
+     ============================================ */
+
+  .resume-section {
+    page-break-inside: auto !important;
+    margin-bottom: 8pt !important;
+  }
+
+  .resume-section.no-separator {
+    margin-bottom: 6pt !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Prevent widows/orphans */
+  p, li, .job-entry, .education-item {
+    orphans: 2 !important;
+    widows: 2 !important;
+  }
+
+  /* ============================================
+     UTILITY OVERRIDES
+     ============================================ */
+
+  /* Force all Tailwind utilities to be overridden */
+  [class*="text-"],
+  [class*="font-"],
+  [class*="leading-"],
+  [class*="tracking-"],
+  [class*="m-"],
+  [class*="p-"],
+  [class*="mt-"],
+  [class*="mb-"],
+  [class*="pt-"],
+  [class*="pb-"] {
+    /* Styles above will override */
+  }
+}
