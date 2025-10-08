@@ -28,54 +28,64 @@ lang: 'de'
     <!-- Skills Section -->
     <div class="resume-section core-skills-section no-separator">
       <h2>Kernkompetenzen</h2>
-
-      <h3>Soft Skills</h3>
-      <div class="skills-grid">
-        <div class="skill-item">Kommunikation (Storytelling)</div>
-        <div class="skill-item">Interdisziplinäre Teamführung</div>
-        <div class="skill-item">Stakeholder-Management</div>
-        <div class="skill-item">Strategische Priorisierung</div>
-        <div class="skill-item">Lehre & Wissenstransfer</div>
-        <div class="skill-item">Unternehmertum</div>
-        <div class="skill-item">Change Management</div>
+      <!-- First Row: Soft Skills + Hard Skills -->
+      <div class="skills-clusters-row">
+        <div class="skill-cluster">
+          <h3>Soft Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">Kommunikation (Storytelling)</div>
+            <div class="skill-item">Interdisziplinäre Teamführung</div>
+            <div class="skill-item">Stakeholder-Management</div>
+            <div class="skill-item">Strategische Priorisierung</div>
+            <div class="skill-item">Lehre & Wissenstransfer</div>
+            <div class="skill-item">Unternehmertum</div>
+            <div class="skill-item">Change Management</div>
+          </div>
+        </div>
+        <div class="skill-cluster">
+          <h3>Hard Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">Datengetriebene Entscheidungsfindung</div>
+            <div class="skill-item">Geschäftsmodellierung</div>
+            <div class="skill-item">Produkt Entwicklung Web & Mobil</div>
+            <div class="skill-item">IT-Strategie-Beratung</div>
+            <div class="skill-item">Go-To-Market-Strategie (GTM)</div>
+            <div class="skill-item">Teamaufbau & Recruiting</div>
+            <div class="skill-item">Budget-Management</div>
+            <div class="skill-item">Plattform-Architektur & Design</div>
+            <div class="skill-item">M&A-Vorbereitung & Due Diligence</div>
+          </div>
+        </div>
       </div>
-
-      <h3>Hard Skills</h3>
-      <div class="skills-grid">
-        <div class="skill-item">Datengetriebene Entscheidungsfindung</div>
-        <div class="skill-item">Geschäftsmodellierung</div>
-        <div class="skill-item">Produkt Entwicklung Web & Mobil</div>
-        <div class="skill-item">IT-Strategie-Beratung</div>
-        <div class="skill-item">Go-To-Market-Strategie (GTM)</div>
-        <div class="skill-item">Teamaufbau & Recruiting</div>
-        <div class="skill-item">Budget-Management</div>
-        <div class="skill-item">Plattform-Architektur & Design</div>
-        <div class="skill-item">M&A-Vorbereitung & Due Diligence</div>
-      </div>
-
-      <h3>Technische Fähigkeiten</h3>
-      <div class="skills-grid">
-        <div class="skill-item">Next.js</div>
-        <div class="skill-item">TypeScript</div>
-        <div class="skill-item">PostgreSQL</div>
-        <div class="skill-item">MySQL</div>
-        <div class="skill-item">GraphQL</div>
-        <div class="skill-item">Vercel</div>
-        <div class="skill-item">CI/CD</div>
-        <div class="skill-item">AI Prompts</div>
-        <div class="skill-item">Java Spring</div>
-        <div class="skill-item">Matomo</div>
-        <div class="skill-item">AWS</div>
-      </div>
-
-      <h3>Branchenexpertise</h3>
-      <div class="skills-grid">
-        <div class="skill-item">Blockchain & DeFi</div>
-        <div class="skill-item">Public Finance & Regulatory Tech</div>
-        <div class="skill-item">PropTech</div>
-        <div class="skill-item">E-commerce</div>
-        <div class="skill-item">HealthTech</div>
-        <div class="skill-item">SaaS-Produktentwicklung</div>
+      <!-- Second Row: Technical Skills + Domain Expertise -->
+      <div class="skills-clusters-row">
+        <div class="skill-cluster">
+          <h3>Technische Fähigkeiten</h3>
+          <div class="skills-grid">
+            <div class="skill-item">Next.js</div>
+            <div class="skill-item">TypeScript</div>
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">GraphQL</div>
+            <div class="skill-item">Vercel</div>
+            <div class="skill-item">CI/CD</div>
+            <div class="skill-item">AI Prompts</div>
+            <div class="skill-item">Java Spring</div>
+            <div class="skill-item">Matomo</div>
+            <div class="skill-item">AWS</div>
+          </div>
+        </div>
+        <div class="skill-cluster">
+          <h3>Branchenexpertise</h3>
+          <div class="skills-grid">
+            <div class="skill-item">Blockchain & DeFi</div>
+            <div class="skill-item">Public Finance & Regulatory Tech</div>
+            <div class="skill-item">PropTech</div>
+            <div class="skill-item">E-commerce</div>
+            <div class="skill-item">HealthTech</div>
+            <div class="skill-item">SaaS-Produktentwicklung</div>
+          </div>
+        </div>
       </div>
     </div>
 
