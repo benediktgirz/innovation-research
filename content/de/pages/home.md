@@ -10,7 +10,7 @@ lang: 'de'
 
 # Ich helfe Energieführungskräften, ihre Leistung in KI und Cybersicherheit zu steigern
 
-Ich baue derzeit eine neue Geschäftseinheit für die [Horizonte Group](https://www.horizonte.group/) auf, in der wir ein spezialisiertes Team zusammenstellen, um zukunftsweisende Lösungen für künstliche Intelligenz und Cybersicherheit an Kunden im DACH-Energiesektor einzuführen.
+Wir bauen derzeit eine neue Geschäftseinheit für die [Horizonte Group](https://www.horizonte.group/) auf, in der wir ein spezialisiertes Team zusammenstellen, um zukunftsweisende Lösungen für künstliche Intelligenz und Cybersicherheit im DACH-Energiesektor einzuführen.
 
 Mein besonderer Vorteil: Ich habe bereits in folgenden vier verschiedenen Rollen auf internationalem Niveau erfolgreich mehrere Jahre gearbeitet:
 <span class="font-medium">Marketer</span>,
