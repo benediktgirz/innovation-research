@@ -167,14 +167,18 @@
     border-radius: 4pt !important;
     padding: 4pt 6pt !important;
     font-size: 8pt !important;
-    line-height: 1.25 !important;
+    line-height: 1.2 !important;
     text-align: center !important;
     color: #1a365d !important;
     font-weight: 500 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     word-wrap: break-word !important;
-    hyphens: none !important;
+    hyphens: auto !important;
+    height: 32pt !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   /* ============================================
@@ -334,32 +338,47 @@
     justify-content: space-between !important;
     align-items: baseline !important;
     margin-bottom: 2pt !important;
+    gap: 8pt !important;
   }
 
   .education-header strong {
     font-family: "Quicksand", sans-serif !important;
     font-size: 9pt !important;
     font-weight: 600 !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+  }
+
+  .education-meta {
+    flex-shrink: 0 !important;
+    padding-right: 2pt !important;
   }
 
   .education-period {
     font-size: 7.5pt !important;
     font-style: italic !important;
     white-space: nowrap !important;
+    padding-right: 2pt !important;
   }
 
   .education-second-line {
     display: flex !important;
     justify-content: space-between !important;
     margin-bottom: 2pt !important;
+    gap: 8pt !important;
   }
 
   .education-description {
     font-weight: 500 !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
   }
 
   .education-location {
     font-style: italic !important;
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    padding-right: 2pt !important;
   }
 
   .education-details {

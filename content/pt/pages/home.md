@@ -7,10 +7,9 @@ description: 'Executivo de Produto com expertise em Tech, Negócios, Gestão e S
 lang: 'pt'
 ---
 
-# Meu nome é Benedikt; eu desenvolvo e escalo produtos de sucesso
+# Ajudo líderes do setor energético a melhorar seu desempenho em IA e cibersegurança
 
-Ajudo líderes a construir produtos impactantes, 
-lançá-los com sucesso, formar equipes e criar narrativas poderosas.
+Estou atualmente construindo uma nova unidade de negócios para o [Horizonte Group](https://www.horizonte.group/), onde estamos reunindo uma equipe especializada para introduzir soluções de ponta em inteligência artificial e cibersegurança para clientes do setor energético DACH.
 
 Minha vantagem especial: já trabalhei com sucesso em quatro funções diferentes a nível internacional:
 <span class="font-medium">Marketer</span>,
@@ -20,24 +19,6 @@ Minha vantagem especial: já trabalhei com sucesso em quatro funções diferente
 
 Isso me dá uma perspectiva única para entender cada etapa do desenvolvimento de produtos e promover colaboração interfuncional.
 
-<div class="experience-overview">
-  <h3>Minha experiência recente</h3>
-  <div class="experience-nav">
-    <a href="/pt/experiencia#finrate" class="experience-nav-item">
-      <div>
-        <div class="experience-nav-company">Product Lead</div>
-        <div class="experience-nav-role">Finrate AG</div>
-      </div>
-    </a>
-    <a href="/pt/experiencia#capveriant" class="experience-nav-item">
-      <div>
-        <div class="experience-nav-company">Chief Technology Officer</div>
-        <div class="experience-nav-role">CAPVERIANT GmbH</div>
-      </div>
-    </a>
-  </div>
-</div>
+**Você é apaixonado por moldar o futuro da energia com tecnologia inovadora?** Estamos procurando profissionais talentosos que querem causar um impacto real. [Junte-se à nossa missão](/pt/contato/) e nos ajude a impulsionar a transição energética com excelência em IA e cibersegurança.
 
-Entreguei produtos da ideação até aquisição bem-sucedida de M&A. [Ver todas as experiências](/pt/experiencia/).
 
-[Entre em contato](/pt/contato/) para discutir como podemos colaborar em seu próximo projeto transformador.

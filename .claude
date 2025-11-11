@@ -1,0 +1,27 @@
+# Project-Specific Context
+
+## Development Server
+
+When starting the development server for this project, always use port 3001:
+
+```bash
+deno task lume -s --port 3001
+```
+
+This ensures consistency and avoids port conflicts with other running services.
+
+## Multi-Language Development Workflow
+
+This site supports 4 languages: English (en), German (de), French (fr), and Portuguese (pt).
+
+**Important:** When making content or layout changes:
+
+1. **Always develop and test on the English version first** (`content/en/pages/`)
+2. **Get user approval** on the English implementation
+3. **Only then apply** the same changes to the other language versions (de, fr, pt)
+
+This workflow ensures:
+- Faster iteration during development
+- Clear testing and approval process
+- Consistency across all language versions
+- Reduced back-and-forth when changes are needed

@@ -8,10 +8,9 @@ description:
 lang: 'de'
 ---
 
-# Mein Name ist Benedikt; ich entwickle und skaliere erfolgreiche Produkte
+# Ich helfe Energieführungskräften, ihre Leistung in KI und Cybersicherheit zu steigern
 
-Ich helfe Führungskräften dabei, wirkungsvolle Produkte zu entwickeln, 
-diese erfolgreich zu launchen, Teams aufzubauen und starke Narrative zu schaffen.
+Ich baue derzeit eine neue Geschäftseinheit für die [Horizonte Group](https://www.horizonte.group/) auf, in der wir ein spezialisiertes Team zusammenstellen, um zukunftsweisende Lösungen für künstliche Intelligenz und Cybersicherheit an Kunden im DACH-Energiesektor einzuführen.
 
 Mein besonderer Vorteil: Ich habe bereits in folgenden vier verschiedenen Rollen auf internationalem Niveau erfolgreich mehrere Jahre gearbeitet:
 <span class="font-medium">Marketer</span>,
@@ -21,24 +20,7 @@ Mein besonderer Vorteil: Ich habe bereits in folgenden vier verschiedenen Rollen
 
 Dies gibt mir eine einzigartige Perspektive, um jeden Schritt der Produktentwicklung zu verstehen und funktionsübergreifende Zusammenarbeit zu fördern.
 
-<div class="experience-overview">
-  <h3>Meine jüngste Erfahrung</h3>
-  <div class="experience-nav">
-    <a href="/de/erfahrung#finrate" class="experience-nav-item">
-      <div>
-        <div class="experience-nav-company">Product Lead</div>
-        <div class="experience-nav-role">Finrate AG</div>
-      </div>
-    </a>
-    <a href="/de/erfahrung#capveriant" class="experience-nav-item">
-      <div>
-        <div class="experience-nav-company">Chief Technology Officer</div>
-        <div class="experience-nav-role">CAPVERIANT GmbH, [Deutsche Pfandbriefbank]</div>
-      </div>
-    </a>
-  </div>
-</div>
+**Die Zukunft der Energie mit innovativer Technologie zu gestalten** Wir suchen talentierte Fachkräfte, die einen echten Unterschied machen wollen. [Schließen Sie sich unserer Mission an](/de/kontakt/) und helfen Sie uns, die Energiewende mit Exzellenz in KI und Cybersicherheit voranzutreiben.
 
-Ich habe Produkte von der Ideenfindung bis zur erfolgreichen M&A-Übernahme geliefert. [Alle Erfahrungen ansehen](/de/erfahrung/).
 
-[Kontaktieren Sie mich](/de/kontakt/) um zu besprechen, wie wir bei Ihrem nächsten transformativen Projekt zusammenarbeiten können. 
+

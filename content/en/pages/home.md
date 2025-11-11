@@ -8,10 +8,9 @@ description:
 lang: 'en'
 ---
 
-# I'm Benedikt, I love building and growing successful products
+# I help energy leaders boost their performance in AI and cybersecurity
 
-I help leaders build impactful products, go to market,
-scale teams and shape narratives.
+I'm currently building a new business unit for the [Horizonte Group](https://www.horizonte.group/), where we're assembling a specialized team to introduce cutting-edge artificial intelligence and cybersecurity solutions to clients in the DACH energy sector.
 
 My unfair advantage is having worked in four different roles as
 <span class="font-medium">Marketer</span>,
@@ -21,24 +20,7 @@ My unfair advantage is having worked in four different roles as
 
 This gives me a unique perspective to understand every step of product development and foster cross-functional collaboration.
 
-<div class="experience-overview">
-  <h3>My recent experience</h3>
-  <div class="experience-nav">
-    <a href="/experience#finrate" class="experience-nav-item">
-      <div>
-        <div class="experience-nav-company">Product Lead</div>
-        <div class="experience-nav-role">Finrate AG</div>
-      </div>
-    </a>
-    <a href="/experience#capveriant" class="experience-nav-item">
-      <div>
-        <div class="experience-nav-company">Chief Technology Officer</div>
-        <div class="experience-nav-role">CAPVERIANT GmbH</div>
-      </div>
-    </a>
-  </div>
-</div>
+**Shaping the future of energy with innovative technology** We're looking for talented professionals who want to make a real impact. [Join our mission](/contact) and help us drive the energy transition forward with AI and cybersecurity excellence.
 
-I've delivered products from ideation to successful M&A acquisition. [Check all experiences](/experience).
 
-[Contact me](/contact) to discuss how we can collaborate on your next transformative project. 
+ 
