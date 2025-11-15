@@ -20,7 +20,9 @@ My unfair advantage is having worked in four different roles as
 
 This gives me a unique perspective to understand every step of product development and foster cross-functional collaboration.
 
-**Shaping the future of energy with innovative technology** We're looking for talented professionals who want to make a real impact. [Join our mission](/contact) and help us drive the energy transition forward with AI and cybersecurity excellence.
+# Shaping the future of energy with innovative technology
+
+We're looking for talented professionals who want to make a real impact. [Join our mission](/contact) and help us drive the energy transition forward with AI and cybersecurity excellence.
 
 
  

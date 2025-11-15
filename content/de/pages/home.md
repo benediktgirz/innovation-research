@@ -20,7 +20,7 @@ Mein besonderer Vorteil: Ich habe bereits in folgenden vier verschiedenen Rollen
 
 Dies gibt mir eine einzigartige Perspektive, um jeden Schritt der Lösungsentwicklung zu verstehen und funktionsübergreifende Zusammenarbeit zu fördern.
 
-**Die Zukunft der Energie mit innovativer Technologie zu gestalten** 
+# Die Zukunft der Energie mit innovativer Technologie zu gestalten*
 
 Wir suchen talentierte Fachkräfte, die einen echten Unterschied machen wollen. [Schließen Sie sich unserer Mission an](/de/kontakt/) und helfen Sie uns, die Energiewende mit Exzellenz in KI und Cybersicherheit voranzutreiben.
 
